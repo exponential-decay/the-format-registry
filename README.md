@@ -17,8 +17,17 @@ host @ [exponentialdecay.co.uk](http://exponentialdecay.co.uk/blog)
 
 ## Source code
 
-**GitHub:** [GitHub](https://github.com/exponential-decay)
+**GitHub:** [exponential-decay/the-format-registry](https://github.com/exponential-decay/the-format-registry)
 
+-----
+
+### Disclaimer
+
+While this notice is up the persistence of the links **cannot** be guaranteed.
+There are mechanisms still to be built which will provide guarantee. At present the application
+reads the data from source, and maps it, but cannot guarantee 'subject' mapping. Thus far
+the work has focused on export, vocabulary, and link redirection. 
+ 
 -----
 
 ## Data features...
