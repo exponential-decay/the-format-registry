@@ -3,6 +3,7 @@
 *.md~
 *.php~
 *.xml~
+*.xsl~
 *.htm~
 *.html~
 *.css~
