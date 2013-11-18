@@ -1,8 +1,8 @@
 # gedit backup files
-.txt~
-.md~
-.php~
-.xml~
-.htm~
-.html~
-.css~
+*.txt~
+*.md~
+*.php~
+*.xml~
+*.htm~
+*.html~
+*.css~
