@@ -1,0 +1,138 @@
+<http://the-fr.org/format-registry/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology>.
+<http://the-fr.org/format-registry/> <http://www.w3.org/2000/01/rdf-schema#comment> "the-fr format registry ontology."@en.
+<http://the-fr.org/format-registry/> <http://www.w3.org/2000/01/rdf-schema#label> "the-fr Ontology"@en.
+<http://the-fr.org/def/format-registry/FileFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/FileFormat> <http://www.w3.org/2000/01/rdf-schema#label> "File Format"@en.
+<http://the-fr.org/def/format-registry/FileFormat> <http://www.w3.org/2000/01/rdf-schema#comment> "A file format is an encoding of a file type that can be rendered or interpreted in a consistent, expected and meaningful way, through the intervention of a particular piece of software or hardware which has been designed to handle that format. A file may (or may not) be a container containing zero or more files of various formats. File formats may be defined by a specification, or by a reference software system. Many file formats exist in forms with minor variations, and many also in more than one version. Typing of file formats should be interpreted generously rather than strictly, but sufficiently precisely to distinguish versions where such distinctions have significant interpretive consequences."@en.
+<http://the-fr.org/def/format-registry/FileFormat> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/File_format>.
+<http://the-fr.org/def/format-registry/FileFormat> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/FileFormat> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty>.
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty>.
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/2000/01/rdf-schema#label> "PUID"@en.
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/2000/01/rdf-schema#comment> "The PRONOM Persistent Unique Identifier (PUID) is an extensible scheme for providing persistent, unique and unambiguous identifiers for records in the PRONOM registry. Such identifiers are fundamental to the exchange and management of digital objects, by allowing human or automated user agents to unambiguously identify, and share that identification of, the representation information required to support access to an object. A PUID is assigned on entry to PRONOM, and every identifier is unique within the namespace, and is persistently and unambiguously bound to a single registry entry. The PUID type element identifies the type of registry entry; for a file format it is fmt or x-fmt; for a character encoding it is chr or x-chr; for a compression encoding it is cmp or x-cmp; for a software package it is sfw or x-sfw. The integer value that follows is the identifier element and denotes an instance of that type within PRONOM.\r\nThe x-puid is a legacy form of the PRONOM Persistent Unique Identifier (PUID) originally intended as a temporary identifier to assign to records until a judgment could be made about the validity of the entry; if the entry was deemed to be a valid entry then a standard PUID was meant to replace the X-PUID on an entry. Many collections have been characterised using X-PUIDs and for this reason existing X-PUIDs are still maintained but will not be assigned to any new entries."@en.
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/PRONOM_technical_registry#The_PRONOM_Persistent_Unique_Identifier_.28PUID.29_scheme>.
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/puid> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/2000/01/rdf-schema#label> "Internet Media Type"@en.
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/2004/02/skos/core#altLabel> "MIME Type"@en.
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Internet Media Type formerly MIME (Multipurpose Internet Mail Extensions) types describe the media type of content either in email or served by web servers or web applications and are intended to help guide a web browser in how the content is to be processed and displayed. Not all formats have an associated MIME type, but this is specified where it is known. MIME is an acronym for Multipurpose Internet Mail Extensions, and is written to allow MIME to be extended in certain ways, without having to revise the standard. MIME types consist of a standardised system of identifiers consisting of a type and a sub-type, separated by a slash, such as text/html. This provides a procedure for maintaining and extending these sets of values by registering them with the Internet Assigned Numbers Authority."@en.
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Internet_media_type>.
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/prop/format-registry/internetMediaType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/prop/format-registry/hasExtension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/hasExtension> <http://www.w3.org/2000/01/rdf-schema#label> "File Extension"@en.
+<http://the-fr.org/prop/format-registry/hasExtension> <http://www.w3.org/2000/01/rdf-schema#comment> "A file extension is a suffix to the name of a computer file applied to indicate the type of file format. It gives a human readable identifier for the file; such that users can quickly understand the type of file it is without having to open it. The filename extension associates the file with certain software packages, helping an application program recognise whether it is of a type that it can work with. In some operating systems, such as DOS, a file extension is required, but in others, such as Unix, it is optional. Some operating systems limit the length of the extension and some are case sensitive. On Windows computers, extensions consist of a dot '.' at the end of a file name, typically followed by three letters to identify the type of file. On a Unix based system, the file name is a single string, with the '.' being just another character, and with the file name being of variable-length. A file extension is not a reliable identifier of the format of the file. An extension may be linked to more than one program; they are not assigned by a controlling authority, and can be easily changed."@en.
+<http://the-fr.org/prop/format-registry/hasExtension> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Filename_extension>.
+<http://the-fr.org/prop/format-registry/hasExtension> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/hasExtension> <http://www.w3.org/2000/01/rdf-schema#domain> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/prop/format-registry/hasExtension> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/prop/format-registry/version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/version> <http://www.w3.org/2000/01/rdf-schema#label> "Version"@en.
+<http://the-fr.org/prop/format-registry/version> <http://www.w3.org/2000/01/rdf-schema#comment> "The specific version number or letter of the compression technique, file format or character encoding. It is the number or letter used to distinguish this version from previous and subse-quent versions, and usually follows the naming convention established by the manufacturer."@en.
+<http://the-fr.org/prop/format-registry/version> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/version> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/prop/format-registry/formatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/formatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>.
+<http://the-fr.org/prop/format-registry/formatType> <http://www.w3.org/2000/01/rdf-schema#label> "Format Type"@en.
+<http://the-fr.org/prop/format-registry/formatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Property describing the class family or type that the registered format belongs to, e.g. MP3 has format type Audio.".
+<http://the-fr.org/prop/format-registry/formatType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/formatType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Aggregate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Aggregate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Aggregate> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregate"@en.
+<http://the-fr.org/def/format-registry/Aggregate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a format that represents aggregations of arbitrary content drawn from multiple con-tent genre categories. A ZIP file could be a useful example of such an aggregate format, wherein it may contain a wide range and large number of different file format types."@en.
+<http://the-fr.org/def/format-registry/Aggregate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Aggregate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Audio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Audio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@en.
+<http://the-fr.org/def/format-registry/Audio> <http://www.w3.org/2000/01/rdf-schema#comment> "Audio encoded in a digital form which can be decoded and output via a computer. They are digital representations of audio waveforms, and are files that are intended to be heard rather than read. An audio file may be a raw bitstream, but is often presented as part of a multimedia format."@en.
+<http://the-fr.org/def/format-registry/Audio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Audio> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Database> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Database> <http://www.w3.org/2000/01/rdf-schema#label> "Database"@en.
+<http://the-fr.org/def/format-registry/Database> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a format that consists of an organised collection of information in a suitable database management system format and easily accessed by a software application. Binary in nature and characterised by being difficult to open in a text editor, and mostly used by an application specific for the purpose of opening."@en.
+<http://the-fr.org/def/format-registry/Database> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Database> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en.
+<http://the-fr.org/def/format-registry/Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a format that represents non database management system data, e.g. NetCDF (Network common data form), SAS XPORT, FITS, and CSV. A dataset can be primarily text oriented which can be opened in a text editor but might also be rendered in an application. A dataset may also be binary i.e. a dataset that isn\u2019t a database or traditional spreadsheet data, NetCDF being an example of this.".
+<http://the-fr.org/def/format-registry/Dataset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Dataset> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Email> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Email> <http://www.w3.org/2000/01/rdf-schema#label> "Email"@en.
+<http://the-fr.org/def/format-registry/Email> <http://www.w3.org/2000/01/rdf-schema#comment> "Electronic mail formats used for the transmission and storage of memo-like content and documents across disparate networked environments, e.g. MSG, PST."@en.
+<http://the-fr.org/def/format-registry/Email> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Email> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Gis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Gis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Gis> <http://www.w3.org/2000/01/rdf-schema#label> "GIS"@en.
+<http://the-fr.org/def/format-registry/Gis> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a format used within a Geographic Information System. The format may facilitate the capture, storage, manipulation, analysis, display and retrieval of data linked to geographic locations. It enables the linking of geographically referenced data to textual attributes held in a database."@en.
+<http://the-fr.org/def/format-registry/Gis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Gis> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/RasterImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/RasterImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/RasterImage> <http://www.w3.org/2000/01/rdf-schema#label> "Raster Image"@en.
+<http://the-fr.org/def/format-registry/RasterImage> <http://www.w3.org/2000/01/rdf-schema#comment> "A raster image is a data structure that allows the representation of an image from a series of bits of information. It is intended that the bits are translated into pixels for representation on a display medium. Each pixel is assigned a specific value which determines its colour, and these pixels create an overall finished image."@en.
+<http://the-fr.org/def/format-registry/RasterImage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/RasterImage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/VectorImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/VectorImage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/VectorImage> <http://www.w3.org/2000/01/rdf-schema#label> "Vector Image"@en.
+<http://the-fr.org/def/format-registry/VectorImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Images created using geometric primitives such as lines, arcs, and circles and commonly stored using mathematical equations and coordinates. A vector image defines points and the paths that connect them to form a digital representation of an image. Usually contains very little data, but typically includes the starting point (pixel) of the object, the kind of object it is, its size, and colour."@en.
+<http://the-fr.org/def/format-registry/VectorImage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/VectorImage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/PageDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/PageDescription> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/PageDescription> <http://www.w3.org/2000/01/rdf-schema#label> "Page Description"@en.
+<http://the-fr.org/def/format-registry/PageDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual or binary data stream that can be run through an interpreter to generate an image, such as PostScript in creating a PDF (Portable Document Format).  As a language it is used to encode documents by precisely describing their appearance when rendered for print or display."@en.
+<http://the-fr.org/def/format-registry/PageDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/PageDescription> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Presentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Presentation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Presentation> <http://www.w3.org/2000/01/rdf-schema#label> "Presentation"@en.
+<http://the-fr.org/def/format-registry/Presentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a format that represents interactive presentation content. Used by a presentation program to edit, manipulate and/or display visual information. A presentation file often contains both text and graphic elements, and is created with the intention of conveying information to a group of people all at once."@en.
+<http://the-fr.org/def/format-registry/Presentation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Presentation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Spreadsheet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Spreadsheet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Spreadsheet> <http://www.w3.org/2000/01/rdf-schema#label> "Spreadsheet"@en.
+<http://the-fr.org/def/format-registry/Spreadsheet> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a tabular format that allows users to enter numerical data and often manipulate that data into new spreadsheets or graphical representations. Typically uses a software program to record, maintain and display numerical data in rows and columns. Each row and each column is assigned a value, and the intersection of these values is a cell, representing a particular location within the spreadsheet."@en.
+<http://the-fr.org/def/format-registry/Spreadsheet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Spreadsheet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/MarkupText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/MarkupText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/MarkupText> <http://www.w3.org/2000/01/rdf-schema#label> "Mark-up Text"@en.
+<http://the-fr.org/def/format-registry/MarkupText> <http://www.w3.org/2000/01/rdf-schema#comment> "Text which includes a mark-up scheme to be interpreted specifically for other applications. It is used for annotating text in a way that is syntactically distinguishable from that text. Mark-up text is machine-readable and is typically absent from the version of the text which is displayed for end-user consumption."@en.
+<http://the-fr.org/def/format-registry/MarkupText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/MarkupText> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/StructuredText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/StructuredText> <http://www.w3.org/2000/01/rdf-schema#label> "Structured Text"@en.
+<http://the-fr.org/def/format-registry/StructuredText> <http://www.w3.org/2000/01/rdf-schema#comment> "Simple plain text which is structured for use by other applications. A structured string consists of a sequence of paragraphs separated by one or more blank lines. Each paragraph has a level which is defined as the minimum indentation of the paragraph. A paragraph is a sub-paragraph of another paragraph if the other paragraph is the last preceding paragraph that has a lower level. Structured text might include source code which is to be compiled into an executable format at a later date."@en.
+<http://the-fr.org/def/format-registry/StructuredText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/StructuredText> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/UnstructuredText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/UnstructuredText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/UnstructuredText> <http://www.w3.org/2000/01/rdf-schema#label> "Unstructured Text"@en.
+<http://the-fr.org/def/format-registry/UnstructuredText> <http://www.w3.org/2000/01/rdf-schema#comment> "Unformatted, plain text files that do not fit with a predefined data model, and do not fit well into relational tables. Typically it is text-heavy, and may contain dates and numbers."@en.
+<http://the-fr.org/def/format-registry/UnstructuredText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/UnstructuredText> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@en.
+<http://the-fr.org/def/format-registry/Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Formats that allow the time-based presentation of still images to give the illusion of movement. A video file may be presented alongside other file types, such as audio content, as part of a multimedia format."@en.
+<http://the-fr.org/def/format-registry/Video> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Video> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2000/01/rdf-schema#label> "Wordprocessed Text"@en.
+<http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2000/01/rdf-schema#comment> "Formatted text and additional content for presentation purposes. Used by a word processor software application to create, edit, format, save and print files. Wordprocessed text may be presented alongside other file types, such as graphics and photographs. Wordprocessed text files typically record presentation information such as character style and size, or other details that specify the appearance of a finished document."@en.
+<http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
