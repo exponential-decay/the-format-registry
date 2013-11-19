@@ -11,8 +11,9 @@ the digital preservation community.
 The focus of this project will be on the data and the augmenting of what is 
 currently available.
 
-There will be blogs and discussions on the architecture of this site on my primary
-host @ [exponentialdecay.co.uk](http://exponentialdecay.co.uk/blog)
+There will be [blogs](http://exponentialdecay.co.uk/blog/tag/the-fr-org/) and 
+discussions on the architecture of this site on my primary host 
+@ [exponentialdecay.co.uk](http://exponentialdecay.co.uk/blog)
 
 ----
 
