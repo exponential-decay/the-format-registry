@@ -5,8 +5,8 @@ Welcome to The Format Registry: A linked data file format registry.
 
 The work is the result of a four-day hack during November 2013. Its 
 goal is to challenge the status quo, to influence the rapid development 
-of further format registries and linked open data initiatives within the
-digital preservation community.
+of further format registries and other linked open data initiatives within 
+the digital preservation community.
 
 The focus of this project will be on the data and the augmenting of what is 
 currently available.
