@@ -28,6 +28,13 @@
 
 	class ResponseHandler
 	{
+		const DOC 	= 0;
+		const DEF 	= 1;
+		const PROP 	= 2;
+		const DATA  = 3;
+		const API 	= 4;
+		const UNKNOWN = 9999;
+
 		const URITYPE  		= 0;
 		const URICLASS  		= 1;
 		const URIVALUE			= 2; 
@@ -36,12 +43,43 @@
 		public $slugs_arr = '';
 		public $slugsize = '';
 
+		public $uri_type = '';	# doc, def, prop, data and api
+
 		public $content_type = '';
 
 		public function __construct()
 		{
 			$this->slugs_arr = get_slugs('/', $_SERVER['REQUEST_URI']);
 			$this->slugsize = sizeof($this->slugs_arr);
+			$this->uri_type = $this->set_uri_type($this->slugs_arr[URITYPE]);
+		}
+
+		private function set_uri_type($uri_type_from_arr)
+		{
+			$uritype = $this->UNKNOWN;
+
+			if (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0)
+			{
+				$uritype = $this->DOC;
+			}  
+			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0) 
+			{
+				$uritype = $this->DEF;
+			}	
+			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0) 
+			{
+				$uritype = $this->PROP;
+			}
+			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
+			{
+				$uritype = $this->DATA;
+			}
+			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], API) == 0)
+			{
+				$uritype = $this->API;
+			}
+
+			return $uritype;
 		}
 
 		public function handle_return_format($extension)

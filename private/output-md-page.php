@@ -1,42 +1,13 @@
 <?php
 
 	include_once ("parsedown/Parsedown.php");
+	include_once ("response-handler-class.php");
 
-	function format_tfr_xml($xml)
+	function format_tfr_xml($xml, $uritype)
 	{
 		$xsl_loc = "private/xsl/tfr-rdf-generic.xsl";
-
-		$doc = new DOMDocument();
-		$xsl = new XSLTProcessor();
-
-		$doc->load($xsl_loc);
-		$xsl->importStyleSheet($doc);
-
-		$doc->loadXML($xml);
-		$xslresult = trim(preg_replace('/\t+/', '', $xsl->transformToXML($doc)));
-
-		return $xslresult;
-	}
-	
-	function format_prop_xml($xml)
-	{
-		$xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
-
-		$doc = new DOMDocument();
-		$xsl = new XSLTProcessor();
-
-		$doc->load($xsl_loc);
-		$xsl->importStyleSheet($doc);
-
-		$doc->loadXML($xml);
-		$xslresult = trim(preg_replace('/\t+/', '', $xsl->transformToXML($doc)));
-
-		return $xslresult;
-	}
-
-	function format_def_xml($xml)
-	{
-		$xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
+		#xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
+		#$xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
 
 		$doc = new DOMDocument();
 		$xsl = new XSLTProcessor();

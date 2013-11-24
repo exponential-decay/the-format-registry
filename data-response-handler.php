@@ -54,10 +54,10 @@
 
 		if($slugs->slugsize >= 3 && $slugs->slugsize < 5)
 		{			
-			if(strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0 || 
-					strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0 || 
-					strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0 && 
-					strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
+			if ($slugs->uritype == ResponseHandler::DOC || 
+				 $slugs->uritype == ResponseHandler::DEF || 
+				 $slugs->uritype == ResponseHandler::PROP && 
+				 	$slugs->uritype == ResponseHandler::DATA)
 			{
 				$subject_uri = set_subject_uri($slugs);
 
@@ -66,7 +66,7 @@
 					$tfr_describe_query = "describe " . $subject_uri;
 					$db->outputfmt(ARC2XML);
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
-					$xslMDresult = format_tfr_xml($tfr_describe_result);
+					$xslMDresult = format_tfr_xml($tfr_describe_result, $slugs->uritype);
 					#$xslMDresult = format_prop_xml($tfr_describe_result);
 					print generate_markdown($xslMDresult);
 				}
