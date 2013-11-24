@@ -57,9 +57,8 @@
 			if(strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
 			{
 				$subject_uri = set_subject_uri($slugs);
-				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
-				if ($tfr_ask_result == 'true')
+				if (ask_triplestore($db, $subject_uri) == 'true')
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 					$db->outputfmt(ARC2XML);
@@ -75,9 +74,8 @@
 			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DATA) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
 			{
 				$subject_uri = set_subject_uri($slugs);
-				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
-				if ($tfr_ask_result == 'true')
+				if (ask_triplestore($db, $subject_uri) == 'true')
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 
@@ -98,9 +96,8 @@
 			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
 			{
 				$subject_uri = set_subject_uri($slugs);
-				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
-				if ($tfr_ask_result == 'true')
+				if (ask_triplestore($db, $subject_uri) == 'true')
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 					$db->outputfmt(ARC2XML);
@@ -116,9 +113,8 @@
 			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
 			{
 				$subject_uri = set_subject_uri($slugs);
-				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
-				if ($tfr_ask_result == 'true')
+				if (ask_triplestore($db, $subject_uri) == 'true')
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 					$db->outputfmt(ARC2XML);
