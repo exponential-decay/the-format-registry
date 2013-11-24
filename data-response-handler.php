@@ -78,21 +78,13 @@
 
 	function handle_request($db)
 	{
-		#Sample request: http://the-fr.org/id/file-format/1
-
 		$slugs = new ResponseHandler();
 
-
 		if($slugs->slugsize >= 3 && $slugs->slugsize < 5)
-		{
-			$typeslugptr   = 0;
-			$classslugptr  = 1;
-			$idslugptr		= 2; 
-			$fmtslugptr    = 3;	
-			
-			if(strcmp($slugs->slugs_arr[$typeslugptr], DOC) == 0 && strcmp($slugs->slugs_arr[$classslugptr], DATACLASS) == 0)
+		{			
+			if(strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
@@ -108,20 +100,20 @@
 					print generate_markdown("## No data for requested uri (DOC): " . $_SERVER['REQUEST_URI']);
 				}
 			}
-			elseif (strcmp($slugs->slugs_arr[$typeslugptr], DATA) == 0 && strcmp($slugs->slugs_arr[$classslugptr], DATACLASS) == 0)
+			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DATA) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 
-					$db->outputfmt(return_format($slugs->slugs_arr[$fmtslugptr]));
+					$db->outputfmt(return_format($slugs->slugs_arr[ResponseHandler::RETURNFORMAT]));
 
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
 
-					$filename = 'Content-disposition: attachment; filename=' . $slugs->slugs_arr[$idslugptr] . "." . $slugs->slugs_arr[$fmtslugptr];
+					$filename = 'Content-disposition: attachment; filename=' . $slugs->slugs_arr[ResponseHandler::URIVALUE] . "." . $slugs->slugs_arr[ResponseHandler::RETURNFORMAT];
 					header($filename);
 					header ('Content-Type: text/xml');
 					print $tfr_describe_result;
@@ -131,9 +123,9 @@
 					print generate_markdown("## No data for requested uri (DATA): " . $_SERVER['REQUEST_URI']);
 				}
 			}
-			elseif (strcmp($slugs->slugs_arr[$typeslugptr], DEF) == 0 && strcmp($slugs->slugs_arr[$classslugptr], FORMATREG) == 0)
+			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/def/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/def/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
@@ -149,9 +141,9 @@
 					print generate_markdown("## No data for requested uri (DEF): " . $_SERVER['REQUEST_URI']);
 				}
 			}
-			elseif (strcmp($slugs->slugs_arr[$typeslugptr], PROP) == 0 && strcmp($slugs->slugs_arr[$classslugptr], FORMATREG) == 0)
+			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/prop/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/prop/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
