@@ -49,9 +49,25 @@
 
 		public function __construct()
 		{
-			$this->slugs_arr = get_slugs('/', $_SERVER['REQUEST_URI']);
+			$this->slugs_arr = $this->get_slugs('/', $_SERVER['REQUEST_URI']);
 			$this->slugsize = sizeof($this->slugs_arr);
 			$this->uri_type = $this->set_uri_type($this->slugs_arr[self::URITYPE]);
+		}
+
+		private function get_slugs($delimeter, $request_uri)
+		{
+			define("EXTPOS", 2);	#position of expected file request, IDed by extension
+
+			$slugs = array_values(array_filter(explode($delimeter, $request_uri)));
+		
+			# split out a format extension if we have one, to return something useful
+			$format = (array_filter(explode('.', $slugs[EXTPOS])));
+
+			# remove concatenated portion, then merge		
+			unset($slugs[EXTPOS]);	
+
+			#return
+			return array_merge($slugs, $format);
 		}
 
 		private function set_uri_type($uri_type_from_arr)

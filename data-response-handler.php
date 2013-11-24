@@ -18,22 +18,6 @@
 		return $db;
 	}
 
-	function get_slugs($delimeter, $request_uri)
-	{
-		define("EXTPOS", 2);	#position of expected file request, IDed by extension
-
-		$slugs = array_values(array_filter(explode($delimeter, $request_uri)));
-		
-		# split out a format extension if we have one, to return something useful
-		$format = (array_filter(explode('.', $slugs[EXTPOS])));
-
-		# remove concatenated portion, then merge		
-		unset($slugs[EXTPOS]);	
-
-		#return
-		return array_merge($slugs, $format);
-	}
-
 	function ask_triplestore($db, $subject_uri)
 	{
 		$tfr_ask_query = "ask where { " . $subject_uri . " ?p ?o . }";		# TODO: extract to function
