@@ -54,7 +54,10 @@
 
 		if($slugs->slugsize >= 3 && $slugs->slugsize < 5)
 		{			
-			if(strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
+			if(strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0 || 
+					strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0 || 
+					strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0 && 
+					strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
 			{
 				$subject_uri = set_subject_uri($slugs);
 
@@ -64,6 +67,7 @@
 					$db->outputfmt(ARC2XML);
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
 					$xslMDresult = format_tfr_xml($tfr_describe_result);
+					#$xslMDresult = format_prop_xml($tfr_describe_result);
 					print generate_markdown($xslMDresult);
 				}
 				else
@@ -91,40 +95,6 @@
 				else
 				{
 					print generate_markdown("## No data for requested uri (DATA): " . $_SERVER['REQUEST_URI']);
-				}
-			}
-			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
-			{
-				$subject_uri = set_subject_uri($slugs);
-
-				if (ask_triplestore($db, $subject_uri) == 'true')
-				{
-					$tfr_describe_query = "describe " . $subject_uri;
-					$db->outputfmt(ARC2XML);
-					$tfr_describe_result = $db->query($tfr_describe_query, True);
-					$xslMDresult = format_prop_xml($tfr_describe_result);
-					print generate_markdown($xslMDresult);
-				}
-				else
-				{
-					print generate_markdown("## No data for requested uri (DEF): " . $_SERVER['REQUEST_URI']);
-				}
-			}
-			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
-			{
-				$subject_uri = set_subject_uri($slugs);
-
-				if (ask_triplestore($db, $subject_uri) == 'true')
-				{
-					$tfr_describe_query = "describe " . $subject_uri;
-					$db->outputfmt(ARC2XML);
-					$tfr_describe_result = $db->query($tfr_describe_query, True);
-					$xslMDresult = format_prop_xml($tfr_describe_result);
-					print generate_markdown($xslMDresult);
-				}
-				else
-				{
-					print generate_markdown("## No data for requested uri (PROP): " . $_SERVER['REQUEST_URI']);
 				}
 			}
 		}
