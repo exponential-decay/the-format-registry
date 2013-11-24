@@ -40,6 +40,11 @@
 		const URIVALUE			= 2; 
 		const RETURNFORMAT  	= 3;	
 
+		const APITYPE 				= 1;
+		const APIEXTERNALSCHEME = 2;
+		const APIPUIDTYPE 		= 3; 
+		const APIPUIDVALUE 		= 4;
+
 		public $slugs_arr = '';
 		public $slugsize = '';
 
