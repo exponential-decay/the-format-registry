@@ -3,7 +3,6 @@
 	include_once ("private/output-md-page.php");
 	include_once ("private/sparqllib/sparqllib.php");
 	include_once ("response-handler-class.php");
-	include_once ("private/sparqllib/sparqllib-arc2-outputformats.php");
 
 	function connect_to_sparql()
 	{
@@ -43,39 +42,6 @@
 		return $tfr_ask_result;
 	}
 
-	function return_format($extension)
-	{
-		$format = ARC2XML;
-		$extension = strtolower($extension);		
-
-		if($extension == "xml")
-		{
-			$format = ARC2XML;
-		}
-		elseif($extension == "json")
-		{
-			$format = ARC2JSON;
-		}
-		elseif($extension == "php")
-		{
-			$format = ARC2PHP;
-		}
-		elseif($extension == "ttl")
-		{
-			$format = ARC2TTL;
-		}
-		elseif($extension == "rdf")
-		{
-			$format = ARC2RDFXML;
-		}
-		elseif($extension == "tsv")
-		{
-			$format = ARC2TSV;
-		}
-
-		return $format;
-	}
-
 	function handle_request($db)
 	{
 		$slugs = new ResponseHandler();
@@ -109,7 +75,7 @@
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 
-					$db->outputfmt(return_format($slugs->slugs_arr[ResponseHandler::RETURNFORMAT]));
+					$db->outputfmt(ResponseHandler::handle_return_format($slugs->slugs_arr[ResponseHandler::RETURNFORMAT]));
 
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
 

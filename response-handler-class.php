@@ -1,4 +1,6 @@
 <?php
+	
+	include_once ("private/sparqllib/sparqllib-arc2-outputformats.php");
 
 	# Standard data URI components
 	define("DOC", 'doc');		# document e.g. HTML return
@@ -38,6 +40,39 @@
 		{
 			$this->slugs_arr = get_slugs('/', $_SERVER['REQUEST_URI']);
 			$this->slugsize = sizeof($this->slugs_arr);
+		}
+
+		function handle_return_format($extension)
+		{
+			$format = ARC2XML;
+			$extension = strtolower($extension);		
+
+			if($extension == "xml")
+			{
+				$format = ARC2XML;
+			}
+			elseif($extension == "json")
+			{
+				$format = ARC2JSON;
+			}
+			elseif($extension == "php")
+			{
+				$format = ARC2PHP;
+			}
+			elseif($extension == "ttl")
+			{
+				$format = ARC2TTL;
+			}
+			elseif($extension == "rdf")
+			{
+				$format = ARC2RDFXML;
+			}
+			elseif($extension == "tsv")
+			{
+				$format = ARC2TSV;
+			}
+
+			return $format;
 		}
 	}
 
