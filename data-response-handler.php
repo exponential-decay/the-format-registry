@@ -2,6 +2,7 @@
 
 	include_once ("private/output-md-page.php");
 	include_once ("private/sparqllib/sparqllib.php");
+	include_once ("response-handler-class.php");
 	include_once ("private/sparqllib/sparqllib-arc2-outputformats.php");
 
 	function connect_to_sparql()
@@ -79,11 +80,10 @@
 	{
 		#Sample request: http://the-fr.org/id/file-format/1
 
-		$root = $_SERVER['DOCUMENT_ROOT'];
-		$slugs = get_slugs('/', $_SERVER['REQUEST_URI']);		# Stick REQUEST_URI into init() for class?
-		$slugsize = sizeof($slugs);
+		$slugs = new ResponseHandler();
 
-		if($slugsize >= 3 && $slugsize < 5)
+
+		if($slugs->slugsize >= 3 && $slugs->slugsize < 5)
 		{
 			$typeslugptr   = 0;
 			$classslugptr  = 1;
@@ -95,12 +95,19 @@
 			define("PROP", 'prop');
 			define("DEF", 'def');
 
+			define("API", "api");
+
+			define("PUID", "puid");
+			define("FMTPUID", "fmt");
+			define("XFMTPUID", "x-fmt");
+			define("XFMTPUIDALT", "xfmt");
+
 			define("DATACLASS", "file-format");
 			define("FORMATREG", "format-registry");
 
-			if(strcmp($slugs[$typeslugptr], DOC) == 0 && strcmp($slugs[$classslugptr], DATACLASS) == 0)
+			if(strcmp($slugs->slugs_arr[$typeslugptr], DOC) == 0 && strcmp($slugs->slugs_arr[$classslugptr], DATACLASS) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/id/". $slugs[$classslugptr]. "/" . $slugs[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
@@ -116,20 +123,20 @@
 					print generate_markdown("## No data for requested uri (DOC): " . $_SERVER['REQUEST_URI']);
 				}
 			}
-			elseif (strcmp($slugs[$typeslugptr], DATA) == 0 && strcmp($slugs[$classslugptr], DATACLASS) == 0)
+			elseif (strcmp($slugs->slugs_arr[$typeslugptr], DATA) == 0 && strcmp($slugs->slugs_arr[$classslugptr], DATACLASS) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/id/". $slugs[$classslugptr]. "/" . $slugs[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 
-					$db->outputfmt(return_format($slugs[$fmtslugptr]));
+					$db->outputfmt(return_format($slugs->slugs_arr[$fmtslugptr]));
 
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
 
-					$filename = 'Content-disposition: attachment; filename=' . $slugs[$idslugptr] . "." . $slugs[$fmtslugptr];
+					$filename = 'Content-disposition: attachment; filename=' . $slugs->slugs_arr[$idslugptr] . "." . $slugs->slugs_arr[$fmtslugptr];
 					header($filename);
 					header ('Content-Type: text/xml');
 					print $tfr_describe_result;
@@ -139,9 +146,9 @@
 					print generate_markdown("## No data for requested uri (DATA): " . $_SERVER['REQUEST_URI']);
 				}
 			}
-			elseif (strcmp($slugs[$typeslugptr], DEF) == 0 && strcmp($slugs[$classslugptr], FORMATREG) == 0)
+			elseif (strcmp($slugs->slugs_arr[$typeslugptr], DEF) == 0 && strcmp($slugs->slugs_arr[$classslugptr], FORMATREG) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/def/". $slugs[$classslugptr]. "/" . $slugs[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/def/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
@@ -157,9 +164,9 @@
 					print generate_markdown("## No data for requested uri (DEF): " . $_SERVER['REQUEST_URI']);
 				}
 			}
-			elseif (strcmp($slugs[$typeslugptr], PROP) == 0 && strcmp($slugs[$classslugptr], FORMATREG) == 0)
+			elseif (strcmp($slugs->slugs_arr[$typeslugptr], PROP) == 0 && strcmp($slugs->slugs_arr[$classslugptr], FORMATREG) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/prop/". $slugs[$classslugptr]. "/" . $slugs[$idslugptr] . ">";
+				$subject_uri = "<http://the-fr.org/prop/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
