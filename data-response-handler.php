@@ -42,9 +42,20 @@
 		return $tfr_ask_result;
 	}
 
-	function set_subject_uri($slugs)
+	function set_subject_uri($slugs, $uritype)
 	{
-		$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
+		$uri_type_string = $slugs->slugs_arr[ResponseHandler::URITYPE];
+
+		if($uritype == ResponseHandler::DOC)
+		{
+			$uri_type_string = 'id';
+		}
+	
+		$subject_uri = "<http://the-fr.org/" . 
+			$uri_type_string . "/". 
+				$slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . 
+					$slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";	
+
 		return $subject_uri;	
 	}
 
@@ -54,12 +65,13 @@
 
 		if($slugs->slugsize >= 3 && $slugs->slugsize < 5)
 		{			
-			if (($slugs->uri_type == ResponseHandler::DOC || 
-				 $slugs->uri_type == ResponseHandler::DEF || 
-				 $slugs->uri_type == ResponseHandler::PROP) && 
-				 	strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
+			if (($slugs->uri_type == ResponseHandler::DOC && 
+					strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0) ||
+				 		($slugs->uri_type == ResponseHandler::DEF || 
+				 			$slugs->uri_type == ResponseHandler::PROP) &&
+					 			strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
 			{			
-				$subject_uri = set_subject_uri($slugs);
+				$subject_uri = set_subject_uri($slugs, $slugs->uri_type);
 
 				if (ask_triplestore($db, $subject_uri) == 'true')
 				{
@@ -67,12 +79,11 @@
 					$db->outputfmt(ARC2XML);
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
 					$xslMDresult = format_tfr_xml($tfr_describe_result, $slugs->uri_type);
-					#$xslMDresult = format_prop_xml($tfr_describe_result);
 					print generate_markdown($xslMDresult);
 				}
 				else
 				{
-					print generate_markdown("## No data for requested uri (DOC): " . $_SERVER['REQUEST_URI']);
+					print generate_markdown("## No data for requested uri: " . $_SERVER['REQUEST_URI']);
 				}
 			}
 			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DATA) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
@@ -99,12 +110,12 @@
 			}
 			else
 			{
-				print generate_markdown("## No results... potentially invalid uri");
+				print generate_markdown("## No results... potentially invalid uri: " . $_SERVER['REQUEST_URI']);
 			}
 		}
 		else
 		{
-			print generate_markdown("## No results... potentially invalid uri");
+			print generate_markdown("## No results... potentially invalid uri: " . $_SERVER['REQUEST_URI']);
 		}
 	}
 

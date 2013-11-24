@@ -6,8 +6,23 @@
 	function format_tfr_xml($xml, $uritype)
 	{
 		$xsl_loc = "private/xsl/tfr-rdf-generic.xsl";
-		#xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
-		#$xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
+		
+		if ($uritype == ResponseHandler::DOC)
+		{
+			$xsl_loc = "private/xsl/tfr-rdf-generic.xsl";
+		}
+		elseif ($uritype == ResponseHandler::DEF)
+		{
+			$xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
+		}
+		elseif ($uritype == ResponseHandler::PROP)
+		{
+			$xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
+		}
+		else
+		{
+			$xsl_loc = "private/xsl/tfr-rdf-generic-prop.xsl";
+		}
 
 		$doc = new DOMDocument();
 		$xsl = new XSLTProcessor();

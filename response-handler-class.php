@@ -28,11 +28,11 @@
 
 	class ResponseHandler
 	{
-		const DOC 	= 0;
-		const DEF 	= 1;
+		const DOC 		= 0;
+		const DEF 		= 1;
 		const PROP 	= 2;
-		const DATA  = 3;
-		const API 	= 4;
+		const DATA  	= 3;
+		const API 		= 4;
 		const UNKNOWN = 9999;
 
 		const URITYPE  		= 0;
