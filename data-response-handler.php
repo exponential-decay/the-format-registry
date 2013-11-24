@@ -42,6 +42,12 @@
 		return $tfr_ask_result;
 	}
 
+	function set_subject_uri($slugs)
+	{
+		$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
+		return $subject_uri;	
+	}
+
 	function handle_request($db)
 	{
 		$slugs = new ResponseHandler();
@@ -50,7 +56,7 @@
 		{			
 			if(strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
+				$subject_uri = set_subject_uri($slugs);
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
@@ -68,7 +74,7 @@
 			}
 			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DATA) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
+				$subject_uri = set_subject_uri($slugs);
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
@@ -91,7 +97,7 @@
 			}
 			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/def/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
+				$subject_uri = set_subject_uri($slugs);
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
@@ -109,7 +115,7 @@
 			}
 			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0 && strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], FORMATREG) == 0)
 			{
-				$subject_uri = "<http://the-fr.org/prop/". $slugs->slugs_arr[ResponseHandler::URICLASS]. "/" . $slugs->slugs_arr[ResponseHandler::URIVALUE] . ">";
+				$subject_uri = set_subject_uri($slugs);
 				$tfr_ask_result = ask_triplestore($db, $subject_uri);
 
 				if ($tfr_ask_result == 'true')
