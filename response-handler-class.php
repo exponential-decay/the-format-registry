@@ -51,32 +51,32 @@
 		{
 			$this->slugs_arr = get_slugs('/', $_SERVER['REQUEST_URI']);
 			$this->slugsize = sizeof($this->slugs_arr);
-			$this->uri_type = $this->set_uri_type($this->slugs_arr[URITYPE]);
+			$this->uri_type = $this->set_uri_type($this->slugs_arr[self::URITYPE]);
 		}
 
 		private function set_uri_type($uri_type_from_arr)
 		{
-			$uritype = $this->UNKNOWN;
+			$uritype = self::UNKNOWN;
 
-			if (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DOC) == 0)
+			if (strcmp($uri_type_from_arr, DOC) == 0)
 			{
-				$uritype = $this->DOC;
+				$uritype = self::DOC;
 			}  
-			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], DEF) == 0) 
+			elseif (strcmp($uri_type_from_arr, DEF) == 0) 
 			{
-				$uritype = $this->DEF;
+				$uritype = self::DEF;
 			}	
-			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URITYPE], PROP) == 0) 
+			elseif (strcmp($uri_type_from_arr, PROP) == 0) 
 			{
-				$uritype = $this->PROP;
+				$uritype = self::PROP;
 			}
-			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
+			elseif (strcmp($uri_type_from_arr, DATACLASS) == 0)
 			{
-				$uritype = $this->DATA;
+				$uritype = self::DATA;
 			}
-			elseif (strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], API) == 0)
+			elseif (strcmp($uri_type_from_arr, API) == 0)
 			{
-				$uritype = $this->API;
+				$uritype = self::API;
 			}
 
 			return $uritype;

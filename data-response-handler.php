@@ -1,6 +1,6 @@
 <?php
 
-	include_once ("private/output-md-page.php");
+	include_once ("private/md-from-xml.php");
 	include_once ("private/sparqllib/sparqllib.php");
 	include_once ("response-handler-class.php");
 
@@ -54,11 +54,11 @@
 
 		if($slugs->slugsize >= 3 && $slugs->slugsize < 5)
 		{			
-			if ($slugs->uritype == ResponseHandler::DOC || 
-				 $slugs->uritype == ResponseHandler::DEF || 
-				 $slugs->uritype == ResponseHandler::PROP && 
-				 	$slugs->uritype == ResponseHandler::DATA)
-			{
+			if (($slugs->uri_type == ResponseHandler::DOC || 
+				 $slugs->uri_type == ResponseHandler::DEF || 
+				 $slugs->uri_type == ResponseHandler::PROP) && 
+				 	strcmp($slugs->slugs_arr[ResponseHandler::URICLASS], DATACLASS) == 0)
+			{			
 				$subject_uri = set_subject_uri($slugs);
 
 				if (ask_triplestore($db, $subject_uri) == 'true')
@@ -66,7 +66,7 @@
 					$tfr_describe_query = "describe " . $subject_uri;
 					$db->outputfmt(ARC2XML);
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
-					$xslMDresult = format_tfr_xml($tfr_describe_result, $slugs->uritype);
+					$xslMDresult = format_tfr_xml($tfr_describe_result, $slugs->uri_type);
 					#$xslMDresult = format_prop_xml($tfr_describe_result);
 					print generate_markdown($xslMDresult);
 				}
@@ -96,6 +96,10 @@
 				{
 					print generate_markdown("## No data for requested uri (DATA): " . $_SERVER['REQUEST_URI']);
 				}
+			}
+			else
+			{
+				print generate_markdown("## No results... potentially invalid uri");
 			}
 		}
 		else
