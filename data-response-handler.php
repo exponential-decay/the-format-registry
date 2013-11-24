@@ -1,8 +1,9 @@
 <?php
 
 	include_once ("private/md-from-xml.php");
-	include_once ("private/sparqllib/sparqllib.php");
 	include_once ("response-handler-class.php");
+	include_once ("private/sparqllib/sparqllib.php");
+	include_once ("private/sparqllib/sparqllib-beta-functions.php");
 
 	function connect_to_sparql()
 	{
@@ -16,14 +17,6 @@
 		}
 
 		return $db;
-	}
-
-	function ask_triplestore($db, $subject_uri)
-	{
-		$tfr_ask_query = "ask where { " . $subject_uri . " ?p ?o . }";		# TODO: extract to function
-		$db->outputfmt(ARC2PLAIN);
-		$tfr_ask_result = $db->query($tfr_ask_query, True);
-		return $tfr_ask_result;
 	}
 
 	function set_subject_uri($slugs, $uritype)
