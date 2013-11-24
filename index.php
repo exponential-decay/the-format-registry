@@ -1,6 +1,6 @@
 <?php
 
-	include_once ("output-md-page.php");
+	include_once ("output-index-md.php");
 
 	function handle_request()
 	{
