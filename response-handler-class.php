@@ -1,5 +1,20 @@
 <?php
 
+	define("DOC", 'doc');
+	define("DATA", 'data');
+	define("PROP", 'prop');
+	define("DEF", 'def');
+
+	define("API", "api");
+
+	define("PUID", "puid");
+	define("FMTPUID", "fmt");
+	define("XFMTPUID", "x-fmt");
+	define("XFMTPUIDALT", "xfmt");
+
+	define("DATACLASS", "file-format");
+	define("FORMATREG", "format-registry");
+
 	class ResponseHandler
 	{
 		public $slugs_arr = '';

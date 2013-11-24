@@ -90,21 +90,6 @@
 			$idslugptr		= 2; 
 			$fmtslugptr    = 3;	
 			
-			define("DOC", 'doc');
-			define("DATA", 'data');
-			define("PROP", 'prop');
-			define("DEF", 'def');
-
-			define("API", "api");
-
-			define("PUID", "puid");
-			define("FMTPUID", "fmt");
-			define("XFMTPUID", "x-fmt");
-			define("XFMTPUIDALT", "xfmt");
-
-			define("DATACLASS", "file-format");
-			define("FORMATREG", "format-registry");
-
 			if(strcmp($slugs->slugs_arr[$typeslugptr], DOC) == 0 && strcmp($slugs->slugs_arr[$classslugptr], DATACLASS) == 0)
 			{
 				$subject_uri = "<http://the-fr.org/id/". $slugs->slugs_arr[$classslugptr]. "/" . $slugs->slugs_arr[$idslugptr] . ">";
