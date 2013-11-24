@@ -75,13 +75,13 @@
 				{
 					$tfr_describe_query = "describe " . $subject_uri;
 
-					$db->outputfmt(ResponseHandler::handle_return_format($slugs->slugs_arr[ResponseHandler::RETURNFORMAT]));
+					$db->outputfmt($slugs->handle_return_format($slugs->slugs_arr[ResponseHandler::RETURNFORMAT]));
 
 					$tfr_describe_result = $db->query($tfr_describe_query, True);
 
 					$filename = 'Content-disposition: attachment; filename=' . $slugs->slugs_arr[ResponseHandler::URIVALUE] . "." . $slugs->slugs_arr[ResponseHandler::RETURNFORMAT];
 					header($filename);
-					header ('Content-Type: text/xml');
+					header ("Content-Type: " . $slugs->content_type);
 					print $tfr_describe_result;
 				}
 				else

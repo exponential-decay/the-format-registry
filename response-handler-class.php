@@ -36,13 +36,15 @@
 		public $slugs_arr = '';
 		public $slugsize = '';
 
-		function __construct()
+		public $content_type = '';
+
+		public function __construct()
 		{
 			$this->slugs_arr = get_slugs('/', $_SERVER['REQUEST_URI']);
 			$this->slugsize = sizeof($this->slugs_arr);
 		}
 
-		function handle_return_format($extension)
+		public function handle_return_format($extension)
 		{
 			$format = ARC2XML;
 			$extension = strtolower($extension);		
@@ -50,26 +52,32 @@
 			if($extension == "xml")
 			{
 				$format = ARC2XML;
+				$this->content_type = "application/sparql-results+xml";
 			}
 			elseif($extension == "json")
 			{
 				$format = ARC2JSON;
+				$this->content_type = "application/json";
 			}
 			elseif($extension == "php")
 			{
 				$format = ARC2PHP;
+				$this->content_type = "application/vnd.php.serialized";
 			}
 			elseif($extension == "ttl")
 			{
 				$format = ARC2TTL;
+				$this->content_type = "text/turtle";
 			}
 			elseif($extension == "rdf")
 			{
 				$format = ARC2RDFXML;
+				$this->content_type = "application/rdf+xml";
 			}
 			elseif($extension == "tsv")
 			{
 				$format = ARC2TSV;
+				$this->content_type = "text/tab-separated-values";
 			}
 
 			return $format;
