@@ -7,7 +7,7 @@
 
 	function connect_to_sparql()
 	{
-		$endpoint = 'http://localhost/public/sparql/endpoint.php';
+		$endpoint = "http://" . $_SERVER[HTTP_HOST] . "/public/sparql/endpoint.php";
 		$db = sparql_connect( $endpoint );
 
 		if(!$db) 
@@ -52,9 +52,7 @@
 
 				if (ask_triplestore($db, $subject_uri) == 'true')
 				{
-					$tfr_describe_query = "describe " . $subject_uri;
-					$db->outputfmt(ARC2XML);
-					$tfr_describe_result = $db->query($tfr_describe_query, True);
+					$tfr_describe_result = describe_triplestore_subject($db, $subject_uri, ARC2XML);
 					$xslMDresult = format_tfr_xml($tfr_describe_result, $slugs->uri_type);
 					print generate_markdown($xslMDresult);
 				}
@@ -69,15 +67,13 @@
 
 				if (ask_triplestore($db, $subject_uri) == 'true')
 				{
-					$tfr_describe_query = "describe " . $subject_uri;
-
-					$db->outputfmt($slugs->handle_return_format($slugs->slugs_arr[ResponseHandler::RETURNFORMAT]));
-
-					$tfr_describe_result = $db->query($tfr_describe_query, True);
+					$tfr_describe_result = describe_triplestore_subject($db, $subject_uri, $slugs->handle_return_format($slugs->slugs_arr[ResponseHandler::RETURNFORMAT]));
 
 					$filename = 'Content-disposition: attachment; filename=' . $slugs->slugs_arr[ResponseHandler::URIVALUE] . "." . $slugs->slugs_arr[ResponseHandler::RETURNFORMAT];
-					header($filename);
+					
+					header ($filename);
 					header ("Content-Type: " . $slugs->content_type);
+					
 					print $tfr_describe_result;
 				}
 				else

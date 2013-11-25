@@ -1,6 +1,7 @@
 <?php
 
 	include_once ("private/sparqllib/sparqllib.php");
+	include_once ("private/sparqllib/sparqllib-beta-functions.php");
 	include_once ("response-handler-class.php");
 	include_once ("private/md-from-xml.php");
 
@@ -11,7 +12,7 @@
 
 	function connect_to_sparql()
 	{
-		$endpoint = 'http://localhost/public/sparql/endpoint.php';
+		$endpoint = "http://" . $_SERVER[HTTP_HOST] . "/public/sparql/endpoint.php";
 		$db = sparql_connect( $endpoint );
 
 		if(!$db) 
@@ -23,22 +24,6 @@
 		return $db;
 	}
 
-	function ask_triplestore_object($db, $predicate, $object)
-	{
-		$tfr_ask_query = "ask where { ?s " . $predicate . " '" . $object . "' }";
-		$db->outputfmt(ARC2PLAIN);
-		$tfr_ask_result = $db->query($tfr_ask_query, True);
-		return $tfr_ask_result;
-	}
-
-	function select_triplestore_object($db, $predicate, $object)
-	{
-		$tfr_select_query = "SELECT ?record WHERE { ?record " . $predicate . " '" . $object . "'. } LIMIT 1";
-		$db->outputfmt(ARC2RDFXML);
-		$tfr_ask_result = $db->query($tfr_select_query, True);
-		return $tfr_ask_result;
-	}
-
 	function handle_request($db)
 	{
 		#$slugs = new ResponseHandler();
@@ -48,17 +33,38 @@
 		{
 			if ($slugs[ResponseHandler::APITYPE] == 'id')
 			{
-				print_r ($slugs);
-
 				if(strcmp($slugs[ResponseHandler::APIEXTERNALSCHEME], PUID) == 0)
 				{
+					$puid_type = $slugs[ResponseHandler::APIPUIDTYPE];
 
-					#print ask_triplestore_object($db, "<http://the-fr.org/prop/format-registry/puid>", "fmt/15");
-					print select_triplestore_object($db, "<http://the-fr.org/prop/format-registry/puid>", "fmt/15");
-					#print $slugs[ResponseHandler::APIPUIDTYPE];
-					#print $slugs[ResponseHandler::APIPUIDVALUE];
-	
+					if ($puid_type == 'xfmt')	# search is more flexible
+						$puid_type = 'x-fmt';
+
+					$puid_string = $puid_type . "/" . $slugs[ResponseHandler::APIPUIDVALUE];
+
+					if(ask_triplestore_object($db, "<http://the-fr.org/prop/format-registry/puid>", $puid_string) == 'true')
+					{					
+						$data = select_triplestore_object($db, "<http://the-fr.org/prop/format-registry/puid>", $puid_string);
+
+						$xml = simplexml_load_string($data);		
+
+						$subject_uri = $xml->results->result->binding->uri;
+
+						header('Location: ' . $subject_uri) ;
+					}
+					else
+					{
+						print generate_markdown("## No data for requested puid: " . $puid_string);
+					}
 				}
+				else
+				{
+					print generate_markdown("## API functionality not yet implemented.");	#not yet invoked
+				}		
+			}
+			else
+			{
+				print generate_markdown("## API functionality not yet implemented.");		#not yet invoked
 			}
 		}
 	}

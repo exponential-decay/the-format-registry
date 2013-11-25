@@ -28,6 +28,6 @@ RewriteCond %{REQUEST_URI} !^/prop/(.+)$
 RewriteRule !\.(js|ico|txt|gif|jpg|png|css|php|nt|rdf|json|xml|tsv|ttl)$ /index.php
 
 # prevent access to code in private folder
-#RewriteRule ^(private/) - [F,L,NC]
+RewriteRule ^(private/) - [F,L,NC]
 
 # php_flag magic_quotes_gpc off
