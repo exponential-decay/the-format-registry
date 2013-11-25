@@ -7,7 +7,7 @@
 
 	function connect_to_sparql()
 	{
-		$endpoint = "http://" . $_SERVER[HTTP_HOST] . "/public/sparql/endpoint.php";
+		$endpoint = "http://" . $_SERVER['HTTP_HOST'] . "/public/sparql/endpoint.php";
 		$db = sparql_connect( $endpoint );
 
 		if(!$db) 
