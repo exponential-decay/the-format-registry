@@ -56,6 +56,10 @@ the work has focused on export, vocabulary, and link redirection.
 
 ----
 
+## API: [Documentation](http://127.0.0.1/public/documentation/api.php)
+
+----
+
 ## SPARQL Endpoint
 
 ## [http://the-fr.org/public/sparql/endpoint.php](http://the-fr.org/public/sparql/endpoint.php)
