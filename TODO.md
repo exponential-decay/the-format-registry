@@ -23,6 +23,7 @@
 - HTTP header unit tests, e.g. setting Content-type correctly
 - Be more robust in how we're setting headers
 - graceful handling of URI cases
+- mardown handlers and html output improvements
 
 - Outstanding return message / error on some release-notes.xml read attempts:
 
