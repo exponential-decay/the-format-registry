@@ -43,13 +43,27 @@ the-fr.org examples:
 - [PUID: fmt/8](http://the-fr.org/api/id/puid/fmt/8)
 - [PUID: x-fmt/8](http://the-fr.org/api/id/puid/x-fmt/8)
 
-**Return types:**
+**Return types**
 
 The function will currently re-direct the agent to the record matching
 the requested PUID. 
 
 *N.B.* It may be necessary to eventually provide agents using this function call
 with a listing page where a PUID matches multiple the-fr.org records. 
+
+**DROID Compatibility**
+
+the-fr.org PUID search is compatible with the [DROID tool](http://www.nationalarchives.gov.uk/information-management/projects-and-work/droid.htm)
+, developed by The National Archives, UK. Open the tool, browse to *Tools->Preferences->'Signature Updates'* and change 
+the PUID URL Pattern from:
+
+    http://www.nationalarchives.gov.uk/pronom/%s 
+
+to:
+
+    http://the-fr.org/api/id/puid/%s
+
+*N.B.* You might need to open a new DROID profile before changes take effect. 
 
 ----
 
