@@ -22,6 +22,7 @@
 - Internal Signatures and writing engine
 - HTTP header unit tests, e.g. setting Content-type correctly
 - Be more robust in how we're setting headers
+- graceful handling of URI cases
 
 - Outstanding return message / error on some release-notes.xml read attempts:
 
