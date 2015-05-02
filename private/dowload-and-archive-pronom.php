@@ -4,6 +4,27 @@
 
 	header("Content-type: text/plain; charset=utf-8"); 
 
+   class PronomData
+   {
+      public $fmt;
+      public $xfmt;
+
+      function __construct()
+      {
+         self::load_ini_data();
+      }
+
+      function load_ini_data()
+      {
+		   $pronom_ini_array = parse_ini_file(INIFILE, true);
+
+         $this->fmt =  $pronom_ini_array['puids']['fmt'];
+		   $this->xfmt =  $pronom_ini_array['puids']['x-fmt'];	
+      }
+   }
+
+
+
 	function normalize_date($date)
 	{
 		$date = strtolower(str_replace(",", "", $date));
@@ -60,6 +81,20 @@
 
 		return $gotdata;
 	}
+
+   function update_ini_file()
+   {
+
+      return 'done';
+   }
+
+   function getlastupdateinfo()
+   {
+
+      return 'done';
+   }
+
+
 	function new_pronom_data_check()
 	{
 		$pronom_release_note = "http://www.nationalarchives.gov.uk/aboutapps/pronom/release-notes.xml";
@@ -104,11 +139,6 @@
 	function get_pronom_record($built)
 	{
 		#sample record url: http://www.nationalarchives.gov.uk/PRONOM/fmt/588.xml
-
-		$pronom_ini_array = parse_ini_file(INIFILE, true);
-
-		$fmt =  &$pronom_ini_array['puids']['fmt'];
-		$xfmt =  &$pronom_ini_array['puids']['x-fmt'];	
 	
 		$type_arr = array("fmt", "x-fmt");
 
@@ -146,13 +176,16 @@
 		$zipArchive->close();
 	}
 
+   #entry point
+   $prodata = new PronomData();
+
 	if (new_pronom_data_check())
 	{
 		$built = build_download_folders();
 		if($built)
 		{
-			get_pronom_record($built);
-		#	archive_pronom_record($built);
+			#get_pronom_record($built);
+		   #archive_pronom_record($built);
 		}
 	}
 
