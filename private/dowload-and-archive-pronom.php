@@ -6,20 +6,37 @@
 
    class PronomData
    {
-      public $fmt;
+      public $fmt = '';
       public $xfmt;
+
+      public $sigfileno;
+      public $sigfiledate;
+
+      private $pronom_ini_array;
 
       function __construct()
       {
+		   $this->pronom_ini_array = parse_ini_file(INIFILE, true);
          self::load_ini_data();
+         self::load_ini_dates();
       }
 
       function load_ini_data()
       {
-		   $pronom_ini_array = parse_ini_file(INIFILE, true);
+         $this->fmt = $this->pronom_ini_array['puids']['fmt'];
+		   $this->xfmt = $this->pronom_ini_array['puids']['x-fmt'];	
+      }
 
-         $this->fmt =  $pronom_ini_array['puids']['fmt'];
-		   $this->xfmt =  $pronom_ini_array['puids']['x-fmt'];	
+
+      function load_ini_dates()
+      {
+         $this->sigfiledate =  $this->pronom_ini_array['last update']['date'];
+         $this->sigfileno =  $this->pronom_ini_array['last update']['fileno'];
+      }
+
+      function write_ini_data()
+      {
+         print "ross";
       }
    }
 
@@ -82,28 +99,17 @@
 		return $gotdata;
 	}
 
-   function update_ini_file()
+   function getlastupdateinfo($pronomdata)
    {
-
-      return 'done';
-   }
-
-   function getlastupdateinfo()
-   {
-
-      return 'done';
-   }
-
-
-	function new_pronom_data_check()
-	{
 		$pronom_release_note = "http://www.nationalarchives.gov.uk/aboutapps/pronom/release-notes.xml";
-	
 		$newdata = false;
 
 		$dummy_date = "Wed, 12 Nov 2013 10:18:17";	#n.b. write substring or full string...	
 		$dummy_file_no = 71;
 		
+      #$pronomdata->sigfileno;
+      #$pronomdata->sigfiledate;
+
 		$release_notes_headers = get_headers($pronom_release_note, 1);
 
       #Do comparison if date last-modified has changed...
@@ -111,6 +117,20 @@
       $newdate = substr($release_notes_headers['Last-Modified'], 0, 16);
 
 		if(strcmp($olddate, $newdate) != 0)
+      {
+         $newdata = true;
+         #$pronomdata->write_ini_data();
+      }
+
+      return $newdata;
+   }
+
+
+	function new_pronom_data_check($pronomdata)
+	{
+      $newdata = getlastupdateinfo($pronomdata);
+
+      if ($newdata != true)
 		{  
          $file_contents = file_get_contents($pronom_release_note); #, FILE_TEXT, NULL, 234, 3);
          $xml = simplexml_load_string($file_contents) or die("Error: Cannot create object");
@@ -177,9 +197,9 @@
 	}
 
    #entry point
-   $prodata = new PronomData();
+   $pronomdata = new PronomData();
 
-	if (new_pronom_data_check())
+	if (new_pronom_data_check($pronomdata))
 	{
 		$built = build_download_folders();
 		if($built)
