@@ -71,10 +71,30 @@
 		
 		$release_notes_headers = get_headers($pronom_release_note, 1);
 
-		if(strcmp(substr($dummy_date, 0, 16), substr($release_notes_headers['Last-Modified'], 0, 16)) != 0)
-		{
-			$sig_file_no = trim(file_get_contents($pronom_release_note, FILE_TEXT, NULL, 234, 3), "\x2E");
-			if ($sig_file_no > $dummy_file_no)
+      #Do comparison if date last-modified has changed...
+      $olddate = substr($dummy_date, 0, 16);
+      $newdate = substr($release_notes_headers['Last-Modified'], 0, 16);
+
+		if(strcmp($olddate, $newdate) != 0)
+		{  
+         $file_contents = file_get_contents($pronom_release_note); #, FILE_TEXT, NULL, 234, 3);
+         $xml = simplexml_load_string($file_contents) or die("Error: Cannot create object");
+
+         $signaturefilename = $xml->release_note[0]->signature_filename;
+
+         $formats = $xml->release_note[0]->release_outline[0]->format;
+         $newformats = sizeof($formats) - 1; #number of new formats in release note
+         
+         #update latest fmt/number for scraping PRONOM...
+         print $formats[$newformats]->puid[0];
+
+         #release variable once we don't need it... 
+         #hope for garbage collection to occur... 
+         $xml = null;
+
+			$sig_file_no = 'f'; #trim($file_contents, "\x2E");
+			
+         if ($sig_file_no > $dummy_file_no)
 				$newdata = true;
 		}
 
@@ -132,7 +152,7 @@
 		if($built)
 		{
 			get_pronom_record($built);
-			archive_pronom_record($built);
+		#	archive_pronom_record($built);
 		}
 	}
 
