@@ -107,16 +107,16 @@
 		$dummy_date = "Wed, 12 Nov 2013 10:18:17";	#n.b. write substring or full string...	
 		$dummy_file_no = 71;
 		
-      #$pronomdata->sigfileno;
-      #$pronomdata->sigfiledate;
-
 		$release_notes_headers = get_headers($pronom_release_note, 1);
 
       #Do comparison if date last-modified has changed...
       $olddate = substr($dummy_date, 0, 16);
-      $newdate = substr($release_notes_headers['Last-Modified'], 0, 16);
 
-		if(strcmp($olddate, $newdate) != 0)
+      $lastmodified = $release_notes_headers['Last-Modified'];
+
+      $newdate = substr($lastmodified, 0, 16);
+
+		if(strcmp($pronomdata->sigfiledate, $newdate) != 0)
       {
          $newdata = true;
          #$pronomdata->write_ini_data();
@@ -132,6 +132,8 @@
 
       if ($newdata != true)
 		{  
+         #print $pronomdata->sigfileno;
+
          $file_contents = file_get_contents($pronom_release_note); #, FILE_TEXT, NULL, 234, 3);
          $xml = simplexml_load_string($file_contents) or die("Error: Cannot create object");
 
