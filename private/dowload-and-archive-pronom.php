@@ -14,6 +14,8 @@
 
       private $pronom_ini_array;
 
+      public $pronom_release_note = "http://www.nationalarchives.gov.uk/aboutapps/pronom/release-notes.xml";
+
       function __construct()
       {
 		   $this->pronom_ini_array = parse_ini_file(INIFILE, true);
@@ -101,13 +103,13 @@
 
    function getlastupdateinfo($pronomdata)
    {
-		$pronom_release_note = "http://www.nationalarchives.gov.uk/aboutapps/pronom/release-notes.xml";
 		$newdata = false;
 
+      #TODO: Unneded, but might use for testing...
 		$dummy_date = "Wed, 12 Nov 2013 10:18:17";	#n.b. write substring or full string...	
 		$dummy_file_no = 71;
 		
-		$release_notes_headers = get_headers($pronom_release_note, 1);
+		$release_notes_headers = get_headers($pronomdata->pronom_release_note, 1);
 
       #Do comparison if date last-modified has changed...
       $olddate = substr($dummy_date, 0, 16);
@@ -119,25 +121,45 @@
 		if(strcmp($pronomdata->sigfiledate, $newdate) != 0)
       {
          $newdata = true;
-         #$pronomdata->write_ini_data();
+
+         #Update class information, rewrite in destructor...
+         $pronomdata->sigfiledate = $newdate;
       }
 
       return $newdata;
    }
 
+   function loadreleasenotes($pronomdata)
+   {
+      $file_contents = file_get_contents($pronomdata->pronom_release_note); #, FILE_TEXT, NULL, 234, 3);
+      $xml = simplexml_load_string($file_contents) or die("Error: Cannot create object");
+      return $xml;
+   }
+
+   function getlastsigfileno($pronomdata, $releasenotexml)
+   {
+      $newfle = false;
+      $signaturefilename = $releasenotexml->release_note[0]->signature_filename;
+      $signaturefileno = rtrim(ltrim($signaturefilename, 'DROID_SignatureFile_V'), '.xml');
+      if ($signaturefileno > $pronomdata->sigfileno)
+      {
+         $newfile = true;
+         $pronomdata->sigfileno = $signaturefileno;
+      }
+      return $newfile;
+   }
 
 	function new_pronom_data_check($pronomdata)
 	{
       $newdata = getlastupdateinfo($pronomdata);
 
-      if ($newdata != true)
+      if ($newdata == true)
 		{  
-         #print $pronomdata->sigfileno;
+         $newdata = false;
 
-         $file_contents = file_get_contents($pronom_release_note); #, FILE_TEXT, NULL, 234, 3);
-         $xml = simplexml_load_string($file_contents) or die("Error: Cannot create object");
+         $xml = loadreleasenotes($pronomdata);
+         $newdata = getlastsigfileno($pronomdata, $xml);
 
-         $signaturefilename = $xml->release_note[0]->signature_filename;
 
          $formats = $xml->release_note[0]->release_outline[0]->format;
          $newformats = sizeof($formats) - 1; #number of new formats in release note
@@ -148,11 +170,6 @@
          #release variable once we don't need it... 
          #hope for garbage collection to occur... 
          $xml = null;
-
-			$sig_file_no = 'f'; #trim($file_contents, "\x2E");
-			
-         if ($sig_file_no > $dummy_file_no)
-				$newdata = true;
 		}
 
 		return $newdata;	
