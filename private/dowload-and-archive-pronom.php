@@ -29,16 +29,17 @@
 		   $this->xfmt = $this->pronom_ini_array['puids']['x-fmt'];	
       }
 
-
       function load_ini_dates()
       {
          $this->sigfiledate =  $this->pronom_ini_array['last update']['date'];
          $this->sigfileno =  $this->pronom_ini_array['last update']['fileno'];
       }
 
-      function write_ini_data()
+      function write_new_ini_data($pronomdata)
       {
-         print "ross";
+         #learn how to write back to an ini file...
+         print "Updating ini data with new  values \n";
+         print "Latest puid: " + $pronomdata->fmt;
       }
    }
 
@@ -149,6 +150,26 @@
       return $newfile;
    }
 
+   function latest_puid_numbers($pronomdata, $releasenotexml)
+   {
+      $newdata = false;
+      $formats = $releasenotexml->release_note[0]->release_outline[0]->format;
+
+      #number of new formats in release note
+      $newformats = sizeof($formats) - 1; 
+      
+      #update latest fmt/number for scraping PRONOM...
+      $newpuid = $formats[$newformats]->puid[0];
+
+      if ($newpuid > $pronomdata->fmt)
+      {
+         $newdata = true;
+         $pronomdata->fmt = $newpuid;
+      }
+
+      return $newdata;
+   }
+
 	function new_pronom_data_check($pronomdata)
 	{
       $newdata = getlastupdateinfo($pronomdata);
@@ -160,12 +181,11 @@
          $xml = loadreleasenotes($pronomdata);
          $newdata = getlastsigfileno($pronomdata, $xml);
 
-
-         $formats = $xml->release_note[0]->release_outline[0]->format;
-         $newformats = sizeof($formats) - 1; #number of new formats in release note
-         
-         #update latest fmt/number for scraping PRONOM...
-         print $formats[$newformats]->puid[0];
+         if ($newdata == true)
+         {
+            $newdata = false;
+            $newdata = latest_puid_numbers($pronomdata, $xml);
+         }
 
          #release variable once we don't need it... 
          #hope for garbage collection to occur... 
@@ -226,6 +246,8 @@
 			#get_pronom_record($built);
 		   #archive_pronom_record($built);
 		}
+
+      $pronomdata->write_new_ini_data($pronomdata);
 	}
 
 ?>
