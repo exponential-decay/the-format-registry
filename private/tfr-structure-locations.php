@@ -3,7 +3,7 @@
 
 	#urls-agents
 	define("EXPONENTIALDKWEBAGENT", "exponentialDK-PRONOM-Export-web/0.0.0");
-	define("PRONOMBASEURL", "http://www.nationalarchives.gov.uk/PRONOM/");
+	define("PRONOMBASEURL", "http://apps.nationalarchives.gov.uk/PRONOM/");
 
 	#folders
 	define('DATADIR', "../private/pronom/pronom-data/");
