@@ -6,7 +6,7 @@
 
    class PronomData
    {
-      public $fmt = '';
+      public $fmt;
       public $xfmt;
 
       public $sigfileno;
@@ -37,9 +37,25 @@
 
       function write_new_ini_data($pronomdata)
       {
-         #learn how to write back to an ini file...
-         print "Updating ini data with new  values \n";
-         print "Latest puid: " + $pronomdata->fmt;
+         #Example data to write out...
+         /*[last update] 
+         date=Wed, 12 Nov 2013 10:18:17 GMT
+         fileno=71
+
+         [puids]
+         ; + 1 actual figure for scraping...
+         fmt=610
+         x-fmt=456*/
+
+         #TODO: Fina a library to handle this
+         $lastwritedata = "[last update]\ndate=" . $pronomdata->sigfiledate . "\nfileno=" . $pronomdata->sigfileno;
+         $fmtwritedata = "[puids]\nfmt=" . $pronomdata->fmt . "\nx-fmt=" . $pronomdata->xfmt; 
+
+         $inidata = $lastwritedata . "\n\n" . $fmtwritedata;
+
+         #$newini = fopen(INIFILE, 'w');
+         #$fwrite($newini, $inidata);
+         #fclose($newini);
       }
    }
 
@@ -124,7 +140,7 @@
          $newdata = true;
 
          #Update class information, rewrite in destructor...
-         $pronomdata->sigfiledate = $newdate;
+         $pronomdata->sigfiledate = $lastmodified;
       }
 
       return $newdata;
@@ -164,7 +180,7 @@
       if ($newpuid > $pronomdata->fmt)
       {
          $newdata = true;
-         $pronomdata->fmt = $newpuid;
+         $pronomdata->fmt = (string)$newpuid;
       }
 
       return $newdata;
