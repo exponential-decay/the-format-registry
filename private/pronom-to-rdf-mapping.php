@@ -180,10 +180,18 @@
 		return $subject;
 	}
 
-	function pronom_to_rdf_map($ntfile, $data)
-	{
+	function pronom_to_rdf_map($ntfile, $data, $puid)
+	{ 
 		$xml = simplexml_load_string($data);
-		$formatXML = $xml->report_format_detail->FileFormat;
-		triple_mapper($ntfile, mint_subject(), $formatXML);
+  
+      if (substr($data, 0, 1) == '')
+      {    
+         error_log("Problem with file " . $puid . " may be empty.");
+      }
+      else
+      {
+		   $formatXML = $xml->report_format_detail->FileFormat;
+         triple_mapper($ntfile, mint_subject(), $formatXML);
+      }
 	}
 ?>
