@@ -47,15 +47,15 @@
          fmt=610
          x-fmt=456*/
 
-         #TODO: Fina a library to handle this
+         #TODO: Find a library to handle this
          $lastwritedata = "[last update]\ndate=" . $pronomdata->sigfiledate . "\nfileno=" . $pronomdata->sigfileno;
          $fmtwritedata = "[puids]\nfmt=" . $pronomdata->fmt . "\nx-fmt=" . $pronomdata->xfmt; 
 
          $inidata = $lastwritedata . "\n\n" . $fmtwritedata;
 
-         #$newini = fopen(INIFILE, 'w');
-         #$fwrite($newini, $inidata);
-         #fclose($newini);
+         $newini = fopen(INIFILE, 'w');
+         fwrite($newini, $inidata);
+         fclose($newini);
       }
    }
 
@@ -69,27 +69,36 @@
 		return $date;
 	}
 
-	function build_download_folders()
+	function build_download_folders($pronomdata)
 	{
 		$built = false;
 
-		$dummy_date = "Wed, 12 Nov 2013 10:18:17";	#n.b. write substring or full string...	
-		$dummy_file_no = 71;
+      $folder_name = "signature-file-v" . $pronomdata->sigfileno . "-" . normalize_date($pronomdata->sigfiledate);
 
-		$folder_name = "signature-file-v" . $dummy_file_no . "-" . normalize_date($dummy_date);
+      if(!file_exists(DATADIR))
+      {
+         mkdir(DATADIR);
+      }
 
-		if(!file_exists(DATADIR . $folder_name))
+      $newdir = DATADIR . $folder_name;
+
+		if(!file_exists($newdir))
 		{
-			mkdir(DATADIR . $folder_name);
-			mkdir(DATADIR . $folder_name . "/fmt");
-			$built = mkdir(DATADIR . $folder_name . "/x-fmt");
+			mkdir($newdir);
+
+         mkdir(LATESTDIR);
+			mkdir(LATESTDIR . "/fmt");
+			mkdir(LATESTDIR . "/x-fmt");
+  
+			mkdir($newdir . "/fmt");
+			$built = mkdir($newdir . "/x-fmt");
 		}
 		else
 		{
 			$built = true;		#may not always be sufficient
 		}
 
-		return DATADIR . $folder_name; 
+		return $newdir; 
 	}
 
 	function get_data($url) 
@@ -155,7 +164,7 @@
 
    function getlastsigfileno($pronomdata, $releasenotexml)
    {
-      $newfle = false;
+      $newfile = false;
       $signaturefilename = $releasenotexml->release_note[0]->signature_filename;
       $signaturefileno = rtrim(ltrim($signaturefilename, 'DROID_SignatureFile_V'), '.xml');
       if ($signaturefileno > $pronomdata->sigfileno)
@@ -180,10 +189,10 @@
       if ($newpuid > $pronomdata->fmt)
       {
          $newdata = true;
-         $pronomdata->fmt = (string)$newpuid;
+         $pronomdata->fmt = (string)$newpuid;   #xfmts never go up
       }
 
-      return $newdata;
+      return $pronomdata;
    }
 
 	function new_pronom_data_check($pronomdata)
@@ -199,8 +208,8 @@
 
          if ($newdata == true)
          {
-            $newdata = false;
-            $newdata = latest_puid_numbers($pronomdata, $xml);
+            #$newdata = false;    #dont need this here...
+            latest_puid_numbers($pronomdata, $xml);
          }
 
          #release variable once we don't need it... 
@@ -211,24 +220,34 @@
 		return $newdata;	
 	}
 
-	function get_pronom_record($built)
+	function get_pronom_record($built, $pronomdata)
 	{
-		#sample record url: http://www.nationalarchives.gov.uk/PRONOM/fmt/588.xml
+		#sample record url: http://app.nationalarchives.gov.uk/PRONOM/fmt/588.xml
 	
 		$type_arr = array("fmt", "x-fmt");
+      $type_ar = array("fmt", "xfmt");
+
+      #delete after testing
+      #$pronomdata->fmt = 10;
+      #$pronomdata->xfmt = 10;
 
 		for($x = 0; $x < sizeof($type_arr); $x++)
 		{
-			#for ($y = 1; $y <= $fmt; $y++)
-			for ($y = 1; $y <= 2; $y++)
+			for ($y = 1; $y <= $pronomdata->$type_ar[$x]; $y++)
 			{
 				$filename = $y . ".xml";
 				$url = PRONOMBASEURL . $type_arr[$x] . '/' . $filename;
 				$data = get_data($url);
+
 				if(check_for_data($data)) 
 				{ 
+               #command to help debug folder ownership...
+               #echo exec('whoami');
+
+               #TODO: Latest, and built directories as variables... 
 					file_put_contents($built . '/' . $type_arr[$x] . '/' . $filename, $data);
-					file_put_contents(LATESTDIR . $type_arr[$x] . '/' . $filename, $data);
+               
+					copy ($built . '/' . $type_arr[$x] . '/' . $filename, LATESTDIR . $type_arr[$x] . '/' . $filename);
 				}
 			}
 		}
@@ -236,17 +255,26 @@
 
 	function archive_pronom_record($built)
 	{
+      if (!file_exists(ARCHIVEDIR)) {
+         mkdir(ARCHIVEDIR);
+      }
+
 		$zipFile = ARCHIVEDIR . str_replace(DATADIR, "", $built) . ".zip";
 		$zipArchive = new ZipArchive();
 
-		print $zipFile;
-
+      #seems to open in memory, not be contingent on disk write access.
 		if(!$zipArchive->open($zipFile, ZIPARCHIVE::OVERWRITE))
+      {
 			die("Failed to create archive\n");
+      }
 
-		$zipArchive->addGlob($built . "/*/*");
+      #can't recurse, glob pattern for each subfolder
+      #consider rearranging zip another time, when it works.
+		$zipArchive->addGlob($built . "/fmt/*");
+		$zipArchive->addGlob($built . "/x-fmt/*");
+
 		if (!$zipArchive->status == ZIPARCHIVE::ER_OK)
-			echo "Failed to write files to zip\n";
+			error_log("Failed to write files to zip\n");
 
 		$zipArchive->close();
 	}
@@ -256,15 +284,20 @@
 
 	if (new_pronom_data_check($pronomdata))
 	{
-		$built = build_download_folders();
+		$built = build_download_folders($pronomdata);
 		if($built)
 		{
-			#get_pronom_record($built);
-		   #archive_pronom_record($built);
+			get_pronom_record($built, $pronomdata);
+		   archive_pronom_record($built);
 		}
 
       $pronomdata->write_new_ini_data($pronomdata);
+      error_log("New PRONOM data available, v" . $pronomdata->sigfileno . " " . $pronomdata->sigfiledate);
 	}
+   else
+   {
+      error_log("There is no new PRONOM signature, v" . $pronomdata->sigfileno . " " . $pronomdata->sigfiledate);
+   }  
 
 ?>
 
