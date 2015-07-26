@@ -20,9 +20,9 @@
 		fclose($ntfile);		# TODO: check if open
 	}
 
-	function create_tfr_triples($ntfile, $data)
+	function create_tfr_triples($ntfile, $data, $puid)
 	{
-		pronom_to_rdf_map($ntfile, $data);
+		pronom_to_rdf_map($ntfile, $data, $puid);
 	}
 
 	function pronom_data_to_triples()
@@ -42,7 +42,7 @@
 
 				if(strcmp(substr($srcfile, -4, 4), ".xml") == 0)	# TODO: Better check
 				{
-					create_tfr_triples($ntfile, file_get_contents($basedir . "/" . $file));
+					create_tfr_triples($ntfile, file_get_contents($basedir . "/" . $file), $file);
 				}			
 			}
 		}
