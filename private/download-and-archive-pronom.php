@@ -228,8 +228,8 @@
       $type_ar = array("fmt", "xfmt");
 
       #delete after testing
-      #$pronomdata->fmt = 10;
-      #$pronomdata->xfmt = 10;
+      $pronomdata->fmt = 10;
+      $pronomdata->xfmt = 10;
 
 		for($x = 0; $x < sizeof($type_arr); $x++)
 		{
@@ -280,24 +280,29 @@
 	}
 
    #entry point
-   $pronomdata = new PronomData();
-
-	if (new_pronom_data_check($pronomdata))
-	{
-		$built = build_download_folders($pronomdata);
-		if($built)
-		{
-			get_pronom_record($built, $pronomdata);
-		   archive_pronom_record($built);
-		}
-
-      $pronomdata->write_new_ini_data($pronomdata);
-      error_log("New PRONOM data available, v" . $pronomdata->sigfileno . " " . $pronomdata->sigfiledate);
-	}
-   else
+   function downloadarchive()
    {
-      error_log("There is no new PRONOM signature, v" . $pronomdata->sigfileno . " " . $pronomdata->sigfiledate);
-   }  
+      $pronomdata = new PronomData();
+
+	   if (new_pronom_data_check($pronomdata))
+	   {
+		   $built = build_download_folders($pronomdata);
+		   if($built)
+		   {
+			   get_pronom_record($built, $pronomdata);
+		      archive_pronom_record($built);
+		   }
+
+         $pronomdata->write_new_ini_data($pronomdata);
+         error_log("New PRONOM data available, v" . $pronomdata->sigfileno . " " . $pronomdata->sigfiledate);
+         return True;
+	   }
+      else
+      {
+         error_log("There is no new PRONOM signature, v" . $pronomdata->sigfileno . " " . $pronomdata->sigfiledate);
+         return False;
+      }  
+   }
 
 ?>
 
