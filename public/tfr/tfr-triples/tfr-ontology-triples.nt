@@ -136,3 +136,9 @@
 <http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2000/01/rdf-schema#comment> "Formatted text and additional content for presentation purposes. Used by a word processor software application to create, edit, format, save and print files. Wordprocessed text may be presented alongside other file types, such as graphics and photographs. Wordprocessed text files typically record presentation information such as character style and size, or other details that specify the appearance of a finished document."@en.
 <http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
 <http://the-fr.org/def/format-registry/WordprocessedText> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/def/format-registry/Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class>.
+<http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2000/01/rdf-schema#label> "Model"@en.
+<http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2000/01/rdf-schema#comment> "Format that describes a three-dimensional representation of a person or thing or structure. A model will usually describe the object to a smaller scale than the original."@en.
+<http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
