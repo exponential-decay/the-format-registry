@@ -125,6 +125,18 @@
 			{
 				$typetrip = $typetrip . write_triple($subject, TYPE_PREDICATE, WPTXT_CLASS_TYPE, "", false);
 			}
+         elseif (strcmp(trim($type), "Model") == 0)
+         {
+				$typetrip = $typetrip . write_triple($subject, TYPE_PREDICATE, MODEL_CLASS_TYPE, "", false);
+         }
+         elseif (strcmp(trim($type), "") == 0)
+         {
+            //do nothing for empty type, XML returns ""
+         }
+         else
+         {
+            error_log("Unknown type in PRONOM data: " . trim($type));
+         }
 		}
 
 		fwrite($ntfile, $typetrip);
