@@ -23,12 +23,8 @@
 		**Extension:**  <xsl:value-of select="tfrprop:hasExtension"/>&#10;
 		**Alias:** <xsl:value-of select="skos:altLabel"/>&#10;
 		**Class:** [<xsl:value-of select="rdf:type/@rdf:resource"/>](<xsl:value-of select="rdf:type/@rdf:resource"/>)&#10;
-		**Type:** [<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>](<xsl:value-of select="tfr:formatType/@rdf:resource"/>)&#10;
+		**Type:** [<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>](<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>)&#10;
 		</xsl:for-each>
 	</xsl:template>
 </xsl:stylesheet>
-
-
-
-
 
