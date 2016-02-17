@@ -3,6 +3,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:owl="https://www.w3.org/2002/07/owl#"
 	xmlns:dcterms="http://purl.org/dc/terms/"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 	xmlns:tfr="http://the-fr.org/format-registry/"
@@ -20,6 +21,7 @@
 		**Description:** <xsl:value-of select="dcterms:description"/>&#10;
 		**MIMEType:** <xsl:value-of select="tfrprop:internetMediaType"/>&#10;
 		**PUID:** <xsl:value-of select="tfrprop:puid"/>&#10;
+		**sameAs : PRONOM:** [<xsl:value-of select="owl:sameAs/@rdf:resource"/>](<xsl:value-of select="owl:sameAs/@rdf:resource"/>)&#10;
 		**Extension:**  <xsl:value-of select="tfrprop:hasExtension"/>&#10;
 		**Alias:** <xsl:value-of select="skos:altLabel"/>&#10;
 		**Class:** [<xsl:value-of select="rdf:type/@rdf:resource"/>](<xsl:value-of select="rdf:type/@rdf:resource"/>)&#10;
