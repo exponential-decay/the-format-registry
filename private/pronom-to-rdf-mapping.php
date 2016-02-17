@@ -45,7 +45,7 @@
 			elseif (strcmp($Identifier->IdentifierType, 'PUID') == 0)
 			{
 				$predicatevalue = $predicatevalue . write_triple($subject, PUID_PREDICATE, $Identifier->Identifier);
-            //$predicatevalue = $predicatevalue . write_triple($subject, SAMEAS_PREDICATE, make_std_uri($Identifier->Identifier), "", false);
+            $predicatevalue = $predicatevalue . write_triple($subject, SAMEAS_PREDICATE, make_std_uri($Identifier->Identifier), "", false);
 			}
 		}
 
