@@ -8,4 +8,7 @@
 	define("TYPE_PREDICATE", "<http://the-fr.org/prop/format-registry/formatType>");
 	define("ALIAS_PREDICATE", "<http://www.w3.org/2004/02/skos/core#altLabel>");
 	define("EXTENSION_PREDICATE", "<http://the-fr.org/prop/format-registry/hasExtension>");
+
+   // additional ontologies
+   define("SAMEAS_PREDICATE", "<https://www.w3.org/2002/07/owl#sameAs>");
 ?>

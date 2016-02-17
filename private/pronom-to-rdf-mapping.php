@@ -17,6 +17,20 @@
 		fwrite($ntfile, $class);
 	}
 
+   // pronom xml uri
+   function make_xml_uri($identifier)
+   {
+      //e.g. http://www.nationalarchives.gov.uk/PRONOM/fmt/1.xml
+      return "<http://www.nationalarchives.gov.uk/PRONOM/" . $identifier . ".xml>";       
+   }
+
+   // pronom standard uri
+   function make_std_uri($identifier)
+   {
+      //e.g. http://www.nationalarchives.gov.uk/PRONOM/fmt/1
+      return "<http://www.nationalarchives.gov.uk/PRONOM/" . $identifier . ">";
+   }
+
 	function extract_identifiers($ntfile, $subject, $xml)
 	{
 		$predicatevalue = "";
@@ -31,6 +45,7 @@
 			elseif (strcmp($Identifier->IdentifierType, 'PUID') == 0)
 			{
 				$predicatevalue = $predicatevalue . write_triple($subject, PUID_PREDICATE, $Identifier->Identifier);
+            //$predicatevalue = $predicatevalue . write_triple($subject, SAMEAS_PREDICATE, make_std_uri($Identifier->Identifier), "", false);
 			}
 		}
 
