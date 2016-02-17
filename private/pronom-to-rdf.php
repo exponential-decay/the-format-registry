@@ -34,17 +34,31 @@
 		#for($x = 0; $x < 1; $x++)
 		for($x = 0; $x < sizeof($type_arr); $x++)
 		{
+         $no_array = array();
+
 			$basedir = LATESTDIR . "/" . $type_arr[$x];
 			$files = scandir($basedir);
+
+         //sort array consistently by number to set URI values 
+         //in concrete. xfmt1 becomes uri1 xfmt10 becomes uri10 
+         //not uri2, alphabetical ascending sort...
 			foreach($files as $file)
 			{
-				$srcfile = $basedir . "/" . $file;
-
-				if(strcmp(substr($srcfile, -4, 4), ".xml") == 0)	# TODO: Better check
+				if(strcmp(substr($file, -4, 4), ".xml") == 0)	# TODO: Better check
 				{
-					create_tfr_triples($ntfile, file_get_contents($basedir . "/" . $file), $file);
-				}			
+               $no = str_replace(".xml", "", $file);
+               $no = str_replace($type_arr[$x], "", $no);
+	            array_push($no_array, $no);
+            }
 			}
+
+         asort($no_array);
+
+         foreach ($no_array as $nor)
+         {   
+				$srcfile = $basedir . "/" . $type_arr[$x] . $nor . ".xml";
+				create_tfr_triples($ntfile, file_get_contents($srcfile), $srcfile);
+         }
 		}
 
 		close_nt_file($ntfile);
