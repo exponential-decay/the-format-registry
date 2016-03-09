@@ -11,4 +11,5 @@
 
    // additional ontologies
    define("SAMEAS_PREDICATE", "<https://www.w3.org/2002/07/owl#sameAs>");
+   define("MAGIC_PREDICATE", "<http://digipres.org/formats/sources/pronom/formats/#hasMagic>");
 ?>

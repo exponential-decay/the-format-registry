@@ -188,6 +188,23 @@
 		fwrite($ntfile, $aliastxt); 
 	}	
 
+   function extract_magic($ntfile, $subject, $xml)
+   {
+      //e.g. <http://example.com/#someBool> <http://www.example.com/2003/01/bool/test#test> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+      $magictext = "";
+
+      if (sizeof($xml->InternalSignature) > 0)
+      {
+         $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
+      }
+      else
+      {
+         $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
+      }
+      
+      fwrite($ntfile, $magictext);  
+   }
+
 	function triple_mapper($ntfile, $subject, $formatXML)
 	{
 		extract_class($ntfile, $subject);
@@ -197,6 +214,7 @@
 		extract_description($ntfile, $subject, $formatXML);
 		extract_type($ntfile, $subject, $formatXML);
 		extract_extension($ntfile, $subject, $formatXML);
+      extract_magic($ntfile, $subject, $formatXML);
 	}
 
 	function mint_subject()
