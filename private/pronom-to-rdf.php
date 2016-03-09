@@ -20,12 +20,12 @@
 		fclose($ntfile);		# TODO: check if open
 	}
 
-	function create_tfr_triples($ntfile, $data, $puid)
+	function create_tfr_triples($ntfile, $data, $puid, $containermagic=False)
 	{
-		pronom_to_rdf_map($ntfile, $data, $puid);
+		pronom_to_rdf_map($ntfile, $data, $puid, $containermagic);
 	}
 
-	function pronom_data_to_triples()
+	function pronom_data_to_triples($containermagic=False)
 	{
 		$ntfile = init_nt_file();
 
@@ -57,13 +57,28 @@
          foreach ($no_array as $nor)
          {   
 				$srcfile = $basedir . "/" . $type_arr[$x] . $nor . ".xml";
-				create_tfr_triples($ntfile, file_get_contents($srcfile), $srcfile);
+				create_tfr_triples($ntfile, file_get_contents($srcfile), $srcfile, $containermagic);
          }
 		}
 
 		close_nt_file($ntfile);
 	}
 
-	pronom_data_to_triples();
+   function read_container_magic()
+   {
+      $containermagic = array();
+
+      $data = file_get_contents(LATEST_CONTAINER);
+      $xml = simplexml_load_string($data);
+      foreach ($xml->FileFormatMappings->FileFormatMapping as $FormatMapping)
+      {
+         $puid = $FormatMapping['Puid'];
+         array_push($containermagic, (string)$puid);
+      }
+      return $containermagic;
+   }
+
+   $containermagic = read_container_magic();
+	pronom_data_to_triples($containermagic);
 
 ?>

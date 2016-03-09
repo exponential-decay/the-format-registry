@@ -33,6 +33,7 @@
 
 	function extract_identifiers($ntfile, $subject, $xml)
 	{
+      $puid = false;
 		$predicatevalue = "";
 
 		$FormatIdentifier = $xml->FileFormatIdentifier;
@@ -44,13 +45,15 @@
 			}
 			elseif (strcmp($Identifier->IdentifierType, 'PUID') == 0)
 			{
-				$predicatevalue = $predicatevalue . write_triple($subject, PUID_PREDICATE, $Identifier->Identifier);
-            $predicatevalue = $predicatevalue . write_triple($subject, SAMEAS_PREDICATE, make_std_uri($Identifier->Identifier), "", false);
+            $puid = $Identifier->Identifier;
+				$predicatevalue = $predicatevalue . write_triple($subject, PUID_PREDICATE, $puid);
+            $predicatevalue = $predicatevalue . write_triple($subject, SAMEAS_PREDICATE, make_std_uri($puid), "", false);
 			}
 		}
 
 		fwrite($ntfile, $predicatevalue);
 
+      return $puid;
 	}
 
 	function extract_name_version($ntfile, $subject, $xml)
@@ -188,33 +191,51 @@
 		fwrite($ntfile, $aliastxt); 
 	}	
 
-   function extract_magic($ntfile, $subject, $xml)
+   function extract_magic($ntfile, $subject, $xml, $containermagic=false, $puid=false)
    {
+      $container_magic = false;
+
+      if ($puid != false)
+      {
+         if (array_search($puid, $containermagic) > 0)
+         {
+            #fmt/681 provides a good example, container, no standard signature
+            $container_magic = true;
+         }
+      }
+
       //e.g. <http://example.com/#someBool> <http://www.example.com/2003/01/bool/test#test> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
       $magictext = "";
 
-      if (sizeof($xml->InternalSignature) > 0)
+      if ($container_magic == true)
       {
          $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
       }
       else
       {
-         $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
+         if (sizeof($xml->InternalSignature) > 0)
+         {
+            $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
+         }
+         else
+         {
+            $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
+         }
       }
       
       fwrite($ntfile, $magictext);  
    }
 
-	function triple_mapper($ntfile, $subject, $formatXML)
+	function triple_mapper($ntfile, $subject, $formatXML, $containermagic=False)
 	{
 		extract_class($ntfile, $subject);
-		extract_identifiers($ntfile, $subject, $formatXML);
+		$puid = extract_identifiers($ntfile, $subject, $formatXML);
 		extract_name_version($ntfile, $subject, $formatXML);
 		extract_alias($ntfile, $subject, $formatXML);		
 		extract_description($ntfile, $subject, $formatXML);
 		extract_type($ntfile, $subject, $formatXML);
 		extract_extension($ntfile, $subject, $formatXML);
-      extract_magic($ntfile, $subject, $formatXML);
+      extract_magic($ntfile, $subject, $formatXML, $containermagic, $puid);
 	}
 
 	function mint_subject()
@@ -225,7 +246,7 @@
 		return $subject;
 	}
 
-	function pronom_to_rdf_map($ntfile, $data, $puid)
+	function pronom_to_rdf_map($ntfile, $data, $puid, $containermagic=False)
 	{ 
 		$xml = simplexml_load_string($data);
   
@@ -236,7 +257,7 @@
       else
       {
 		   $formatXML = $xml->report_format_detail->FileFormat;
-         triple_mapper($ntfile, mint_subject(), $formatXML);
+         triple_mapper($ntfile, mint_subject(), $formatXML, $containermagic);
       }
 	}
 ?>
