@@ -142,3 +142,9 @@
 <http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2000/01/rdf-schema#comment> "Format that describes a three-dimensional representation of a person or thing or structure. A model will usually describe the object to a smaller scale than the original."@en.
 <http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
 <http://the-fr.org/def/format-registry/Model> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://digipres.org/formats/sources/pronom/formats/#hasMagic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://digipres.org/formats/sources/pronom/formats/#hasMagic> <http://www.w3.org/2000/01/rdf-schema#label> "Magic"@en.
+<http://digipres.org/formats/sources/pronom/formats/#hasMagic> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean that tells us whether the associated file format has a PRONOM signature or not."@en.
+<http://digipres.org/formats/sources/pronom/formats/#hasMagic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://the-fr.org/format-registry/FileFormat>.
+<http://digipres.org/formats/sources/pronom/formats/#hasMagic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://digipres.org/formats/>.
+<http://digipres.org/formats/sources/pronom/formats/#hasMagic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
