@@ -204,29 +204,42 @@
          }
       }
 
-      //e.g. <http://example.com/#someBool> <http://www.example.com/2003/01/bool/test#test> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+      $binary_magic = false;
+      if (sizeof($xml->InternalSignature) > 0)
+      {
+         $binary_magic = true;
+      }
+
       $magictext = "";
       $containertext = "";
       $binarytext = "";
 
-      if ($container_magic == true)
+      //e.g. <http://example.com/#someBool> <http://www.example.com/2003/01/bool/test#test> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+      if ($container_magic == true or $binary_magic == true)
       {
          $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
-         $containertext = $containertext . write_triple($subject, CONTAINER_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
       }
       else
       {
+         $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
+      }
+
+      if ($container_magic == true)
+      {
+         $containertext = $containertext . write_triple($subject, CONTAINER_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>");
+      }
+      else
+      { 
          $containertext = $containertext . write_triple($subject, CONTAINER_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>");
-         if (sizeof($xml->InternalSignature) > 0)
-         {
-            $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>");
-            $binarytext = $binarytext . write_triple($subject, BINARY_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
-         }
-         else
-         {
-            $magictext = $magictext . write_triple($subject, MAGIC_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
-            $binarytext = $binarytext . write_triple($subject, BINARY_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>");
-         }
+      }
+
+      if ($binary_magic == true)
+      {
+         $binarytext = $binarytext . write_triple($subject, BINARY_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"); 
+      }
+      else
+      {
+         $binarytext = $binarytext . write_triple($subject, BINARY_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>");
       }
       
       fwrite($ntfile, $magictext);  

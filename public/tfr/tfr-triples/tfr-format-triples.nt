@@ -474,6 +474,7 @@ The only difference between Windows bitmap 2.0 and OS/2 bitmap 1.0 is the data t
 <http://the-fr.org/id/file-format/45> <http://the-fr.org/prop/format-registry/hasExtension> "dot" .
 <http://the-fr.org/id/file-format/45> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/45> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/45> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/46> <http://the-fr.org/prop/format-registry/puid> "x-fmt/46" .
 <http://the-fr.org/id/file-format/46> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/46> .
@@ -596,6 +597,7 @@ A DWF package must meet the following requirements:
 <http://the-fr.org/id/file-format/56> <http://the-fr.org/prop/format-registry/hasExtension> "fpx" .
 <http://the-fr.org/id/file-format/56> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/56> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/56> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/57> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/57> <http://the-fr.org/prop/format-registry/puid> "x-fmt/57" .
 <http://the-fr.org/id/file-format/57> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/57> .
@@ -1572,6 +1574,7 @@ File format specifications available at http://standards.iso.org/ittf/PubliclyAv
 <http://the-fr.org/id/file-format/151> <http://the-fr.org/prop/format-registry/hasExtension> "dsf" .
 <http://the-fr.org/id/file-format/151> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/151> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/151> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/152> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/152> <http://the-fr.org/prop/format-registry/internetMediaType> "video/dv" .
 <http://the-fr.org/id/file-format/152> <http://the-fr.org/prop/format-registry/puid> "x-fmt/152" .
@@ -2543,6 +2546,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/243> <http://the-fr.org/prop/format-registry/hasExtension> "mpp" .
 <http://the-fr.org/id/file-format/243> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/243> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/243> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/244> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-project" .
 <http://the-fr.org/id/file-format/244> <http://the-fr.org/prop/format-registry/puid> "x-fmt/244" .
@@ -2564,6 +2568,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/245> <http://the-fr.org/prop/format-registry/hasExtension> "mpp" .
 <http://the-fr.org/id/file-format/245> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/245> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/245> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/246> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/246> <http://the-fr.org/prop/format-registry/puid> "x-fmt/246" .
 <http://the-fr.org/id/file-format/246> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/246> .
@@ -2584,6 +2589,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/247> <http://the-fr.org/prop/format-registry/hasExtension> "mpp" .
 <http://the-fr.org/id/file-format/247> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/247> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/247> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/248> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/248> <http://the-fr.org/prop/format-registry/puid> "x-fmt/248" .
 <http://the-fr.org/id/file-format/248> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/248> .
@@ -2631,6 +2637,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/252> <http://the-fr.org/prop/format-registry/hasExtension> "pub" .
 <http://the-fr.org/id/file-format/252> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/252> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/252> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/253> <http://the-fr.org/prop/format-registry/puid> "x-fmt/253" .
 <http://the-fr.org/id/file-format/253> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/253> .
@@ -2641,6 +2648,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/253> <http://the-fr.org/prop/format-registry/hasExtension> "pub" .
 <http://the-fr.org/id/file-format/253> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/253> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/253> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/254> <http://the-fr.org/prop/format-registry/puid> "x-fmt/254" .
 <http://the-fr.org/id/file-format/254> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/254> .
@@ -2685,6 +2693,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/257> <http://the-fr.org/prop/format-registry/hasExtension> "pub" .
 <http://the-fr.org/id/file-format/257> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/257> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/257> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/258> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.visio" .
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/puid> "x-fmt/258" .
@@ -2696,6 +2705,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
 <http://the-fr.org/id/file-format/258> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/259> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/259> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.visio" .
 <http://the-fr.org/id/file-format/259> <http://the-fr.org/prop/format-registry/puid> "x-fmt/259" .
@@ -3809,6 +3819,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/359> <http://the-fr.org/prop/format-registry/hasExtension> "sdc" .
 <http://the-fr.org/id/file-format/359> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/359> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/359> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/360> <http://the-fr.org/prop/format-registry/puid> "x-fmt/360" .
 <http://the-fr.org/id/file-format/360> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/360> .
@@ -3819,6 +3830,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/360> <http://the-fr.org/prop/format-registry/hasExtension> "sdd" .
 <http://the-fr.org/id/file-format/360> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/360> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/360> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/361> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/361> <http://the-fr.org/prop/format-registry/puid> "x-fmt/361" .
 <http://the-fr.org/id/file-format/361> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/361> .
@@ -4282,6 +4294,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/399> <http://the-fr.org/prop/format-registry/hasExtension> "sdw" .
 <http://the-fr.org/id/file-format/399> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/399> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/399> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/400> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.stardivision.draw" .
 <http://the-fr.org/id/file-format/400> <http://the-fr.org/prop/format-registry/puid> "x-fmt/401" .
@@ -4293,6 +4306,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/400> <http://the-fr.org/prop/format-registry/hasExtension> "sda" .
 <http://the-fr.org/id/file-format/400> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/400> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/400> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/401> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/401> <http://the-fr.org/prop/format-registry/puid> "x-fmt/402" .
 <http://the-fr.org/id/file-format/401> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/402> .
@@ -4415,6 +4429,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/411> <http://the-fr.org/prop/format-registry/hasExtension> "jar" .
 <http://the-fr.org/id/file-format/411> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/411> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/411> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/412> <http://the-fr.org/prop/format-registry/puid> "x-fmt/413" .
 <http://the-fr.org/id/file-format/412> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/413> .
@@ -4594,6 +4609,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/hasExtension> "msg" .
 <http://the-fr.org/id/file-format/429> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/430> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/430> <http://the-fr.org/prop/format-registry/puid> "x-fmt/432" .
 <http://the-fr.org/id/file-format/430> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/432> .
@@ -5361,6 +5377,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/493> <http://the-fr.org/prop/format-registry/hasExtension> "wbk" .
 <http://the-fr.org/id/file-format/493> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/493> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/493> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/494> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/494> <http://the-fr.org/prop/format-registry/puid> "fmt/41" .
 <http://the-fr.org/id/file-format/494> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/41> .
@@ -5602,6 +5619,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/512> <http://the-fr.org/prop/format-registry/hasExtension> "xls" .
 <http://the-fr.org/id/file-format/512> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/512> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/512> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/513> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/513> <http://the-fr.org/prop/format-registry/puid> "fmt/60" .
 <http://the-fr.org/id/file-format/513> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/60> .
@@ -5624,6 +5642,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/514> <http://the-fr.org/prop/format-registry/hasExtension> "xlw" .
 <http://the-fr.org/id/file-format/514> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/514> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/514> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/515> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/515> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-excel" .
 <http://the-fr.org/id/file-format/515> <http://the-fr.org/prop/format-registry/puid> "fmt/62" .
@@ -6477,6 +6496,7 @@ Windows bitmap 2.0 and OS/2 bitmap 1.0 are effectively the same format - the onl
 <http://the-fr.org/id/file-format/579> <http://the-fr.org/prop/format-registry/hasExtension> "ppt" .
 <http://the-fr.org/id/file-format/579> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/579> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/579> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/580> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/580> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.sun.xml.draw" .
 <http://the-fr.org/id/file-format/580> <http://the-fr.org/prop/format-registry/puid> "fmt/127" .
@@ -6605,6 +6625,7 @@ Windows bitmap 2.0 and OS/2 bitmap 1.0 are effectively the same format - the onl
 <http://the-fr.org/id/file-format/589> <http://the-fr.org/prop/format-registry/hasExtension> "ott" .
 <http://the-fr.org/id/file-format/589> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/589> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/589> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/590> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/590> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.spreadsheet" .
 <http://the-fr.org/id/file-format/590> <http://the-fr.org/prop/format-registry/puid> "fmt/137" .
@@ -6618,6 +6639,7 @@ Windows bitmap 2.0 and OS/2 bitmap 1.0 are effectively the same format - the onl
 <http://the-fr.org/id/file-format/590> <http://the-fr.org/prop/format-registry/hasExtension> "ots" .
 <http://the-fr.org/id/file-format/590> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/590> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/590> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/591> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/591> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.presentation" .
 <http://the-fr.org/id/file-format/591> <http://the-fr.org/prop/format-registry/puid> "fmt/138" .
@@ -6631,6 +6653,7 @@ Windows bitmap 2.0 and OS/2 bitmap 1.0 are effectively the same format - the onl
 <http://the-fr.org/id/file-format/591> <http://the-fr.org/prop/format-registry/hasExtension> "otp" .
 <http://the-fr.org/id/file-format/591> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/591> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/591> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/592> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/592> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.graphics" .
 <http://the-fr.org/id/file-format/592> <http://the-fr.org/prop/format-registry/puid> "fmt/139" .
@@ -6656,6 +6679,7 @@ Windows bitmap 2.0 and OS/2 bitmap 1.0 are effectively the same format - the onl
 <http://the-fr.org/id/file-format/593> <http://the-fr.org/prop/format-registry/hasExtension> "odb" .
 <http://the-fr.org/id/file-format/593> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/593> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/593> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/594> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/594> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/x-wav" .
 <http://the-fr.org/id/file-format/594> <http://the-fr.org/prop/format-registry/puid> "fmt/141" .
@@ -7464,6 +7488,7 @@ OP1a is intended to meet the requirements of acquisition, storage and interchang
 <http://the-fr.org/id/file-format/667> <http://the-fr.org/prop/format-registry/hasExtension> "xlsx" .
 <http://the-fr.org/id/file-format/667> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/667> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/667> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/668> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/668> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.openxmlformats-officedocument.presentationml.presentation" .
 <http://the-fr.org/id/file-format/668> <http://the-fr.org/prop/format-registry/puid> "fmt/215" .
@@ -7475,6 +7500,7 @@ OP1a is intended to meet the requirements of acquisition, storage and interchang
 <http://the-fr.org/id/file-format/668> <http://the-fr.org/prop/format-registry/hasExtension> "pptx" .
 <http://the-fr.org/id/file-format/668> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/668> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/668> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/669> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.visio" .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/puid> "fmt/216" .
@@ -7654,6 +7680,7 @@ OP1a is intended to meet the requirements of acquisition, storage and interchang
 <http://the-fr.org/id/file-format/686> <http://the-fr.org/prop/format-registry/hasExtension> "wps" .
 <http://the-fr.org/id/file-format/686> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/686> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/686> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/687> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/687> <http://the-fr.org/prop/format-registry/puid> "fmt/234" .
 <http://the-fr.org/id/file-format/687> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/234> .
@@ -7908,6 +7935,7 @@ Full specifications available at: http://www.opengeospatial.org/standards/kml"@e
 <http://the-fr.org/id/file-format/711> <http://the-fr.org/prop/format-registry/hasExtension> "wps" .
 <http://the-fr.org/id/file-format/711> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/711> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/711> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/712> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/712> <http://the-fr.org/prop/format-registry/puid> "fmt/259" .
 <http://the-fr.org/id/file-format/712> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/259> .
@@ -8073,6 +8101,7 @@ SPSS creates an SPSS Output File which represents data in a two dimensional form
 <http://the-fr.org/id/file-format/727> <http://the-fr.org/prop/format-registry/hasExtension> "spv" .
 <http://the-fr.org/id/file-format/727> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/727> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/727> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/728> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/728> <http://the-fr.org/prop/format-registry/puid> "fmt/275" .
 <http://the-fr.org/id/file-format/728> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/275> .
@@ -8261,6 +8290,7 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/743> <http://the-fr.org/prop/format-registry/hasExtension> "ott" .
 <http://the-fr.org/id/file-format/743> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/743> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/743> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/744> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/744> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.text" .
 <http://the-fr.org/id/file-format/744> <http://the-fr.org/prop/format-registry/puid> "fmt/291" .
@@ -8273,6 +8303,7 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/744> <http://the-fr.org/prop/format-registry/hasExtension> "ott" .
 <http://the-fr.org/id/file-format/744> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/744> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/744> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/745> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/745> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.presentation" .
 <http://the-fr.org/id/file-format/745> <http://the-fr.org/prop/format-registry/puid> "fmt/292" .
@@ -8285,6 +8316,7 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/745> <http://the-fr.org/prop/format-registry/hasExtension> "otp" .
 <http://the-fr.org/id/file-format/745> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/745> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/745> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/746> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/746> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.presentation" .
 <http://the-fr.org/id/file-format/746> <http://the-fr.org/prop/format-registry/puid> "fmt/293" .
@@ -8297,6 +8329,7 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/746> <http://the-fr.org/prop/format-registry/hasExtension> "otp" .
 <http://the-fr.org/id/file-format/746> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/746> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/746> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/747> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.spreadsheet" .
 <http://the-fr.org/id/file-format/747> <http://the-fr.org/prop/format-registry/puid> "fmt/294" .
@@ -8309,6 +8342,7 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/747> <http://the-fr.org/prop/format-registry/hasExtension> "ots" .
 <http://the-fr.org/id/file-format/747> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/747> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/747> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/748> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.spreadsheet" .
 <http://the-fr.org/id/file-format/748> <http://the-fr.org/prop/format-registry/puid> "fmt/295" .
@@ -8321,6 +8355,7 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/748> <http://the-fr.org/prop/format-registry/hasExtension> "ots" .
 <http://the-fr.org/id/file-format/748> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/748> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/748> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/749> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/749> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.oasis.opendocument.graphics" .
 <http://the-fr.org/id/file-format/749> <http://the-fr.org/prop/format-registry/puid> "fmt/296" .
@@ -9641,6 +9676,7 @@ The last 3 areas, the Developer Area, the Extension Area and the TGA File Footer
 <http://the-fr.org/id/file-format/865> <http://the-fr.org/prop/format-registry/hasExtension> "wbk" .
 <http://the-fr.org/id/file-format/865> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/865> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/865> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/866> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/866> <http://the-fr.org/prop/format-registry/puid> "fmt/413" .
 <http://the-fr.org/id/file-format/866> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/413> .
@@ -9786,6 +9822,7 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/877> <http://the-fr.org/prop/format-registry/hasExtension> "odb" .
 <http://the-fr.org/id/file-format/877> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/877> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/877> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/878> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/878> <http://the-fr.org/prop/format-registry/puid> "fmt/425" .
 <http://the-fr.org/id/file-format/878> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/425> .
@@ -9965,6 +10002,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/893> <http://the-fr.org/prop/format-registry/hasExtension> "mpp" .
 <http://the-fr.org/id/file-format/893> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/893> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/893> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/894> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/894> <http://the-fr.org/prop/format-registry/puid> "fmt/441" .
 <http://the-fr.org/id/file-format/894> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/441> .
@@ -9986,6 +10024,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/895> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
 <http://the-fr.org/id/file-format/895> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/895> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/895> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/896> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.visio" .
 <http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/puid> "fmt/443" .
@@ -9996,6 +10035,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
 <http://the-fr.org/id/file-format/896> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/897> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/897> <http://the-fr.org/prop/format-registry/puid> "fmt/444" .
 <http://the-fr.org/id/file-format/897> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/444> .
@@ -10006,6 +10046,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/897> <http://the-fr.org/prop/format-registry/hasExtension> "odb" .
 <http://the-fr.org/id/file-format/897> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/897> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/897> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/898> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/898> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-excel.sheet.macroEnabled.12" .
 <http://the-fr.org/id/file-format/898> <http://the-fr.org/prop/format-registry/puid> "fmt/445" .
@@ -10016,6 +10057,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/898> <http://the-fr.org/prop/format-registry/hasExtension> "xlsm" .
 <http://the-fr.org/id/file-format/898> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/898> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/898> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/899> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/899> <http://the-fr.org/prop/format-registry/puid> "fmt/446" .
 <http://the-fr.org/id/file-format/899> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/446> .
@@ -10399,6 +10441,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/935> <http://the-fr.org/prop/format-registry/hasExtension> "ibooks" .
 <http://the-fr.org/id/file-format/935> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/935> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/935> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/936> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/936> <http://the-fr.org/prop/format-registry/internetMediaType> "application/epub+zip" .
 <http://the-fr.org/id/file-format/936> <http://the-fr.org/prop/format-registry/puid> "fmt/483" .
@@ -10409,6 +10452,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/936> <http://the-fr.org/prop/format-registry/hasExtension> "epub" .
 <http://the-fr.org/id/file-format/936> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/936> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/936> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/937> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/937> <http://the-fr.org/prop/format-registry/puid> "fmt/484" .
 <http://the-fr.org/id/file-format/937> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/484> .
@@ -10450,6 +10494,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/940> <http://the-fr.org/prop/format-registry/hasExtension> "pptm" .
 <http://the-fr.org/id/file-format/940> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/940> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/940> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/941> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/941> <http://the-fr.org/prop/format-registry/internetMediaType> "application/pdf" .
 <http://the-fr.org/id/file-format/941> <http://the-fr.org/prop/format-registry/puid> "fmt/488" .
@@ -10543,6 +10588,7 @@ Since the method of identifying and distinguishing specific types of OOXML docum
 <http://the-fr.org/id/file-format/947> <http://the-fr.org/prop/format-registry/hasExtension> "docx" .
 <http://the-fr.org/id/file-format/947> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/947> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/947> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/948> <http://the-fr.org/prop/format-registry/puid> "fmt/495" .
 <http://the-fr.org/id/file-format/948> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/495> .
@@ -10624,6 +10670,7 @@ Since the method of identifying and distinguishing specific types of OOXML docum
 <http://the-fr.org/id/file-format/955> <http://the-fr.org/prop/format-registry/hasExtension> "dgn" .
 <http://the-fr.org/id/file-format/955> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/955> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/955> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/956> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/956> <http://the-fr.org/prop/format-registry/puid> "fmt/503" .
 <http://the-fr.org/id/file-format/956> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/503> .
@@ -10843,6 +10890,7 @@ The format lacks an extension, and is instead represented by a file name consist
 <http://the-fr.org/id/file-format/976> <http://the-fr.org/prop/format-registry/hasExtension> "docm" .
 <http://the-fr.org/id/file-format/976> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/976> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/976> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/977> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/977> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-officetheme" .
 <http://the-fr.org/id/file-format/977> <http://the-fr.org/prop/format-registry/puid> "fmt/524" .
@@ -10852,6 +10900,7 @@ The format lacks an extension, and is instead represented by a file name consist
 <http://the-fr.org/id/file-format/977> <http://the-fr.org/prop/format-registry/hasExtension> "thmx" .
 <http://the-fr.org/id/file-format/977> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/977> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/977> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/978> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/978> <http://the-fr.org/prop/format-registry/puid> "fmt/525" .
 <http://the-fr.org/id/file-format/978> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/525> .
@@ -11669,6 +11718,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1047> <http://the-fr.org/prop/format-registry/hasExtension> "mix" .
 <http://the-fr.org/id/file-format/1047> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1047> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1047> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1048> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-excel.sheet.binary.macroEnabled.12" .
 <http://the-fr.org/id/file-format/1048> <http://the-fr.org/prop/format-registry/puid> "fmt/595" .
@@ -11680,6 +11730,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1048> <http://the-fr.org/prop/format-registry/hasExtension> "xlsb" .
 <http://the-fr.org/id/file-format/1048> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1048> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1048> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1049> <http://the-fr.org/prop/format-registry/puid> "fmt/596" .
 <http://the-fr.org/id/file-format/1049> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/596> .
@@ -11702,6 +11753,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1050> <http://the-fr.org/prop/format-registry/hasExtension> "dotx" .
 <http://the-fr.org/id/file-format/1050> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1050> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1050> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1051> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.openxmlformats-officedocument.spreadsheetml.template" .
 <http://the-fr.org/id/file-format/1051> <http://the-fr.org/prop/format-registry/puid> "fmt/598" .
@@ -11713,6 +11765,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1051> <http://the-fr.org/prop/format-registry/hasExtension> "xltx" .
 <http://the-fr.org/id/file-format/1051> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1051> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1051> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1052> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-word.template.macroEnabled.12" .
 <http://the-fr.org/id/file-format/1052> <http://the-fr.org/prop/format-registry/puid> "fmt/599" .
@@ -11724,6 +11777,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1052> <http://the-fr.org/prop/format-registry/hasExtension> "dotm" .
 <http://the-fr.org/id/file-format/1052> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1052> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1052> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1053> <http://the-fr.org/prop/format-registry/puid> "fmt/600" .
 <http://the-fr.org/id/file-format/1053> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/600> .
@@ -11837,6 +11891,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1062> <http://the-fr.org/prop/format-registry/hasExtension> "doc" .
 <http://the-fr.org/id/file-format/1062> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1062> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1062> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1063> <http://the-fr.org/prop/format-registry/puid> "fmt/610" .
 <http://the-fr.org/id/file-format/1063> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/610> .
@@ -11923,6 +11978,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1070> <http://the-fr.org/prop/format-registry/hasExtension> "ggb" .
 <http://the-fr.org/id/file-format/1070> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1070> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1070> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1071> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.geogebra.file" .
 <http://the-fr.org/id/file-format/1071> <http://the-fr.org/prop/format-registry/puid> "fmt/618" .
@@ -11946,6 +12002,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1072> <http://the-fr.org/prop/format-registry/hasExtension> "ggb" .
 <http://the-fr.org/id/file-format/1072> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1072> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1072> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1073> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1073> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.geogebra.file" .
 <http://the-fr.org/id/file-format/1073> <http://the-fr.org/prop/format-registry/puid> "fmt/620" .
@@ -11957,6 +12014,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1073> <http://the-fr.org/prop/format-registry/hasExtension> "ggb" .
 <http://the-fr.org/id/file-format/1073> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1073> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1073> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1074> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1074> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.geogebra.file" .
 <http://the-fr.org/id/file-format/1074> <http://the-fr.org/prop/format-registry/puid> "fmt/621" .
@@ -11968,6 +12026,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1074> <http://the-fr.org/prop/format-registry/hasExtension> "ggb" .
 <http://the-fr.org/id/file-format/1074> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1074> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1074> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1075> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.geogebra.file" .
 <http://the-fr.org/id/file-format/1075> <http://the-fr.org/prop/format-registry/puid> "fmt/622" .
@@ -11979,6 +12038,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1075> <http://the-fr.org/prop/format-registry/hasExtension> "ggb" .
 <http://the-fr.org/id/file-format/1075> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1075> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1075> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1076> <http://the-fr.org/prop/format-registry/puid> "fmt/623" .
 <http://the-fr.org/id/file-format/1076> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/623> .
@@ -12034,6 +12094,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1080> <http://the-fr.org/prop/format-registry/hasExtension> "xltm" .
 <http://the-fr.org/id/file-format/1080> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1080> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1080> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1081> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-excel.addin.macroEnabled.12" .
 <http://the-fr.org/id/file-format/1081> <http://the-fr.org/prop/format-registry/puid> "fmt/628" .
@@ -12045,6 +12106,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1081> <http://the-fr.org/prop/format-registry/hasExtension> "xlam" .
 <http://the-fr.org/id/file-format/1081> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1081> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1081> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1082> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.openxmlformats-officedocument.presentationml.slideshow" .
 <http://the-fr.org/id/file-format/1082> <http://the-fr.org/prop/format-registry/puid> "fmt/629" .
@@ -12056,6 +12118,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1082> <http://the-fr.org/prop/format-registry/hasExtension> "ppsx" .
 <http://the-fr.org/id/file-format/1082> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1082> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1082> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1083> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-powerpoint.slideshow.macroEnabled.12" .
 <http://the-fr.org/id/file-format/1083> <http://the-fr.org/prop/format-registry/puid> "fmt/630" .
@@ -12067,6 +12130,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1083> <http://the-fr.org/prop/format-registry/hasExtension> "ppsm" .
 <http://the-fr.org/id/file-format/1083> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1083> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1083> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1084> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1084> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.openxmlformats-officedocument.presentationml.template" .
 <http://the-fr.org/id/file-format/1084> <http://the-fr.org/prop/format-registry/puid> "fmt/631" .
@@ -12078,6 +12142,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1084> <http://the-fr.org/prop/format-registry/hasExtension> "potx" .
 <http://the-fr.org/id/file-format/1084> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1084> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1084> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1085> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-powerpoint.template.macroEnabled.12" .
 <http://the-fr.org/id/file-format/1085> <http://the-fr.org/prop/format-registry/puid> "fmt/632" .
@@ -12089,6 +12154,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1085> <http://the-fr.org/prop/format-registry/hasExtension> "potm" .
 <http://the-fr.org/id/file-format/1085> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1085> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1085> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1086> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-powerpoint.addin.macroEnabled.12" .
 <http://the-fr.org/id/file-format/1086> <http://the-fr.org/prop/format-registry/puid> "fmt/633" .
@@ -12100,6 +12166,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1086> <http://the-fr.org/prop/format-registry/hasExtension> "ppam" .
 <http://the-fr.org/id/file-format/1086> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1086> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1086> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1087> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-htmlhelp" .
 <http://the-fr.org/id/file-format/1087> <http://the-fr.org/prop/format-registry/puid> "fmt/634" .
@@ -12132,6 +12199,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1089> <http://the-fr.org/prop/format-registry/hasExtension> "sldm" .
 <http://the-fr.org/id/file-format/1089> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1089> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1089> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1090> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1090> <http://the-fr.org/prop/format-registry/internetMediaType> "application/msonenote" .
 <http://the-fr.org/id/file-format/1090> <http://the-fr.org/prop/format-registry/puid> "fmt/637" .
@@ -12237,6 +12305,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1099> <http://the-fr.org/prop/format-registry/hasExtension> "key" .
 <http://the-fr.org/id/file-format/1099> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1099> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1099> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1100> <http://the-fr.org/prop/format-registry/puid> "fmt/647" .
 <http://the-fr.org/id/file-format/1100> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/647> .
@@ -12364,6 +12433,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1110> <http://the-fr.org/prop/format-registry/hasExtension> "xps" .
 <http://the-fr.org/id/file-format/1110> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1110> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1110> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1111> <http://the-fr.org/prop/format-registry/puid> "fmt/658" .
 <http://the-fr.org/id/file-format/1111> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/658> .
@@ -12516,6 +12586,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1125> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1125> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1125> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1125> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1126> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1126> <http://the-fr.org/prop/format-registry/puid> "fmt/673" .
 <http://the-fr.org/id/file-format/1126> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/673> .
@@ -12526,6 +12597,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1126> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1126> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1126> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1126> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1127> <http://the-fr.org/prop/format-registry/puid> "fmt/674" .
 <http://the-fr.org/id/file-format/1127> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/674> .
@@ -12536,6 +12608,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1127> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1127> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1127> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1127> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1128> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1128> <http://the-fr.org/prop/format-registry/puid> "fmt/675" .
 <http://the-fr.org/id/file-format/1128> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/675> .
@@ -12546,6 +12619,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1128> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1128> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1128> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1128> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1129> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1129> <http://the-fr.org/prop/format-registry/puid> "fmt/676" .
 <http://the-fr.org/id/file-format/1129> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/676> .
@@ -12556,6 +12630,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1129> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1129> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1129> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1129> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1130> <http://the-fr.org/prop/format-registry/puid> "fmt/677" .
 <http://the-fr.org/id/file-format/1130> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/677> .
@@ -12566,6 +12641,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1130> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1130> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1130> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1130> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1131> <http://the-fr.org/prop/format-registry/puid> "fmt/678" .
 <http://the-fr.org/id/file-format/1131> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/678> .
@@ -12576,6 +12652,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1131> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1131> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1131> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1131> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1132> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1132> <http://the-fr.org/prop/format-registry/puid> "fmt/679" .
 <http://the-fr.org/id/file-format/1132> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/679> .
@@ -12586,6 +12663,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1132> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1132> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1132> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1132> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1133> <http://the-fr.org/prop/format-registry/puid> "fmt/680" .
 <http://the-fr.org/id/file-format/1133> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/680> .
@@ -12596,6 +12674,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1133> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1133> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1133> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1133> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1134> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1134> <http://the-fr.org/prop/format-registry/puid> "fmt/681" .
 <http://the-fr.org/id/file-format/1134> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/681> .
@@ -12606,6 +12685,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1134> <http://the-fr.org/prop/format-registry/hasExtension> "ppp" .
 <http://the-fr.org/id/file-format/1134> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1134> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1134> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1135> <http://the-fr.org/prop/format-registry/puid> "fmt/682" .
 <http://the-fr.org/id/file-format/1135> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/682> .
@@ -12617,6 +12697,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1135> <http://the-fr.org/prop/format-registry/hasExtension> "db" .
 <http://the-fr.org/id/file-format/1135> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1135> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1135> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1136> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1136> <http://the-fr.org/prop/format-registry/puid> "fmt/683" .
 <http://the-fr.org/id/file-format/1136> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/683> .
@@ -13102,6 +13183,7 @@ Full specifications available at: http://www.opengeospatial.org/standards/kml"@e
 <http://the-fr.org/id/file-format/1177> <http://the-fr.org/prop/format-registry/hasExtension> "kmz" .
 <http://the-fr.org/id/file-format/1177> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1177> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1177> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1178> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1178> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-project" .
 <http://the-fr.org/id/file-format/1178> <http://the-fr.org/prop/format-registry/puid> "fmt/725" .
@@ -13112,6 +13194,7 @@ Full specifications available at: http://www.opengeospatial.org/standards/kml"@e
 <http://the-fr.org/id/file-format/1178> <http://the-fr.org/prop/format-registry/hasExtension> "mpp" .
 <http://the-fr.org/id/file-format/1178> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1178> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1178> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1179> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1179> <http://the-fr.org/prop/format-registry/puid> "fmt/726" .
 <http://the-fr.org/id/file-format/1179> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/726> .
@@ -13444,6 +13527,7 @@ Within the \'WordDocument\' stream, the byte at position 0x0B deals with encrypt
 <http://the-fr.org/id/file-format/1207> <http://the-fr.org/prop/format-registry/hasExtension> "doc" .
 <http://the-fr.org/id/file-format/1207> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1207> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1207> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1208> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1208> <http://the-fr.org/prop/format-registry/internetMediaType> "application/msword" .
 <http://the-fr.org/id/file-format/1208> <http://the-fr.org/prop/format-registry/puid> "fmt/755" .
@@ -13458,6 +13542,7 @@ Within the \'WordDocument\' stream, the byte at position 0x0B deals with encrypt
 <http://the-fr.org/id/file-format/1208> <http://the-fr.org/prop/format-registry/hasExtension> "dot" .
 <http://the-fr.org/id/file-format/1208> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1208> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1208> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1209> <http://the-fr.org/prop/format-registry/puid> "fmt/756" .
 <http://the-fr.org/id/file-format/1209> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/756> .
@@ -14046,6 +14131,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1261> <http://the-fr.org/prop/format-registry/hasExtension> "sdc" .
 <http://the-fr.org/id/file-format/1261> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1261> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1261> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1262> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1262> <http://the-fr.org/prop/format-registry/puid> "fmt/809" .
 <http://the-fr.org/id/file-format/1262> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/809> .
@@ -14055,6 +14141,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1262> <http://the-fr.org/prop/format-registry/hasExtension> "sdc" .
 <http://the-fr.org/id/file-format/1262> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1262> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1262> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1263> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1263> <http://the-fr.org/prop/format-registry/puid> "fmt/810" .
 <http://the-fr.org/id/file-format/1263> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/810> .
@@ -14064,6 +14151,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1263> <http://the-fr.org/prop/format-registry/hasExtension> "sdd" .
 <http://the-fr.org/id/file-format/1263> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1263> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1263> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1264> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1264> <http://the-fr.org/prop/format-registry/puid> "fmt/811" .
 <http://the-fr.org/id/file-format/1264> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/811> .
@@ -14073,6 +14161,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1264> <http://the-fr.org/prop/format-registry/hasExtension> "sdd" .
 <http://the-fr.org/id/file-format/1264> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1264> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1264> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1265> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1265> <http://the-fr.org/prop/format-registry/puid> "fmt/812" .
 <http://the-fr.org/id/file-format/1265> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/812> .
@@ -14082,6 +14171,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1265> <http://the-fr.org/prop/format-registry/hasExtension> "sdw" .
 <http://the-fr.org/id/file-format/1265> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1265> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1265> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1266> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1266> <http://the-fr.org/prop/format-registry/puid> "fmt/813" .
 <http://the-fr.org/id/file-format/1266> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/813> .
@@ -14091,6 +14181,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1266> <http://the-fr.org/prop/format-registry/hasExtension> "sdw" .
 <http://the-fr.org/id/file-format/1266> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1266> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1266> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1267> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1267> <http://the-fr.org/prop/format-registry/puid> "fmt/814" .
 <http://the-fr.org/id/file-format/1267> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/814> .
@@ -14100,6 +14191,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1267> <http://the-fr.org/prop/format-registry/hasExtension> "sdd" .
 <http://the-fr.org/id/file-format/1267> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1267> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1267> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1268> <http://the-fr.org/prop/format-registry/puid> "fmt/815" .
 <http://the-fr.org/id/file-format/1268> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/815> .
@@ -14109,6 +14201,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1268> <http://the-fr.org/prop/format-registry/hasExtension> "sdd" .
 <http://the-fr.org/id/file-format/1268> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1268> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1268> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1269> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1269> <http://the-fr.org/prop/format-registry/puid> "fmt/816" .
 <http://the-fr.org/id/file-format/1269> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/816> .
@@ -14228,6 +14321,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1280> <http://the-fr.org/prop/format-registry/hasExtension> "dpp" .
 <http://the-fr.org/id/file-format/1280> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1280> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1280> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1281> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1281> <http://the-fr.org/prop/format-registry/puid> "fmt/828" .
 <http://the-fr.org/id/file-format/1281> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/828> .
@@ -14250,6 +14344,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1282> <http://the-fr.org/prop/format-registry/hasExtension> "3mf" .
 <http://the-fr.org/id/file-format/1282> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1282> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1282> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1283> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1283> <http://the-fr.org/prop/format-registry/puid> "fmt/830" .
 <http://the-fr.org/id/file-format/1283> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/830> .
@@ -14325,6 +14420,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1289> <http://the-fr.org/prop/format-registry/hasExtension> "wb3" .
 <http://the-fr.org/id/file-format/1289> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1289> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1289> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1290> <http://the-fr.org/prop/format-registry/puid> "fmt/837" .
 <http://the-fr.org/id/file-format/1290> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/837> .
@@ -14335,6 +14431,7 @@ The format is used to store media images for forensic purposes. They are a type 
 <http://the-fr.org/id/file-format/1290> <http://the-fr.org/prop/format-registry/hasExtension> "qpw" .
 <http://the-fr.org/id/file-format/1290> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1290> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1290> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1291> <http://the-fr.org/prop/format-registry/puid> "fmt/838" .
 <http://the-fr.org/id/file-format/1291> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/838> .
@@ -14505,6 +14602,7 @@ AD1 images may be encrypted or unencrypted. Encrypted images have only a small u
 <http://the-fr.org/id/file-format/1305> <http://the-fr.org/prop/format-registry/hasExtension> "dpp" .
 <http://the-fr.org/id/file-format/1305> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1305> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1305> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1306> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1306> <http://the-fr.org/prop/format-registry/puid> "fmt/853" .
 <http://the-fr.org/id/file-format/1306> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/853> .
@@ -14515,6 +14613,7 @@ AD1 images may be encrypted or unencrypted. Encrypted images have only a small u
 <http://the-fr.org/id/file-format/1306> <http://the-fr.org/prop/format-registry/hasExtension> "dpp" .
 <http://the-fr.org/id/file-format/1306> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1306> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1306> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1307> <http://the-fr.org/prop/format-registry/puid> "fmt/854" .
 <http://the-fr.org/id/file-format/1307> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/854> .
