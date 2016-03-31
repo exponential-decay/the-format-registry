@@ -30,6 +30,8 @@
 		**sameAs : PRONOM:** [<xsl:value-of select="owl:sameAs/@rdf:resource"/>](<xsl:value-of select="owl:sameAs/@rdf:resource"/>)&#10;
 		**Extension:**  <xsl:value-of select="tfrprop:hasExtension"/>&#10;
 		**Magic:**  <xsl:value-of select="digipres:hasMagic"/>&#10;
+		**Container Magic:**  <xsl:value-of select="tfrprop:hasPRONOMContainerMagic"/>&#10;
+		**Binary Magic:**  <xsl:value-of select="tfrprop:hasPRONOMBinaryMagic"/>&#10;
 		**Alias:** <xsl:value-of select="skos:altLabel"/>&#10;
 		**Class:** [<xsl:value-of select="rdf:type/@rdf:resource"/>](<xsl:value-of select="rdf:type/@rdf:resource"/>)&#10;
 		**Type:** [<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>](<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>)&#10;

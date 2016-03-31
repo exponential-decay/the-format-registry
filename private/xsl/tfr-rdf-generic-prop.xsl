@@ -25,7 +25,7 @@
 		**SubclassOf:** [<xsl:value-of select="rdfs:subClassOf/@rdf:resource"/>](<xsl:value-of select="rdfs:subClassOf/@rdf:resource"/>)&#10; 		
 		**Description:** <xsl:value-of select="rdfs:comment"/>&#10;
 		**isDefinedBy:**  [<xsl:value-of select="rdfs:isDefinedBy/@rdf:resource"/>](<xsl:value-of select="rdfs:isDefinedBy/@rdf:resource"/>)&#10;
-		**SeeAlso:** [<xsl:value-of select="rdfs:seeAlso/@rdf:resource"/>](<xsl:value-of select="rdfs:seeAlso/@rdf:resource"/>)&#10;
+		**SeeAlso:** <xsl:value-of select="rdfs:seeAlso/@rdf:resource"/>&#10;
 		**Class:** [<xsl:value-of select="rdf:type/@rdf:resource"/>](<xsl:value-of select="rdf:type/@rdf:resource"/>)&#10;
 		**Type:** [<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>](<xsl:value-of select="tfr:formatType/@rdf:resource"/>)&#10;
 		**Status** <xsl:value-of select="status:term_status"/>&#10;
