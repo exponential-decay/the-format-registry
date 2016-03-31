@@ -12,7 +12,7 @@
    // additional ontologies
    define("SAMEAS_PREDICATE", "<https://www.w3.org/2002/07/owl#sameAs>");
    define("MAGIC_PREDICATE", "<http://digipres.org/formats/sources/pronom/formats/#hasMagic>");
-   define("CONTAINER_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMContainerSignature>");
-   define("BINARY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMBinarySignature>");
+   define("CONTAINER_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic>");
+   define("BINARY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic>");
    
 ?>
