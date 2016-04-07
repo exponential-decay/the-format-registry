@@ -70,6 +70,14 @@
 	function extract_description($ntfile, $subject, $xml)
 	{
 		fwrite($ntfile, write_triple($subject, DESCRIPTION_PREDICATE, addslashes($xml->FormatDescription), "@en"));
+      if (strpos(strtolower($xml->FormatDescription), 'deprecated') !== false) 
+      {
+         fwrite($ntfile, write_triple($subject, DEPRECATED_PREDICATE, "true", "^^<http://www.w3.org/2001/XMLSchema#boolean>"));
+      }
+      else
+      {
+         fwrite($ntfile, write_triple($subject, DEPRECATED_PREDICATE, "false", "^^<http://www.w3.org/2001/XMLSchema#boolean>"));
+      }
 	}
 
 	function extract_type($ntfile, $subject, $xml)
