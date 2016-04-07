@@ -163,3 +163,9 @@
 <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
 <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
 <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Magic_number_(programming)>.
+<http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2000/01/rdf-schema#label> "Deprecated"@en.
+<http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2000/01/rdf-schema#comment> "A format record may be deprecated because insufficient information exists to distinguish it from another record. A format record will often contain information to redirect users to a supplanting record. A deprecated PUID will never be returned by the DROID format identification tool due to its signature information (external, and binary) having being removed."@en.
+<http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
