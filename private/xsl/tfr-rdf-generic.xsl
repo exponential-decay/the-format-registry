@@ -25,6 +25,7 @@
 		**Name:** <xsl:value-of select="rdfs:label"/>&#10;
 		**Version:** <xsl:value-of select="tfrprop:version"/>&#10; 		
 		**Description:** <xsl:value-of select="dcterms:description"/>&#10;
+      **Deprecated:** <xsl:value-of select="tfrprop:isDeprecated"/>&#10;
 		**MIMEType:** <xsl:value-of select="tfrprop:internetMediaType"/>&#10;
 		**PUID:** <xsl:value-of select="tfrprop:puid"/>&#10;
 		**sameAs : PRONOM:** [<xsl:value-of select="owl:sameAs/@rdf:resource"/>](<xsl:value-of select="owl:sameAs/@rdf:resource"/>)&#10;
