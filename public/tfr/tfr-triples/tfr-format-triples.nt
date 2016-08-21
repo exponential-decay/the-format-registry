@@ -261,7 +261,6 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/23> <http://purl.org/dc/terms/description> "Microsoft Excel has a built-in AutoRecover feature that has replaced the AutoSave add-in that exists in versions of Excel that are earlier than Microsoft Excel 2002. The AutoRecover feature saves copies of all open Excel files at a user-definable fixed interval. The files can be recovered if Excel closes unexpectedly, for example, during a power failure."@en .
 <http://the-fr.org/id/file-format/23> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/23> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Spreadsheet> .
-<http://the-fr.org/id/file-format/23> <http://the-fr.org/prop/format-registry/hasExtension> "bak" .
 <http://the-fr.org/id/file-format/23> <http://the-fr.org/prop/format-registry/hasExtension> "xlk" .
 <http://the-fr.org/id/file-format/23> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/23> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -1279,7 +1278,7 @@ File specifications are available at http://www.autodesk.com/techpubs/autocad/ac
 <http://the-fr.org/id/file-format/113> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/113> .
 <http://the-fr.org/id/file-format/113> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Drawing"@en .
 <http://the-fr.org/id/file-format/113> <http://the-fr.org/prop/format-registry/version> "5.0" .
-<http://the-fr.org/id/file-format/113> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/113> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family."@en .
 <http://the-fr.org/id/file-format/113> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/113> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/113> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
@@ -1354,10 +1353,11 @@ File specifications are available at http://www.autodesk.com/techpubs/autocad/ac
 <http://the-fr.org/id/file-format/118> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/118> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/119> <http://the-fr.org/prop/format-registry/internetMediaType> "image/wmf" .
 <http://the-fr.org/id/file-format/119> <http://the-fr.org/prop/format-registry/puid> "x-fmt/119" .
 <http://the-fr.org/id/file-format/119> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/119> .
 <http://the-fr.org/id/file-format/119> <http://www.w3.org/2000/01/rdf-schema#label> "Windows Metafile Image"@en .
-<http://the-fr.org/id/file-format/119> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/119> <http://purl.org/dc/terms/description> "Windows Metafile is an image file format originally designed for Microsoft Windows in 1990. Windows Metafiles may contain both vector graphics and bitmap components."@en .
 <http://the-fr.org/id/file-format/119> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/119> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/119> <http://the-fr.org/prop/format-registry/hasExtension> "wmf" .
@@ -1739,13 +1739,14 @@ File format specifications available at http://standards.iso.org/ittf/PubliclyAv
 <http://the-fr.org/id/file-format/152> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/152> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/153> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
-<http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/internetMediaType> "image/x-emf" .
+<http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/internetMediaType> "image/emf" .
 <http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/puid> "x-fmt/153" .
 <http://the-fr.org/id/file-format/153> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/153> .
 <http://the-fr.org/id/file-format/153> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Windows Enhanced Metafile"@en .
 <http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/version> "1.0" .
-<http://the-fr.org/id/file-format/153> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/153> <http://purl.org/dc/terms/description> "The Enhanced Metafile format is a 32-bit format that can contain both vector information and bitmap information. This format contains extended features over the Windows Metafile Format, including built-in scaling information, and improvements in color palettes and device independence."@en .
 <http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/153> <http://the-fr.org/prop/format-registry/hasExtension> "emf" .
 <http://the-fr.org/id/file-format/153> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -2438,15 +2439,15 @@ File format specifications available at http://standards.iso.org/ittf/PubliclyAv
 <http://the-fr.org/id/file-format/214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/puid> "x-fmt/214" .
 <http://the-fr.org/id/file-format/214> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/214> .
-<http://the-fr.org/id/file-format/214> <http://www.w3.org/2000/01/rdf-schema#label> "Windows Paint"@en .
-<http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/version> "3.x" .
-<http://the-fr.org/id/file-format/214> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/214> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Paint"@en .
+<http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/version> "1" .
+<http://the-fr.org/id/file-format/214> <http://purl.org/dc/terms/description> "Prior to Windows 3.0, the bundled version of Microsoft Paint used a proprietary format with the extension MSP. The format supported only 1 bit monochrome graphics. Windows 3.0 replaced Microsoft Paint with an application called Paintbrush, that could open MSP files, but would save only as PCX or BMP."@en .
 <http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/hasExtension> "msp" .
-<http://the-fr.org/id/file-format/214> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/214> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/214> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/215> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/215> <http://the-fr.org/prop/format-registry/puid> "x-fmt/215" .
 <http://the-fr.org/id/file-format/215> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/215> .
@@ -2957,7 +2958,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/258> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/258> .
 <http://the-fr.org/id/file-format/258> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Drawing"@en .
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/version> "2000" .
-<http://the-fr.org/id/file-format/258> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/258> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family."@en .
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/258> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
@@ -2971,7 +2972,7 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/259> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Drawing"@en .
 <http://the-fr.org/id/file-format/259> <http://the-fr.org/prop/format-registry/version> "2002" .
 <http://the-fr.org/id/file-format/259> <http://www.w3.org/2004/02/skos/core#altLabel> "Microsoft Visio Drawing (XP)" .
-<http://the-fr.org/id/file-format/259> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/259> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family."@en .
 <http://the-fr.org/id/file-format/259> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/259> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/259> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
@@ -4806,7 +4807,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/409> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/410> .
 <http://the-fr.org/id/file-format/409> <http://www.w3.org/2000/01/rdf-schema#label> "Windows New Executable"@en .
 <http://the-fr.org/id/file-format/409> <http://www.w3.org/2004/02/skos/core#altLabel> "EXE" .
-<http://the-fr.org/id/file-format/409> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/409> <http://purl.org/dc/terms/description> "The New Executable (abbreviated NE or NewEXE) is a 16-bit .exe file format, a successor to the DOS MZ executable format. It is used by 16-bit Microsoft Windows, and by some versions of OS/2 and MS-DOS."@en .
 <http://the-fr.org/id/file-format/409> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/409> <http://the-fr.org/prop/format-registry/hasExtension> "exe" .
 <http://the-fr.org/id/file-format/409> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -5474,7 +5475,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/465> <http://www.w3.org/2000/01/rdf-schema#label> "Portable Network Graphics"@en .
 <http://the-fr.org/id/file-format/465> <http://the-fr.org/prop/format-registry/version> "1.1" .
 <http://the-fr.org/id/file-format/465> <http://www.w3.org/2004/02/skos/core#altLabel> "PNG (1.1)" .
-<http://the-fr.org/id/file-format/465> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/465> <http://purl.org/dc/terms/description> "Portable Network Graphics (PNG) was designed for the lossless, portable, compressed storage of raster images.  PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. Indexed-color, grayscale, and truecolor images are supported, plus an optional alpha channel. Sample depths range from 1 to 16 bits. PNG is designed to work in online viewing applications, so it is fully streamable.  It can store gamma and chromaticity.  PNG also detects file corruption."@en .
 <http://the-fr.org/id/file-format/465> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/465> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/465> <http://the-fr.org/prop/format-registry/hasExtension> "png" .
@@ -5488,7 +5489,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/466> <http://www.w3.org/2000/01/rdf-schema#label> "Portable Network Graphics"@en .
 <http://the-fr.org/id/file-format/466> <http://the-fr.org/prop/format-registry/version> "1.2" .
 <http://the-fr.org/id/file-format/466> <http://www.w3.org/2004/02/skos/core#altLabel> "PNG (1.2)" .
-<http://the-fr.org/id/file-format/466> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/466> <http://purl.org/dc/terms/description> "Portable Network Graphics (PNG) was designed for the lossless, portable, compressed storage of raster images.  PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. Indexed-color, grayscale, and truecolor images are supported, plus an optional alpha channel. Sample depths range from 1 to 16 bits. PNG is designed to work in online viewing applications, so it is fully streamable.  It can store gamma and chromaticity.  PNG also detects file corruption."@en .
 <http://the-fr.org/id/file-format/466> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/466> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/466> <http://the-fr.org/prop/format-registry/hasExtension> "png" .
@@ -8023,6 +8024,7 @@ OP1a is intended to meet the requirements of acquisition, storage and interchang
 <http://the-fr.org/id/file-format/655> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/655> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/655> <http://the-fr.org/prop/format-registry/hasExtension> "nef" .
+<http://the-fr.org/id/file-format/655> <http://the-fr.org/prop/format-registry/hasExtension> "nrw" .
 <http://the-fr.org/id/file-format/655> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/655> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/655> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -8031,7 +8033,7 @@ OP1a is intended to meet the requirements of acquisition, storage and interchang
 <http://the-fr.org/id/file-format/656> <http://the-fr.org/prop/format-registry/puid> "fmt/203" .
 <http://the-fr.org/id/file-format/656> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/203> .
 <http://the-fr.org/id/file-format/656> <http://www.w3.org/2000/01/rdf-schema#label> "Ogg Vorbis Codec Compressed Multimedia File"@en .
-<http://the-fr.org/id/file-format/656> <http://purl.org/dc/terms/description> "Ogg is a open container format maintained by the Xiph.Org Foundation."@en .
+<http://the-fr.org/id/file-format/656> <http://purl.org/dc/terms/description> "Ogg is a open container format maintained by the Xiph.Org Foundation. Vorbis is a free and open-source software project headed by the Xiph.Org Foundation and produces an audio coding format and software reference encoder/decoder (codec) for lossy audio compression."@en .
 <http://the-fr.org/id/file-format/656> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/656> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
 <http://the-fr.org/id/file-format/656> <http://the-fr.org/prop/format-registry/hasExtension> "ogg" .
@@ -8173,15 +8175,15 @@ OP1a is intended to meet the requirements of acquisition, storage and interchang
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.visio" .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/puid> "fmt/216" .
 <http://the-fr.org/id/file-format/669> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/216> .
-<http://the-fr.org/id/file-format/669> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio for Windows"@en .
-<http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/version> "2007" .
-<http://the-fr.org/id/file-format/669> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/669> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio XML Drawing"@en .
+<http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/version> "2003-2010" .
+<http://the-fr.org/id/file-format/669> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family. This XML version of the Visio Drawing format was aimed at interoperability and editing outside of Visio."@en .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/hasExtension> "vdx" .
-<http://the-fr.org/id/file-format/669> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/669> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/670> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/670> <http://the-fr.org/prop/format-registry/puid> "fmt/217" .
 <http://the-fr.org/id/file-format/670> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/217> .
@@ -8437,12 +8439,12 @@ OP1a is intended to meet the requirements of acquisition, storage and interchang
 <http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/puid> "fmt/240" .
 <http://the-fr.org/id/file-format/693> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/240> .
 <http://the-fr.org/id/file-format/693> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Office Binder File for Windows"@en .
-<http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/version> "97-2003" .
-<http://the-fr.org/id/file-format/693> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/version> "97-2000" .
+<http://the-fr.org/id/file-format/693> <http://purl.org/dc/terms/description> "Microsoft Binder was an application included with Microsoft Office 95, 97, and 2000 that allowed users to include different types of OLE 2.0 objects (e.g., documents, spreadsheets, and presentations) in one file."@en .
 <http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/hasExtension> "obd" .
-<http://the-fr.org/id/file-format/693> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/693> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/693> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/694> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/694> <http://the-fr.org/prop/format-registry/puid> "fmt/241" .
@@ -9708,10 +9710,10 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/797> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/797> <http://the-fr.org/prop/format-registry/puid> "fmt/344" .
 <http://the-fr.org/id/file-format/797> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/344> .
-<http://the-fr.org/id/file-format/797> <http://the-fr.org/prop/format-registry/internetMediaType> "image/x-emf" .
+<http://the-fr.org/id/file-format/797> <http://the-fr.org/prop/format-registry/internetMediaType> "image/emf" .
 <http://the-fr.org/id/file-format/797> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Windows Enhanced Metafile"@en .
 <http://the-fr.org/id/file-format/797> <http://the-fr.org/prop/format-registry/version> "2.0" .
-<http://the-fr.org/id/file-format/797> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/797> <http://purl.org/dc/terms/description> "The Enhanced Metafile format is a 32-bit format that can contain both vector information and bitmap information. This format contains extended features over the Windows Metafile Format, including built-in scaling information, and improvements in color palettes and device independence."@en .
 <http://the-fr.org/id/file-format/797> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/797> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/797> <http://the-fr.org/prop/format-registry/hasExtension> "emf" .
@@ -9721,10 +9723,10 @@ WARC format has been written by the members of the IIPC (http://www.netpreserve.
 <http://the-fr.org/id/file-format/798> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/798> <http://the-fr.org/prop/format-registry/puid> "fmt/345" .
 <http://the-fr.org/id/file-format/798> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/345> .
-<http://the-fr.org/id/file-format/798> <http://the-fr.org/prop/format-registry/internetMediaType> "image/x-emf" .
+<http://the-fr.org/id/file-format/798> <http://the-fr.org/prop/format-registry/internetMediaType> "image/emf" .
 <http://the-fr.org/id/file-format/798> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Windows Enhanced Metafile"@en .
 <http://the-fr.org/id/file-format/798> <http://the-fr.org/prop/format-registry/version> "3.0" .
-<http://the-fr.org/id/file-format/798> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/798> <http://purl.org/dc/terms/description> "The Enhanced Metafile format is a 32-bit format that can contain both vector information and bitmap information. This format contains extended features over the Windows Metafile Format, including built-in scaling information, and improvements in color palettes and device independence."@en .
 <http://the-fr.org/id/file-format/798> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/798> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
 <http://the-fr.org/id/file-format/798> <http://the-fr.org/prop/format-registry/hasExtension> "emf" .
@@ -10914,7 +10916,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/895> <http://the-fr.org/prop/format-registry/puid> "fmt/442" .
 <http://the-fr.org/id/file-format/895> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/442> .
 <http://the-fr.org/id/file-format/895> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio (generic)"@en .
-<http://the-fr.org/id/file-format/895> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/895> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family."@en .
 <http://the-fr.org/id/file-format/895> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/895> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
 <http://the-fr.org/id/file-format/895> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -10925,8 +10927,8 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/puid> "fmt/443" .
 <http://the-fr.org/id/file-format/896> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/443> .
 <http://the-fr.org/id/file-format/896> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Drawing"@en .
-<http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/version> "2003" .
-<http://the-fr.org/id/file-format/896> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/version> "2003-2010" .
+<http://the-fr.org/id/file-format/896> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family."@en .
 <http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/896> <http://the-fr.org/prop/format-registry/hasExtension> "vsd" .
 <http://the-fr.org/id/file-format/896> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11040,7 +11042,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/906> <http://the-fr.org/prop/format-registry/puid> "fmt/453" .
 <http://the-fr.org/id/file-format/906> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/453> .
 <http://the-fr.org/id/file-format/906> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Stop List"@en .
-<http://the-fr.org/id/file-format/906> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/906> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files. The Verity Collection Stop List file contains a list of words that are to be excluded from a collection’s full-word index."@en .
 <http://the-fr.org/id/file-format/906> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/906> <http://the-fr.org/prop/format-registry/hasExtension> "stp" .
 <http://the-fr.org/id/file-format/906> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11050,7 +11052,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/907> <http://the-fr.org/prop/format-registry/puid> "fmt/454" .
 <http://the-fr.org/id/file-format/907> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/454> .
 <http://the-fr.org/id/file-format/907> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Index About File"@en .
-<http://the-fr.org/id/file-format/907> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/907> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files. Verity Collection Index About files give general collection information and assist in optimising searches."@en .
 <http://the-fr.org/id/file-format/907> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/907> <http://the-fr.org/prop/format-registry/hasExtension> "abt" .
 <http://the-fr.org/id/file-format/907> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11060,7 +11062,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/908> <http://the-fr.org/prop/format-registry/puid> "fmt/455" .
 <http://the-fr.org/id/file-format/908> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/455> .
 <http://the-fr.org/id/file-format/908> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Index Pending Transaction File"@en .
-<http://the-fr.org/id/file-format/908> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/908> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files. The Verity Collection Index Pending Transaction Files store information on pending indexing transactions."@en .
 <http://the-fr.org/id/file-format/908> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/908> <http://the-fr.org/prop/format-registry/hasExtension> "trn" .
 <http://the-fr.org/id/file-format/908> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11070,7 +11072,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/909> <http://the-fr.org/prop/format-registry/puid> "fmt/456" .
 <http://the-fr.org/id/file-format/909> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/456> .
 <http://the-fr.org/id/file-format/909> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Index Style Policy"@en .
-<http://the-fr.org/id/file-format/909> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/909> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files. The Verity Collection Index Style Policy specifies the indexing mode to be used for a collection."@en .
 <http://the-fr.org/id/file-format/909> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/909> <http://the-fr.org/prop/format-registry/hasExtension> "plc" .
 <http://the-fr.org/id/file-format/909> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11080,7 +11082,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/910> <http://the-fr.org/prop/format-registry/puid> "fmt/457" .
 <http://the-fr.org/id/file-format/910> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/457> .
 <http://the-fr.org/id/file-format/910> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Document Dataset Descriptor Style Set"@en .
-<http://the-fr.org/id/file-format/910> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/910> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files. The Verity Collection Document Dataset Descriptor Style Set file contains definitions for all internal fields included in the default schema for the collection’s document table."@en .
 <http://the-fr.org/id/file-format/910> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/910> <http://the-fr.org/prop/format-registry/hasExtension> "ddd" .
 <http://the-fr.org/id/file-format/910> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11090,7 +11092,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/911> <http://the-fr.org/prop/format-registry/puid> "fmt/458" .
 <http://the-fr.org/id/file-format/911> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/458> .
 <http://the-fr.org/id/file-format/911> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Document Index Descriptor Style Set"@en .
-<http://the-fr.org/id/file-format/911> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/911> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files."@en .
 <http://the-fr.org/id/file-format/911> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/911> <http://the-fr.org/prop/format-registry/hasExtension> "did" .
 <http://the-fr.org/id/file-format/911> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11100,7 +11102,8 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/912> <http://the-fr.org/prop/format-registry/puid> "fmt/459" .
 <http://the-fr.org/id/file-format/912> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/459> .
 <http://the-fr.org/id/file-format/912> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Word List Descriptor Style Set"@en .
-<http://the-fr.org/id/file-format/912> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/912> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files. The Verity Collection Document Index Descriptor Style Set configures a word index that includes
+all partitions of the collection. The spanning word list is an optional index that aids fast searching."@en .
 <http://the-fr.org/id/file-format/912> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/912> <http://the-fr.org/prop/format-registry/hasExtension> "wld" .
 <http://the-fr.org/id/file-format/912> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11110,7 +11113,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/913> <http://the-fr.org/prop/format-registry/puid> "fmt/460" .
 <http://the-fr.org/id/file-format/913> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/460> .
 <http://the-fr.org/id/file-format/913> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Partition Definition Descriptor Style Set"@en .
-<http://the-fr.org/id/file-format/913> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/913> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files. The Verity Collection Partition Definition Descriptor Style Set contains parameters for configuring and managing the collection’s partitions."@en .
 <http://the-fr.org/id/file-format/913> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/913> <http://the-fr.org/prop/format-registry/hasExtension> "pdd" .
 <http://the-fr.org/id/file-format/913> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11120,7 +11123,7 @@ This version, published June 2009, added various improvements, but the major cha
 <http://the-fr.org/id/file-format/914> <http://the-fr.org/prop/format-registry/puid> "fmt/461" .
 <http://the-fr.org/id/file-format/914> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/461> .
 <http://the-fr.org/id/file-format/914> <http://www.w3.org/2000/01/rdf-schema#label> "Verity Collection Index Descriptor File"@en .
-<http://the-fr.org/id/file-format/914> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/914> <http://purl.org/dc/terms/description> "A Verity collection is the fundamental structure underlying the search capabilities of Verity applications. A collection consists of information about a particular set of documents that are available for searching and viewing. The specific information stored for a collection includes a word index and various other indexes, plus a document table containing document field information and logical pointers to the document files."@en .
 <http://the-fr.org/id/file-format/914> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/914> <http://the-fr.org/prop/format-registry/hasExtension> "wld" .
 <http://the-fr.org/id/file-format/914> <http://the-fr.org/prop/format-registry/hasExtension> "ddd" .
@@ -11629,6 +11632,7 @@ Since the method of identifying and distinguishing specific types of OOXML docum
 <http://the-fr.org/id/file-format/956> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/956> <http://the-fr.org/prop/format-registry/puid> "fmt/503" .
 <http://the-fr.org/id/file-format/956> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/503> .
+<http://the-fr.org/id/file-format/956> <http://the-fr.org/prop/format-registry/internetMediaType> "multipart/appledouble" .
 <http://the-fr.org/id/file-format/956> <http://www.w3.org/2000/01/rdf-schema#label> "AppleDouble Resource Fork"@en .
 <http://the-fr.org/id/file-format/956> <http://purl.org/dc/terms/description> "The resource fork is a construct of the Mac OS operating system used to store structured data in a file, alongside unstructured data stored within the data fork. The format specification is available here: http://support.apple.com/kb/TA32537?viewlocale=en_US
 
@@ -12453,7 +12457,10 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1022> <http://the-fr.org/prop/format-registry/puid> "fmt/569" .
 <http://the-fr.org/id/file-format/1022> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/569> .
 <http://the-fr.org/id/file-format/1022> <http://www.w3.org/2000/01/rdf-schema#label> "Matroska"@en .
-<http://the-fr.org/id/file-format/1022> <http://purl.org/dc/terms/description> "The Matroska Multimedia Container is an open standard free container format, based on the Extensible Binary Meta Language (EBML). Matroska file extensions are .MKV for video (with subtitles and audio), .MK3D for stereoscopic video, .MKA for audio-only files, and .MKS for subtitles only."@en .
+<http://the-fr.org/id/file-format/1022> <http://the-fr.org/prop/format-registry/version> "1-4" .
+<http://the-fr.org/id/file-format/1022> <http://purl.org/dc/terms/description> "The Matroska Multimedia Container is an open standard free container format, based on the Extensible Binary Meta Language (EBML). Matroska file extensions are .MKV for video (with subtitles and audio), .MK3D for stereoscopic video, .MKA for audio-only files, and .MKS for subtitles only. The Internet Engineering Task Force (IETF) Working Group: Codec Encoding for LossLess Archiving and Realtime transmission (cellar) is tasked with the standardisation of Matroska.
+
+The EBML specifications are work-in-progress, and can be found here: https://github.com/Matroska-Org/ebml-specification/blob/master/specification.markdown"@en .
 <http://the-fr.org/id/file-format/1022> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1022> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Video> .
 <http://the-fr.org/id/file-format/1022> <http://the-fr.org/prop/format-registry/hasExtension> "mkv" .
@@ -12705,6 +12712,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/1043> <http://the-fr.org/prop/format-registry/puid> "fmt/590" .
 <http://the-fr.org/id/file-format/1043> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/590> .
+<http://the-fr.org/id/file-format/1043> <http://the-fr.org/prop/format-registry/internetMediaType> "image/jxr" .
 <http://the-fr.org/id/file-format/1043> <http://www.w3.org/2000/01/rdf-schema#label> "JPEG Extended Range"@en .
 <http://the-fr.org/id/file-format/1043> <http://purl.org/dc/terms/description> "JPEG XR (abbr. For JPEG extended range) is a still-image compression standard and file format for continuous tone photographic images, based on technology originally developed and patented by Microsoft under the name HD Photo (formerly Windows Media Photo). It supports both lossy and lossless compression."@en .
 <http://the-fr.org/id/file-format/1043> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -14723,7 +14731,7 @@ Full specifications available at: http://www.opengeospatial.org/standards/kml"@e
 <http://the-fr.org/id/file-format/1207> <http://the-fr.org/prop/format-registry/internetMediaType> "application/msword" .
 <http://the-fr.org/id/file-format/1207> <http://the-fr.org/prop/format-registry/puid> "fmt/754" .
 <http://the-fr.org/id/file-format/1207> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/754> .
-<http://the-fr.org/id/file-format/1207> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Word Document (ord proord Protected)"@en .
+<http://the-fr.org/id/file-format/1207> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Word Document (Password Protected)"@en .
 <http://the-fr.org/id/file-format/1207> <http://the-fr.org/prop/format-registry/version> "97-2003" .
 <http://the-fr.org/id/file-format/1207> <http://purl.org/dc/terms/description> "With the release of Word 97, Microsoft revised the native binary word processing format, which is based on its generic OLE2 Compound Document Format. A Word document is stored as a ‘WordDocument’ stream within a Compound Document Format file. The format remained unchanged with the releases of Word 2000, 2002 and 2003. An alternative extension of .wbk refers to a backup file of a Word document, however there is no material or structural difference between a .wbk file and the .doc file it is a backup of.
 
@@ -16194,3 +16202,959 @@ The .acsm file is essentially a \'key\' to allow the download of purchased conte
 <http://the-fr.org/id/file-format/1328> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1328> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1328> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1329> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.pagemaker" .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/puid> "fmt/876" .
+<http://the-fr.org/id/file-format/1329> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/876> .
+<http://the-fr.org/id/file-format/1329> <http://www.w3.org/2000/01/rdf-schema#label> "Pagemaker Document (Generic)"@en .
+<http://the-fr.org/id/file-format/1329> <http://purl.org/dc/terms/description> "Pagemaker is a desktop publishing program. This is a generic signature which has been developed from versions 6.5 and version 7. It may be possible to distinguish between different versions of Pagemaker with a better understanding of the format."@en .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/hasExtension> "p65" .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/hasExtension> "pmd" .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/hasExtension> "pmt" .
+<http://the-fr.org/id/file-format/1329> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1329> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1330> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1330> <http://the-fr.org/prop/format-registry/puid> "fmt/877" .
+<http://the-fr.org/id/file-format/1330> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/877> .
+<http://the-fr.org/id/file-format/1330> <http://www.w3.org/2000/01/rdf-schema#label> "Corel Presentation"@en .
+<http://the-fr.org/id/file-format/1330> <http://the-fr.org/prop/format-registry/version> "7-8-9" .
+<http://the-fr.org/id/file-format/1330> <http://purl.org/dc/terms/description> "Presentations is a presentation program that was formerly available as part of Novell\'s PerfectOffice productivity suite, and is now part of the Corel\'s WordPerfect Office suite."@en .
+<http://the-fr.org/id/file-format/1330> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1330> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1330> <http://the-fr.org/prop/format-registry/hasExtension> "shw" .
+<http://the-fr.org/id/file-format/1330> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1330> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1330> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1331> <http://the-fr.org/prop/format-registry/puid> "fmt/878" .
+<http://the-fr.org/id/file-format/1331> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/878> .
+<http://the-fr.org/id/file-format/1331> <http://www.w3.org/2000/01/rdf-schema#label> "Corel Presentation"@en .
+<http://the-fr.org/id/file-format/1331> <http://the-fr.org/prop/format-registry/version> "3" .
+<http://the-fr.org/id/file-format/1331> <http://purl.org/dc/terms/description> "Presentations is a presentation program that was formerly available as part of Novell\'s PerfectOffice productivity suite, and is now part of the Corel\'s WordPerfect Office suite."@en .
+<http://the-fr.org/id/file-format/1331> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1331> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1331> <http://the-fr.org/prop/format-registry/hasExtension> "shw" .
+<http://the-fr.org/id/file-format/1331> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1331> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1331> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1332> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/puid> "fmt/879" .
+<http://the-fr.org/id/file-format/1332> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/879> .
+<http://the-fr.org/id/file-format/1332> <http://www.w3.org/2000/01/rdf-schema#label> "Fortran"@en .
+<http://the-fr.org/id/file-format/1332> <http://purl.org/dc/terms/description> "Fortran (formerly FORTRAN, derived from \"Formula Translation\") is a programming language suited to numeric and scientific computing. Fortran was originally developed by IBM in the 1950s for use in the scientific and engineering sectors."@en .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/hasExtension> "f90" .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/hasExtension> "f95" .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/hasExtension> "f03" .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/hasExtension> "f" .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/hasExtension> "for" .
+<http://the-fr.org/id/file-format/1332> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1332> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1333> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1333> <http://the-fr.org/prop/format-registry/puid> "fmt/880" .
+<http://the-fr.org/id/file-format/1333> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/880> .
+<http://the-fr.org/id/file-format/1333> <http://www.w3.org/2000/01/rdf-schema#label> "JSON-LD"@en .
+<http://the-fr.org/id/file-format/1333> <http://purl.org/dc/terms/description> "JSON-LD is a JSON-based format to serialize Linked Data. It is designed to be easy to convert an existing JSON file to JSON-LD. It\'s main objective is to be a way to use Linked Data in Web-based programming environments, to build interoperable Web services, and to store Linked Data in JSON-based storage engines."@en .
+<http://the-fr.org/id/file-format/1333> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1333> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1333> <http://the-fr.org/prop/format-registry/hasExtension> "jsonld" .
+<http://the-fr.org/id/file-format/1333> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1333> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1333> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1334> <http://the-fr.org/prop/format-registry/puid> "fmt/881" .
+<http://the-fr.org/id/file-format/1334> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/881> .
+<http://the-fr.org/id/file-format/1334> <http://the-fr.org/prop/format-registry/internetMediaType> "image/vnd.ms-modi" .
+<http://the-fr.org/id/file-format/1334> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Document Imaging File Format"@en .
+<http://the-fr.org/id/file-format/1334> <http://purl.org/dc/terms/description> "This is a proprietary file format created by Microsoft Document Imaging, a program which enables the editing and annotation of documents scanned by Microsoft Office Document Scanning. It was introduced in Office XP and was included in Office 2003 and 2007. This format is a variant of TIFF."@en .
+<http://the-fr.org/id/file-format/1334> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1334> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1334> <http://the-fr.org/prop/format-registry/hasExtension> "mdi" .
+<http://the-fr.org/id/file-format/1334> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1334> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1334> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1335> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1335> <http://the-fr.org/prop/format-registry/puid> "fmt/882" .
+<http://the-fr.org/id/file-format/1335> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/882> .
+<http://the-fr.org/id/file-format/1335> <http://www.w3.org/2000/01/rdf-schema#label> "Wordstar 2000"@en .
+<http://the-fr.org/id/file-format/1335> <http://the-fr.org/prop/format-registry/version> "1" .
+<http://the-fr.org/id/file-format/1335> <http://purl.org/dc/terms/description> "Wordstar 2000 is a version of the Wordstar word proccessor application that was popular in the early to mid 1980s and was created by MicroPro. Wordstar 2000 files are likely to lack a file extension."@en .
+<http://the-fr.org/id/file-format/1335> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1335> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
+<http://the-fr.org/id/file-format/1335> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1335> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1335> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1336> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1336> <http://the-fr.org/prop/format-registry/puid> "fmt/883" .
+<http://the-fr.org/id/file-format/1336> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/883> .
+<http://the-fr.org/id/file-format/1336> <http://www.w3.org/2000/01/rdf-schema#label> "Siegfried Signature File"@en .
+<http://the-fr.org/id/file-format/1336> <http://purl.org/dc/terms/description> "The Siegfried signature file is used by Siegfried, a file format identification tool created by Richard Lehane that uses PRONOM, and freedesktop.org\'s MIME-info file format signatures."@en .
+<http://the-fr.org/id/file-format/1336> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1336> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1336> <http://the-fr.org/prop/format-registry/hasExtension> "sig" .
+<http://the-fr.org/id/file-format/1336> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1336> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1336> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1337> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1337> <http://the-fr.org/prop/format-registry/puid> "fmt/884" .
+<http://the-fr.org/id/file-format/1337> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/884> .
+<http://the-fr.org/id/file-format/1337> <http://www.w3.org/2000/01/rdf-schema#label> "AXD HTTP Handler File"@en .
+<http://the-fr.org/id/file-format/1337> <http://purl.org/dc/terms/description> "AXD Handler Files are used by ASP.NET applications for handling embedded resource requests."@en .
+<http://the-fr.org/id/file-format/1337> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1337> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1337> <http://the-fr.org/prop/format-registry/hasExtension> "axd" .
+<http://the-fr.org/id/file-format/1337> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1337> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1337> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1338> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1338> <http://the-fr.org/prop/format-registry/puid> "fmt/885" .
+<http://the-fr.org/id/file-format/1338> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/885> .
+<http://the-fr.org/id/file-format/1338> <http://www.w3.org/2000/01/rdf-schema#label> "BASIC File"@en .
+<http://the-fr.org/id/file-format/1338> <http://purl.org/dc/terms/description> ".bas is a file extension commonly related to BASIC (Beginners All-purpose Symbolic Instructional Code) source code."@en .
+<http://the-fr.org/id/file-format/1338> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1338> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1338> <http://the-fr.org/prop/format-registry/hasExtension> "bas" .
+<http://the-fr.org/id/file-format/1338> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1338> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1338> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1339> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1339> <http://the-fr.org/prop/format-registry/puid> "fmt/886" .
+<http://the-fr.org/id/file-format/1339> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/886> .
+<http://the-fr.org/id/file-format/1339> <http://www.w3.org/2000/01/rdf-schema#label> "HTML Components"@en .
+<http://the-fr.org/id/file-format/1339> <http://purl.org/dc/terms/description> "HTML Components (HTCs) are a legacy technology used to implement components in script as Dynamic HTML (DHTML) \"behaviors\" in the Microsoft Internet Explorer web browser."@en .
+<http://the-fr.org/id/file-format/1339> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1339> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1339> <http://the-fr.org/prop/format-registry/hasExtension> "htc" .
+<http://the-fr.org/id/file-format/1339> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1339> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1339> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1340> <http://the-fr.org/prop/format-registry/puid> "fmt/887" .
+<http://the-fr.org/id/file-format/1340> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/887> .
+<http://the-fr.org/id/file-format/1340> <http://www.w3.org/2000/01/rdf-schema#label> "SafeGuard Encrypted Virtual Disk"@en .
+<http://the-fr.org/id/file-format/1340> <http://purl.org/dc/terms/description> "SafeGuard PrivateDisk is disk encryption software produced by Sophos. The .hdr file appears to contain header information, while the .vol file is the encrypted virtual disk."@en .
+<http://the-fr.org/id/file-format/1340> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1340> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Aggregate> .
+<http://the-fr.org/id/file-format/1340> <http://the-fr.org/prop/format-registry/hasExtension> "vol" .
+<http://the-fr.org/id/file-format/1340> <http://the-fr.org/prop/format-registry/hasExtension> "hdr" .
+<http://the-fr.org/id/file-format/1340> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1340> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1340> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1341> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/puid> "fmt/888" .
+<http://the-fr.org/id/file-format/1341> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/888> .
+<http://the-fr.org/id/file-format/1341> <http://www.w3.org/2000/01/rdf-schema#label> "QuadriSpace Format"@en .
+<http://the-fr.org/id/file-format/1341> <http://purl.org/dc/terms/description> "QuadriSpace provide 3D Publishing and Documentation software. This entry currently covers each known QuadriSpace-specifc format, however it may be possible and necessary to separate different QuadriSpace formats into their own entries in the future."@en .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/hasExtension> "qsd" .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/hasExtension> "qsl" .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/hasExtension> "qsm" .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/hasExtension> "qst" .
+<http://the-fr.org/id/file-format/1341> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1341> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1342> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1342> <http://the-fr.org/prop/format-registry/puid> "fmt/889" .
+<http://the-fr.org/id/file-format/1342> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/889> .
+<http://the-fr.org/id/file-format/1342> <http://www.w3.org/2000/01/rdf-schema#label> "Feather"@en .
+<http://the-fr.org/id/file-format/1342> <http://purl.org/dc/terms/description> "Feather is a lightweight binary file format for storing data frames, with an aim to assist data sharing across data analysis languages."@en .
+<http://the-fr.org/id/file-format/1342> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1342> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1342> <http://the-fr.org/prop/format-registry/hasExtension> "feather" .
+<http://the-fr.org/id/file-format/1342> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1342> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1342> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1343> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1343> <http://the-fr.org/prop/format-registry/puid> "fmt/890" .
+<http://the-fr.org/id/file-format/1343> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/890> .
+<http://the-fr.org/id/file-format/1343> <http://www.w3.org/2000/01/rdf-schema#label> "AbiWord Document"@en .
+<http://the-fr.org/id/file-format/1343> <http://purl.org/dc/terms/description> "AbiWord is a free, open source Word Processor application. Its native file format is based upon XML."@en .
+<http://the-fr.org/id/file-format/1343> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1343> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
+<http://the-fr.org/id/file-format/1343> <http://the-fr.org/prop/format-registry/hasExtension> "abw" .
+<http://the-fr.org/id/file-format/1343> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1343> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1343> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1344> <http://the-fr.org/prop/format-registry/puid> "fmt/891" .
+<http://the-fr.org/id/file-format/1344> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/891> .
+<http://the-fr.org/id/file-format/1344> <http://www.w3.org/2000/01/rdf-schema#label> "AbiWord Document Template"@en .
+<http://the-fr.org/id/file-format/1344> <http://purl.org/dc/terms/description> "AbiWord is a free, open source Word Processor application. Its native file format is based upon XML."@en .
+<http://the-fr.org/id/file-format/1344> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1344> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
+<http://the-fr.org/id/file-format/1344> <http://the-fr.org/prop/format-registry/hasExtension> "awt" .
+<http://the-fr.org/id/file-format/1344> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1344> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1344> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1345> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.wordperfect" .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/puid> "fmt/892" .
+<http://the-fr.org/id/file-format/1345> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/892> .
+<http://the-fr.org/id/file-format/1345> <http://www.w3.org/2000/01/rdf-schema#label> "Compound WordPerfect for Windows Document"@en .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/version> "6 onwards" .
+<http://the-fr.org/id/file-format/1345> <http://purl.org/dc/terms/description> "This is a compound version of Wordperfect for Windows. Also known as Corel WordPerfect. Major and minor version fields are the main variants between 6.x and 12 formats (The last two bytes in this signature). The major version is the same for 6.x through to 12 documents - 2. The minor version byte for a non-compound file created in WPWin 8.0 is 1. The minor version for a compound file created in WPWin 8.0. Is 2."@en .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/hasExtension> "wpd" .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/hasExtension> "doc" .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/hasExtension> "wp6" .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/hasExtension> "wp" .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/hasExtension> "w60" .
+<http://the-fr.org/id/file-format/1345> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1345> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1346> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1346> <http://the-fr.org/prop/format-registry/puid> "fmt/893" .
+<http://the-fr.org/id/file-format/1346> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/893> .
+<http://the-fr.org/id/file-format/1346> <http://www.w3.org/2000/01/rdf-schema#label> "i2 Analysts Notebook"@en .
+<http://the-fr.org/id/file-format/1346> <http://purl.org/dc/terms/description> "The i2 Analyst’s Notebook format is a visual intelligence analysis environment that allows users to collate, analyse and visualise data."@en .
+<http://the-fr.org/id/file-format/1346> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1346> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1346> <http://the-fr.org/prop/format-registry/hasExtension> "anb" .
+<http://the-fr.org/id/file-format/1346> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1346> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1346> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1347> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1347> <http://the-fr.org/prop/format-registry/puid> "fmt/894" .
+<http://the-fr.org/id/file-format/1347> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/894> .
+<http://the-fr.org/id/file-format/1347> <http://www.w3.org/2000/01/rdf-schema#label> "Gaussian Input Data File"@en .
+<http://the-fr.org/id/file-format/1347> <http://purl.org/dc/terms/description> "Gaussian Input Data files are created by the Gaussian computer program for computational chemistry."@en .
+<http://the-fr.org/id/file-format/1347> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1347> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1347> <http://the-fr.org/prop/format-registry/hasExtension> "gjf" .
+<http://the-fr.org/id/file-format/1347> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1347> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1347> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1348> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1348> <http://the-fr.org/prop/format-registry/puid> "fmt/895" .
+<http://the-fr.org/id/file-format/1348> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/895> .
+<http://the-fr.org/id/file-format/1348> <http://www.w3.org/2000/01/rdf-schema#label> "JEOL NMR Spectroscopy"@en .
+<http://the-fr.org/id/file-format/1348> <http://purl.org/dc/terms/description> "Nuclear magnetic resonance spectroscopy (NMR spectroscopy) data files produced by with JEOL\'s NMR Spectrometers."@en .
+<http://the-fr.org/id/file-format/1348> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1348> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1348> <http://the-fr.org/prop/format-registry/hasExtension> "jdf" .
+<http://the-fr.org/id/file-format/1348> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1348> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1348> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1349> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1349> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.recordare.musicxml+xml" .
+<http://the-fr.org/id/file-format/1349> <http://the-fr.org/prop/format-registry/puid> "fmt/896" .
+<http://the-fr.org/id/file-format/1349> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/896> .
+<http://the-fr.org/id/file-format/1349> <http://www.w3.org/2000/01/rdf-schema#label> "Music XML"@en .
+<http://the-fr.org/id/file-format/1349> <http://purl.org/dc/terms/description> "MusicXML is an XML based format, it was designed for sharing sheet music files between applications, and for archiving sheet music files for use in the future."@en .
+<http://the-fr.org/id/file-format/1349> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1349> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1349> <http://the-fr.org/prop/format-registry/hasExtension> "xml" .
+<http://the-fr.org/id/file-format/1349> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1349> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1349> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1350> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.recordare.musicxml" .
+<http://the-fr.org/id/file-format/1350> <http://the-fr.org/prop/format-registry/puid> "fmt/897" .
+<http://the-fr.org/id/file-format/1350> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/897> .
+<http://the-fr.org/id/file-format/1350> <http://www.w3.org/2000/01/rdf-schema#label> "Compressed Music XML"@en .
+<http://the-fr.org/id/file-format/1350> <http://purl.org/dc/terms/description> "This is a ZIP container version of the MusicXML format, a XML based format. It was designed for sharing sheet music files between applications, and for archiving sheet music files for use in the future."@en .
+<http://the-fr.org/id/file-format/1350> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1350> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1350> <http://the-fr.org/prop/format-registry/hasExtension> "mxl" .
+<http://the-fr.org/id/file-format/1350> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1350> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1350> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1351> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1351> <http://the-fr.org/prop/format-registry/puid> "fmt/898" .
+<http://the-fr.org/id/file-format/1351> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/898> .
+<http://the-fr.org/id/file-format/1351> <http://www.w3.org/2000/01/rdf-schema#label> "Zoomify Image Format"@en .
+<http://the-fr.org/id/file-format/1351> <http://purl.org/dc/terms/description> "Zoomify offers the ability to zoom into high resolution images. It works by converting a high resolution image into a collection of JPEG tiles that are stored within a .zif file. This file can in turn be displayed within a web browser with the aid of a javascript library."@en .
+<http://the-fr.org/id/file-format/1351> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1351> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1351> <http://the-fr.org/prop/format-registry/hasExtension> "zif" .
+<http://the-fr.org/id/file-format/1351> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1351> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1351> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1352> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/internetMediaType> "application/octet-stream" .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/puid> "fmt/899" .
+<http://the-fr.org/id/file-format/1352> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/899> .
+<http://the-fr.org/id/file-format/1352> <http://www.w3.org/2000/01/rdf-schema#label> "Windows Portable Executable"@en .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/version> "32 bit" .
+<http://the-fr.org/id/file-format/1352> <http://www.w3.org/2004/02/skos/core#altLabel> "Common Object File Format" .
+<http://the-fr.org/id/file-format/1352> <http://www.w3.org/2004/02/skos/core#altLabel> " COFF" .
+<http://the-fr.org/id/file-format/1352> <http://www.w3.org/2004/02/skos/core#altLabel> " EXE" .
+<http://the-fr.org/id/file-format/1352> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/hasExtension> "exe" .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/hasExtension> "dll" .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/hasExtension> "sys" .
+<http://the-fr.org/id/file-format/1352> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1352> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/internetMediaType> "application/octet-stream" .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/puid> "fmt/900" .
+<http://the-fr.org/id/file-format/1353> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/900> .
+<http://the-fr.org/id/file-format/1353> <http://www.w3.org/2000/01/rdf-schema#label> "Windows Portable Executable"@en .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/version> "64 bit" .
+<http://the-fr.org/id/file-format/1353> <http://www.w3.org/2004/02/skos/core#altLabel> "Common Object File Format" .
+<http://the-fr.org/id/file-format/1353> <http://www.w3.org/2004/02/skos/core#altLabel> " COFF" .
+<http://the-fr.org/id/file-format/1353> <http://www.w3.org/2004/02/skos/core#altLabel> " EXE" .
+<http://the-fr.org/id/file-format/1353> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/hasExtension> "exe" .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/hasExtension> "dll" .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/hasExtension> "sys" .
+<http://the-fr.org/id/file-format/1353> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1353> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1354> <http://the-fr.org/prop/format-registry/puid> "fmt/901" .
+<http://the-fr.org/id/file-format/1354> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/901> .
+<http://the-fr.org/id/file-format/1354> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Works Spreadsheet"@en .
+<http://the-fr.org/id/file-format/1354> <http://the-fr.org/prop/format-registry/version> "6-9" .
+<http://the-fr.org/id/file-format/1354> <http://purl.org/dc/terms/description> "Microsoft Works is a discontinued office suite developed by Microsoft. XLR files can contain either spreadsheet or chart data, and can be opened with Microsoft Works, Excel, and the Excel Viewer."@en .
+<http://the-fr.org/id/file-format/1354> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1354> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Spreadsheet> .
+<http://the-fr.org/id/file-format/1354> <http://the-fr.org/prop/format-registry/hasExtension> "xlr" .
+<http://the-fr.org/id/file-format/1354> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1354> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1354> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1355> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1355> <http://the-fr.org/prop/format-registry/puid> "fmt/902" .
+<http://the-fr.org/id/file-format/1355> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/902> .
+<http://the-fr.org/id/file-format/1355> <http://www.w3.org/2000/01/rdf-schema#label> "Blender 3D"@en .
+<http://the-fr.org/id/file-format/1355> <http://the-fr.org/prop/format-registry/version> "32 bit" .
+<http://the-fr.org/id/file-format/1355> <http://purl.org/dc/terms/description> "Blender is the native format of Blender, a free and open source 3D animation application."@en .
+<http://the-fr.org/id/file-format/1355> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1355> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1355> <http://the-fr.org/prop/format-registry/hasExtension> "blend" .
+<http://the-fr.org/id/file-format/1355> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1355> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1355> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1356> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1356> <http://the-fr.org/prop/format-registry/puid> "fmt/903" .
+<http://the-fr.org/id/file-format/1356> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/903> .
+<http://the-fr.org/id/file-format/1356> <http://www.w3.org/2000/01/rdf-schema#label> "Blender 3D"@en .
+<http://the-fr.org/id/file-format/1356> <http://the-fr.org/prop/format-registry/version> "64 bit" .
+<http://the-fr.org/id/file-format/1356> <http://purl.org/dc/terms/description> "Blender is the native format of Blender, a free and open source 3D animation application."@en .
+<http://the-fr.org/id/file-format/1356> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1356> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1356> <http://the-fr.org/prop/format-registry/hasExtension> "blend" .
+<http://the-fr.org/id/file-format/1356> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1356> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1356> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1357> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1357> <http://the-fr.org/prop/format-registry/puid> "fmt/904" .
+<http://the-fr.org/id/file-format/1357> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/904> .
+<http://the-fr.org/id/file-format/1357> <http://www.w3.org/2000/01/rdf-schema#label> "Bluetooth Snoop Packet Capture"@en .
+<http://the-fr.org/id/file-format/1357> <http://purl.org/dc/terms/description> "Android 4.4 introduced the ability to capture all Bluetooth HCI packets and save them to a file, typically called btsnoop_hci.log. The BtSnoop file format closely resembles the snoop format, https://www.nationalarchives.gov.uk/PRONOM/fmt/781"@en .
+<http://the-fr.org/id/file-format/1357> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1357> <http://the-fr.org/prop/format-registry/hasExtension> "log" .
+<http://the-fr.org/id/file-format/1357> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1357> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1357> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1358> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1358> <http://the-fr.org/prop/format-registry/puid> "fmt/905" .
+<http://the-fr.org/id/file-format/1358> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/905> .
+<http://the-fr.org/id/file-format/1358> <http://www.w3.org/2000/01/rdf-schema#label> "Variant Call Format"@en .
+<http://the-fr.org/id/file-format/1358> <http://the-fr.org/prop/format-registry/version> "1.x" .
+<http://the-fr.org/id/file-format/1358> <http://purl.org/dc/terms/description> "The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations."@en .
+<http://the-fr.org/id/file-format/1358> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1358> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1358> <http://the-fr.org/prop/format-registry/hasExtension> "vcf" .
+<http://the-fr.org/id/file-format/1358> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1358> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1358> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1359> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1359> <http://the-fr.org/prop/format-registry/puid> "fmt/906" .
+<http://the-fr.org/id/file-format/1359> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/906> .
+<http://the-fr.org/id/file-format/1359> <http://www.w3.org/2000/01/rdf-schema#label> "Variant Call Format"@en .
+<http://the-fr.org/id/file-format/1359> <http://the-fr.org/prop/format-registry/version> "2.x" .
+<http://the-fr.org/id/file-format/1359> <http://purl.org/dc/terms/description> "The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations."@en .
+<http://the-fr.org/id/file-format/1359> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1359> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1359> <http://the-fr.org/prop/format-registry/hasExtension> "vcf" .
+<http://the-fr.org/id/file-format/1359> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1359> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1359> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1360> <http://the-fr.org/prop/format-registry/puid> "fmt/907" .
+<http://the-fr.org/id/file-format/1360> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/907> .
+<http://the-fr.org/id/file-format/1360> <http://www.w3.org/2000/01/rdf-schema#label> "Variant Call Format"@en .
+<http://the-fr.org/id/file-format/1360> <http://the-fr.org/prop/format-registry/version> "3.x" .
+<http://the-fr.org/id/file-format/1360> <http://purl.org/dc/terms/description> "The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations."@en .
+<http://the-fr.org/id/file-format/1360> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1360> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1360> <http://the-fr.org/prop/format-registry/hasExtension> "vcf" .
+<http://the-fr.org/id/file-format/1360> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1360> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1360> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1361> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1361> <http://the-fr.org/prop/format-registry/puid> "fmt/908" .
+<http://the-fr.org/id/file-format/1361> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/908> .
+<http://the-fr.org/id/file-format/1361> <http://www.w3.org/2000/01/rdf-schema#label> "Variant Call Format"@en .
+<http://the-fr.org/id/file-format/1361> <http://the-fr.org/prop/format-registry/version> "4.x" .
+<http://the-fr.org/id/file-format/1361> <http://purl.org/dc/terms/description> "The Variant Call Format (VCF) specifies the format of a text file used in bioinformatics for storing gene sequence variations."@en .
+<http://the-fr.org/id/file-format/1361> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1361> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1361> <http://the-fr.org/prop/format-registry/hasExtension> "vcf" .
+<http://the-fr.org/id/file-format/1361> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1361> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1361> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1362> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1362> <http://the-fr.org/prop/format-registry/puid> "fmt/909" .
+<http://the-fr.org/id/file-format/1362> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/909> .
+<http://the-fr.org/id/file-format/1362> <http://www.w3.org/2000/01/rdf-schema#label> "CRAM File Format"@en .
+<http://the-fr.org/id/file-format/1362> <http://the-fr.org/prop/format-registry/version> "1.x" .
+<http://the-fr.org/id/file-format/1362> <http://purl.org/dc/terms/description> "CRAM is a framework technology and file format for compression of raw sequence data in the field of bioinformatics."@en .
+<http://the-fr.org/id/file-format/1362> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1362> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1362> <http://the-fr.org/prop/format-registry/hasExtension> "cram" .
+<http://the-fr.org/id/file-format/1362> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1362> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1362> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1363> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1363> <http://the-fr.org/prop/format-registry/puid> "fmt/910" .
+<http://the-fr.org/id/file-format/1363> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/910> .
+<http://the-fr.org/id/file-format/1363> <http://www.w3.org/2000/01/rdf-schema#label> "CRAM File Format"@en .
+<http://the-fr.org/id/file-format/1363> <http://the-fr.org/prop/format-registry/version> "2.x" .
+<http://the-fr.org/id/file-format/1363> <http://purl.org/dc/terms/description> "CRAM is a framework technology and file format for compression of raw sequence data in the field of bioinformatics."@en .
+<http://the-fr.org/id/file-format/1363> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1363> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1363> <http://the-fr.org/prop/format-registry/hasExtension> "cram" .
+<http://the-fr.org/id/file-format/1363> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1363> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1363> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1364> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1364> <http://the-fr.org/prop/format-registry/puid> "fmt/911" .
+<http://the-fr.org/id/file-format/1364> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/911> .
+<http://the-fr.org/id/file-format/1364> <http://www.w3.org/2000/01/rdf-schema#label> "CRAM File Format"@en .
+<http://the-fr.org/id/file-format/1364> <http://the-fr.org/prop/format-registry/version> "3.x" .
+<http://the-fr.org/id/file-format/1364> <http://purl.org/dc/terms/description> "CRAM is a framework technology and file format for compression of raw sequence data in the field of bioinformatics."@en .
+<http://the-fr.org/id/file-format/1364> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1364> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1364> <http://the-fr.org/prop/format-registry/hasExtension> "cram" .
+<http://the-fr.org/id/file-format/1364> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1364> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1364> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1365> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1365> <http://the-fr.org/prop/format-registry/puid> "fmt/912" .
+<http://the-fr.org/id/file-format/1365> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/912> .
+<http://the-fr.org/id/file-format/1365> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Paint"@en .
+<http://the-fr.org/id/file-format/1365> <http://the-fr.org/prop/format-registry/version> "2" .
+<http://the-fr.org/id/file-format/1365> <http://purl.org/dc/terms/description> "Prior to Windows 3.0, the bundled version of Microsoft Paint used a proprietary format with the extension MSP. The format supported only 1 bit monochrome graphics. Windows 3.0 replaced Microsoft Paint with an application called Paintbrush, that could open MSP files, but would save only as PCX or BMP."@en .
+<http://the-fr.org/id/file-format/1365> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1365> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1365> <http://the-fr.org/prop/format-registry/hasExtension> "msp" .
+<http://the-fr.org/id/file-format/1365> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1365> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1365> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1366> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/puid> "fmt/913" .
+<http://the-fr.org/id/file-format/1366> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/913> .
+<http://the-fr.org/id/file-format/1366> <http://www.w3.org/2000/01/rdf-schema#label> "Caligari trueSpace File Format"@en .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/version> "ASCII" .
+<http://the-fr.org/id/file-format/1366> <http://purl.org/dc/terms/description> "TrueSpace was a commercial 3D computer graphics and animation software originally developed by Caligari Corporation before being acquired by Microsoft. The .scn extension indicates a scene, the .cob extension indicates an object."@en .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/hasExtension> "cob" .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/hasExtension> "scn" .
+<http://the-fr.org/id/file-format/1366> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1366> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1367> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/puid> "fmt/914" .
+<http://the-fr.org/id/file-format/1367> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/914> .
+<http://the-fr.org/id/file-format/1367> <http://www.w3.org/2000/01/rdf-schema#label> "Caligari trueSpace File Format"@en .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/version> "Binary" .
+<http://the-fr.org/id/file-format/1367> <http://purl.org/dc/terms/description> "TrueSpace was a commercial 3D computer graphics and animation software originally developed by Caligari Corporation before being acquired by Microsoft. The .scn extension indicates a scene, the .cob extension indicates an object."@en .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/hasExtension> "cob" .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/hasExtension> "scn" .
+<http://the-fr.org/id/file-format/1367> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1367> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1368> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1368> <http://the-fr.org/prop/format-registry/puid> "fmt/915" .
+<http://the-fr.org/id/file-format/1368> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/915> .
+<http://the-fr.org/id/file-format/1368> <http://www.w3.org/2000/01/rdf-schema#label> "Mapsforge Binary Map File Format"@en .
+<http://the-fr.org/id/file-format/1368> <http://purl.org/dc/terms/description> "The mapsforge project aims to provide free and open software for the rendering of maps based on OpenStreetMap data. The Binary Map File Format is designed for map rendering on devices with limited resources, such as mobile phones."@en .
+<http://the-fr.org/id/file-format/1368> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1368> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Gis> .
+<http://the-fr.org/id/file-format/1368> <http://the-fr.org/prop/format-registry/hasExtension> "map" .
+<http://the-fr.org/id/file-format/1368> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1368> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1368> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1369> <http://the-fr.org/prop/format-registry/puid> "fmt/916" .
+<http://the-fr.org/id/file-format/1369> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/916> .
+<http://the-fr.org/id/file-format/1369> <http://www.w3.org/2000/01/rdf-schema#label> "ESRI ArcMap Document"@en .
+<http://the-fr.org/id/file-format/1369> <http://purl.org/dc/terms/description> "In the ArcGIS platform by ESRI, a map document is a file that contains one or more maps, the page layout, and the associated layers, tables, charts, and reports. Map document files have an .mxd extension."@en .
+<http://the-fr.org/id/file-format/1369> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1369> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Gis> .
+<http://the-fr.org/id/file-format/1369> <http://the-fr.org/prop/format-registry/hasExtension> "mxd" .
+<http://the-fr.org/id/file-format/1369> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1369> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1369> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1370> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/puid> "fmt/917" .
+<http://the-fr.org/id/file-format/1370> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/917> .
+<http://the-fr.org/id/file-format/1370> <http://www.w3.org/2000/01/rdf-schema#label> "AmiraMesh"@en .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/version> "ASCII 1.0" .
+<http://the-fr.org/id/file-format/1370> <http://purl.org/dc/terms/description> "AmiraMesh is the native general purpose format of Amira, a software platform for 3D and 4D data visualisation. While no public specification for the file format is available, a number of parsers of the format are available and the signatures within PRONOM represent the variants both witnessed and described by these parsers."@en .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/hasExtension> "am" .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/hasExtension> "amiramesh" .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/hasExtension> "hx" .
+<http://the-fr.org/id/file-format/1370> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1370> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1371> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/puid> "fmt/918" .
+<http://the-fr.org/id/file-format/1371> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/918> .
+<http://the-fr.org/id/file-format/1371> <http://www.w3.org/2000/01/rdf-schema#label> "AmiraMesh"@en .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/version> "3D ASCII 2.0" .
+<http://the-fr.org/id/file-format/1371> <http://purl.org/dc/terms/description> "AmiraMesh is the native general purpose format of Amira, a software platform for 3D and 4D data visualisation. While no public specification for the file format is available, a number of parsers of the format are available and the signatures within PRONOM represent the variants both witnessed and described by these parsers."@en .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/hasExtension> "am" .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/hasExtension> "amiramesh" .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/hasExtension> "hx" .
+<http://the-fr.org/id/file-format/1371> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1371> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1372> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/puid> "fmt/919" .
+<http://the-fr.org/id/file-format/1372> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/919> .
+<http://the-fr.org/id/file-format/1372> <http://www.w3.org/2000/01/rdf-schema#label> "AmiraMesh"@en .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/version> "3D Binary 2.0" .
+<http://the-fr.org/id/file-format/1372> <http://purl.org/dc/terms/description> "AmiraMesh is the native general purpose format of Amira, a software platform for 3D and 4D data visualisation. While no public specification for the file format is available, a number of parsers of the format are available and the signatures within PRONOM represent the variants both witnessed and described by these parsers."@en .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/hasExtension> "am" .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/hasExtension> "amiramesh" .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/hasExtension> "hx" .
+<http://the-fr.org/id/file-format/1372> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1372> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1373> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/puid> "fmt/920" .
+<http://the-fr.org/id/file-format/1373> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/920> .
+<http://the-fr.org/id/file-format/1373> <http://www.w3.org/2000/01/rdf-schema#label> "AmiraMesh"@en .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/version> "3D Binary Little Endian 2.0" .
+<http://the-fr.org/id/file-format/1373> <http://purl.org/dc/terms/description> "AmiraMesh is the native general purpose format of Amira, a software platform for 3D and 4D data visualisation. While no public specification for the file format is available, a number of parsers of the format are available and the signatures within PRONOM represent the variants both witnessed and described by these parsers."@en .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/hasExtension> "am" .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/hasExtension> "amiramesh" .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/hasExtension> "hx" .
+<http://the-fr.org/id/file-format/1373> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1373> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1374> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/puid> "fmt/921" .
+<http://the-fr.org/id/file-format/1374> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/921> .
+<http://the-fr.org/id/file-format/1374> <http://www.w3.org/2000/01/rdf-schema#label> "AmiraMesh"@en .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/version> "Binary Little Endian 2.1" .
+<http://the-fr.org/id/file-format/1374> <http://purl.org/dc/terms/description> "AmiraMesh is the native general purpose format of Amira, a software platform for 3D and 4D data visualisation. While no public specification for the file format is available, a number of parsers of the format are available and the signatures within PRONOM represent the variants both witnessed and described by these parsers."@en .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/hasExtension> "am" .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/hasExtension> "amiramesh" .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/hasExtension> "hx" .
+<http://the-fr.org/id/file-format/1374> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1374> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1375> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1375> <http://the-fr.org/prop/format-registry/puid> "fmt/922" .
+<http://the-fr.org/id/file-format/1375> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/922> .
+<http://the-fr.org/id/file-format/1375> <http://www.w3.org/2000/01/rdf-schema#label> "Xar Image Format"@en .
+<http://the-fr.org/id/file-format/1375> <http://www.w3.org/2004/02/skos/core#altLabel> "Flare Image Format" .
+<http://the-fr.org/id/file-format/1375> <http://purl.org/dc/terms/description> "The Xar file format, previously known as the Flare file format, is an open, vector graphic format, and is the native graphics format for applications such as Xara X and its predecessor, CorelXARA."@en .
+<http://the-fr.org/id/file-format/1375> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1375> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1375> <http://the-fr.org/prop/format-registry/hasExtension> "xar" .
+<http://the-fr.org/id/file-format/1375> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1375> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1375> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1376> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1376> <http://the-fr.org/prop/format-registry/puid> "fmt/923" .
+<http://the-fr.org/id/file-format/1376> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/923> .
+<http://the-fr.org/id/file-format/1376> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft xWMA"@en .
+<http://the-fr.org/id/file-format/1376> <http://purl.org/dc/terms/description> "The Microsoft xWMA format is an audio container/codec format used by XAudio 2."@en .
+<http://the-fr.org/id/file-format/1376> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1376> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1376> <http://the-fr.org/prop/format-registry/hasExtension> "xwma" .
+<http://the-fr.org/id/file-format/1376> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1376> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1376> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1377> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-visio.drawing.main+xml" .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/puid> "fmt/924" .
+<http://the-fr.org/id/file-format/1377> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/924> .
+<http://the-fr.org/id/file-format/1377> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Drawing"@en .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/version> "2013" .
+<http://the-fr.org/id/file-format/1377> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family. Visio 2013 introduced file formats based upon Open Packaging Conventions and XML. Further information about these formats can be found here: https://msdn.microsoft.com/en-us/library/office/jj228622.aspx"@en .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/hasExtension> "vsdx" .
+<http://the-fr.org/id/file-format/1377> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1377> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1378> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-visio.stencil.main+xml" .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/puid> "fmt/925" .
+<http://the-fr.org/id/file-format/1378> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/925> .
+<http://the-fr.org/id/file-format/1378> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Stencil"@en .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/version> "2013" .
+<http://the-fr.org/id/file-format/1378> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family. Visio 2013 introduced file formats based upon Open Packaging Conventions and XML. Further information about these formats can be found here: https://msdn.microsoft.com/en-us/library/office/jj228622.aspx"@en .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/hasExtension> "vssx" .
+<http://the-fr.org/id/file-format/1378> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1378> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1379> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-visio.template.main+xml" .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/puid> "fmt/926" .
+<http://the-fr.org/id/file-format/1379> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/926> .
+<http://the-fr.org/id/file-format/1379> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Template"@en .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/version> "2013" .
+<http://the-fr.org/id/file-format/1379> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family. Visio 2013 introduced file formats based upon Open Packaging Conventions and XML. Further information about these formats can be found here: https://msdn.microsoft.com/en-us/library/office/jj228622.aspx"@en .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/hasExtension> "vstx" .
+<http://the-fr.org/id/file-format/1379> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1379> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1380> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-visio.drawing.macroEnabled.main+xml" .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/puid> "fmt/927" .
+<http://the-fr.org/id/file-format/1380> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/927> .
+<http://the-fr.org/id/file-format/1380> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Macro-Enabled Drawing"@en .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/version> "2013" .
+<http://the-fr.org/id/file-format/1380> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family. Visio 2013 introduced file formats based upon Open Packaging Conventions and XML. Further information about these formats can be found here: https://msdn.microsoft.com/en-us/library/office/jj228622.aspx"@en .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/hasExtension> "vsdm" .
+<http://the-fr.org/id/file-format/1380> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1380> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1381> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-visio.stencil.macroEnabled.main+xml" .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/puid> "fmt/928" .
+<http://the-fr.org/id/file-format/1381> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/928> .
+<http://the-fr.org/id/file-format/1381> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Macro-Enabled Stencil"@en .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/version> "2013" .
+<http://the-fr.org/id/file-format/1381> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family. Visio 2013 introduced file formats based upon Open Packaging Conventions and XML. Further information about these formats can be found here: https://msdn.microsoft.com/en-us/library/office/jj228622.aspx"@en .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/hasExtension> "vssm" .
+<http://the-fr.org/id/file-format/1381> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1381> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1382> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.ms-visio.template.macroEnabled.main+xml" .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/puid> "fmt/929" .
+<http://the-fr.org/id/file-format/1382> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/929> .
+<http://the-fr.org/id/file-format/1382> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Visio Macro-Enabled Template"@en .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/version> "2013" .
+<http://the-fr.org/id/file-format/1382> <http://purl.org/dc/terms/description> "Microsoft Visio is a diagramming and vector graphics application and is part of the Microsoft Office family. Visio 2013 introduced file formats based upon Open Packaging Conventions and XML. Further information about these formats can be found here: https://msdn.microsoft.com/en-us/library/office/jj228622.aspx"@en .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/hasExtension> "vstm" .
+<http://the-fr.org/id/file-format/1382> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1382> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1383> <http://the-fr.org/prop/format-registry/puid> "fmt/930" .
+<http://the-fr.org/id/file-format/1383> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/930> .
+<http://the-fr.org/id/file-format/1383> <http://www.w3.org/2000/01/rdf-schema#label> "Magick Image File Format"@en .
+<http://the-fr.org/id/file-format/1383> <http://purl.org/dc/terms/description> "The Magick Image File Format (MIFF) is ImageMagick\'s own format for storing bitmap images. It stores all metadata known to ImageMagick."@en .
+<http://the-fr.org/id/file-format/1383> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1383> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1383> <http://the-fr.org/prop/format-registry/hasExtension> "mif" .
+<http://the-fr.org/id/file-format/1383> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1383> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1383> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1384> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1384> <http://the-fr.org/prop/format-registry/puid> "fmt/931" .
+<http://the-fr.org/id/file-format/1384> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/931> .
+<http://the-fr.org/id/file-format/1384> <http://www.w3.org/2000/01/rdf-schema#label> "Mathcad Document"@en .
+<http://the-fr.org/id/file-format/1384> <http://the-fr.org/prop/format-registry/version> "Binary" .
+<http://the-fr.org/id/file-format/1384> <http://purl.org/dc/terms/description> "Mathcad is a proprietary application intended for the verification, validation, documentation and reuse of engineering calculations."@en .
+<http://the-fr.org/id/file-format/1384> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1384> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1384> <http://the-fr.org/prop/format-registry/hasExtension> "mcd" .
+<http://the-fr.org/id/file-format/1384> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1384> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1384> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1385> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1385> <http://the-fr.org/prop/format-registry/puid> "fmt/932" .
+<http://the-fr.org/id/file-format/1385> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/932> .
+<http://the-fr.org/id/file-format/1385> <http://www.w3.org/2000/01/rdf-schema#label> "Mathcad Document"@en .
+<http://the-fr.org/id/file-format/1385> <http://the-fr.org/prop/format-registry/version> "XML" .
+<http://the-fr.org/id/file-format/1385> <http://purl.org/dc/terms/description> "Mathcad is a proprietary application intended for the verification, validation, documentation and reuse of engineering calculations."@en .
+<http://the-fr.org/id/file-format/1385> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1385> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1385> <http://the-fr.org/prop/format-registry/hasExtension> "xmcd" .
+<http://the-fr.org/id/file-format/1385> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1385> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1385> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1386> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/puid> "fmt/933" .
+<http://the-fr.org/id/file-format/1386> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/933> .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/internetMediaType> "image/vnd-svf" .
+<http://the-fr.org/id/file-format/1386> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Vector Format"@en .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/version> "1" .
+<http://the-fr.org/id/file-format/1386> <http://purl.org/dc/terms/description> "SVF is a vector image format originally developed in 1994. The format supports hyperlinks and layer information."@en .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/hasExtension> "svf" .
+<http://the-fr.org/id/file-format/1386> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1386> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/puid> "fmt/934" .
+<http://the-fr.org/id/file-format/1387> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/934> .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/internetMediaType> "image/vnd-svf" .
+<http://the-fr.org/id/file-format/1387> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Vector Format"@en .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/version> "2" .
+<http://the-fr.org/id/file-format/1387> <http://purl.org/dc/terms/description> "SVF is a vector image format originally developed in 1994. The format supports hyperlinks and layer information."@en .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/VectorImage> .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/hasExtension> "svf" .
+<http://the-fr.org/id/file-format/1387> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1387> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1388> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/puid> "fmt/935" .
+<http://the-fr.org/id/file-format/1388> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/935> .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/internetMediaType> "image/vnd.mozilla.apng" .
+<http://the-fr.org/id/file-format/1388> <http://www.w3.org/2000/01/rdf-schema#label> "Animated Portable Network Graphics"@en .
+<http://the-fr.org/id/file-format/1388> <http://www.w3.org/2004/02/skos/core#altLabel> "APNG" .
+<http://the-fr.org/id/file-format/1388> <http://purl.org/dc/terms/description> "APNG is an extension of the PNG format, adding support for animated images. It is intended to be a replacement for simple animated images that have traditionally used the GIF format, while adding support for 24-bit images and 8-bit transparency. APNG is intended as a simpler alternative to MNG.
+
+APNG is backwards-compatible with PNG; any PNG decoder should be able to ignore the APNG-specific chunks and display a single image."@en .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/hasExtension> "png" .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/hasExtension> "apng" .
+<http://the-fr.org/id/file-format/1388> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1388> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1389> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/puid> "fmt/936" .
+<http://the-fr.org/id/file-format/1389> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/936> .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/internetMediaType> "image/vnd.mix" .
+<http://the-fr.org/id/file-format/1389> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Picture It! Image File"@en .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/version> "1" .
+<http://the-fr.org/id/file-format/1389> <http://purl.org/dc/terms/description> "Microsoft Picture It! is a discontinued photo editing application. MIX is its native format, and is similar though not identical to the Microsoft PhotoDraw Image Format."@en .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/hasExtension> "mix" .
+<http://the-fr.org/id/file-format/1389> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1389> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1390> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1390> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.adobe.air-application-installer-package+zip" .
+<http://the-fr.org/id/file-format/1390> <http://the-fr.org/prop/format-registry/puid> "fmt/937" .
+<http://the-fr.org/id/file-format/1390> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/937> .
+<http://the-fr.org/id/file-format/1390> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Air"@en .
+<http://the-fr.org/id/file-format/1390> <http://the-fr.org/prop/format-registry/version> "1.0" .
+<http://the-fr.org/id/file-format/1390> <http://purl.org/dc/terms/description> "Adobe Air, formerly codenamed Apollo, is a cross-platform runtime system developed by Adobe Systems for building desktop applications and mobile applications, programmed using Adobe Flash, ActionScript and optionally Apache Flex."@en .
+<http://the-fr.org/id/file-format/1390> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1390> <http://the-fr.org/prop/format-registry/hasExtension> "air" .
+<http://the-fr.org/id/file-format/1390> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1390> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1390> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1391> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1391> <http://the-fr.org/prop/format-registry/puid> "fmt/938" .
+<http://the-fr.org/id/file-format/1391> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/938> .
+<http://the-fr.org/id/file-format/1391> <http://www.w3.org/2000/01/rdf-schema#label> "Python Script File"@en .
+<http://the-fr.org/id/file-format/1391> <http://purl.org/dc/terms/description> "Python Script files are text files written using the Python programming language. They can be run by using a Python interpreter."@en .
+<http://the-fr.org/id/file-format/1391> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1391> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1391> <http://the-fr.org/prop/format-registry/hasExtension> "py" .
+<http://the-fr.org/id/file-format/1391> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1391> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1391> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1392> <http://the-fr.org/prop/format-registry/puid> "fmt/939" .
+<http://the-fr.org/id/file-format/1392> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/939> .
+<http://the-fr.org/id/file-format/1392> <http://www.w3.org/2000/01/rdf-schema#label> "Python Compiled File"@en .
+<http://the-fr.org/id/file-format/1392> <http://the-fr.org/prop/format-registry/version> "2.7" .
+<http://the-fr.org/id/file-format/1392> <http://purl.org/dc/terms/description> "Python automatically compiles a python script before running it, the first time the script runs it will create a .pyc in the same directory as the .py file which will then be used if the script is run again to save time by not having to re-compile the code."@en .
+<http://the-fr.org/id/file-format/1392> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1392> <http://the-fr.org/prop/format-registry/hasExtension> "pyc" .
+<http://the-fr.org/id/file-format/1392> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1392> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1392> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1393> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1393> <http://the-fr.org/prop/format-registry/puid> "fmt/940" .
+<http://the-fr.org/id/file-format/1393> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/940> .
+<http://the-fr.org/id/file-format/1393> <http://www.w3.org/2000/01/rdf-schema#label> "Python Compiled File"@en .
+<http://the-fr.org/id/file-format/1393> <http://the-fr.org/prop/format-registry/version> "3.4" .
+<http://the-fr.org/id/file-format/1393> <http://purl.org/dc/terms/description> "Python automatically compiles a python script before running it, the first time the script runs it will create a .pyc in the same directory as the .py file which will then be used if the script is run again to save time by not having to re-compile the code."@en .
+<http://the-fr.org/id/file-format/1393> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1393> <http://the-fr.org/prop/format-registry/hasExtension> "pyc" .
+<http://the-fr.org/id/file-format/1393> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1393> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1393> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1394> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1394> <http://the-fr.org/prop/format-registry/puid> "fmt/941" .
+<http://the-fr.org/id/file-format/1394> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/941> .
+<http://the-fr.org/id/file-format/1394> <http://www.w3.org/2000/01/rdf-schema#label> "Back Up File"@en .
+<http://the-fr.org/id/file-format/1394> <http://purl.org/dc/terms/description> "Many applications produce back up files that have the .bak extension. Some of these will be identifiable through their binary signature, however others may not. An identification based upon this PRONOM entry will be by extension only and therefore will likely require further investigation to determine the specific type of file."@en .
+<http://the-fr.org/id/file-format/1394> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1394> <http://the-fr.org/prop/format-registry/hasExtension> "bak" .
+<http://the-fr.org/id/file-format/1394> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1394> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1394> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1395> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1395> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.adobe.air-application-installer-package+zip" .
+<http://the-fr.org/id/file-format/1395> <http://the-fr.org/prop/format-registry/puid> "fmt/942" .
+<http://the-fr.org/id/file-format/1395> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/942> .
+<http://the-fr.org/id/file-format/1395> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Air"@en .
+<http://the-fr.org/id/file-format/1395> <http://the-fr.org/prop/format-registry/version> "1.5" .
+<http://the-fr.org/id/file-format/1395> <http://purl.org/dc/terms/description> "Adobe Air, formerly codenamed Apollo, is a cross-platform runtime system developed by Adobe Systems for building desktop applications and mobile applications, programmed using Adobe Flash, ActionScript and optionally Apache Flex."@en .
+<http://the-fr.org/id/file-format/1395> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1395> <http://the-fr.org/prop/format-registry/hasExtension> "air" .
+<http://the-fr.org/id/file-format/1395> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1395> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1395> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1396> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1396> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.adobe.air-application-installer-package+zip" .
+<http://the-fr.org/id/file-format/1396> <http://the-fr.org/prop/format-registry/puid> "fmt/943" .
+<http://the-fr.org/id/file-format/1396> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/943> .
+<http://the-fr.org/id/file-format/1396> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Air"@en .
+<http://the-fr.org/id/file-format/1396> <http://the-fr.org/prop/format-registry/version> "2.0" .
+<http://the-fr.org/id/file-format/1396> <http://purl.org/dc/terms/description> "Adobe Air, formerly codenamed Apollo, is a cross-platform runtime system developed by Adobe Systems for building desktop applications and mobile applications, programmed using Adobe Flash, ActionScript and optionally Apache Flex."@en .
+<http://the-fr.org/id/file-format/1396> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1396> <http://the-fr.org/prop/format-registry/hasExtension> "air" .
+<http://the-fr.org/id/file-format/1396> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1396> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1396> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/internetMediaType> "application/ogg" .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/puid> "fmt/944" .
+<http://the-fr.org/id/file-format/1397> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/944> .
+<http://the-fr.org/id/file-format/1397> <http://www.w3.org/2000/01/rdf-schema#label> "Ogg Multimedia Container"@en .
+<http://the-fr.org/id/file-format/1397> <http://purl.org/dc/terms/description> "Ogg is a free, open container format maintained by the Xiph.Org Foundation. The Ogg container format can multiplex a number of independent streams for audio, video, text, and metadata.
+
+In the Ogg multimedia framework, Theora provides a lossy video layer. The audio layer is commonly provided by the music-oriented Vorbis format. Other audio coding format options include the Opus compression format, the lossless audio compression format FLAC, Speex for low bitrate voice data, and OggPCM for uncompressed PCM audio.
+
+This generic entry applies where available PRONOM signatures for Ogg do not yet apply to the file in question. In this instance you may wish to contact pronom@nationalarchives.gov.uk to help improve PRONOM\'s signatures."@en .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Video> .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/hasExtension> "ogg" .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/hasExtension> "ogv" .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/hasExtension> "spx" .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/hasExtension> "opus" .
+<http://the-fr.org/id/file-format/1397> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1397> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1398> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/puid> "fmt/945" .
+<http://the-fr.org/id/file-format/1398> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/945> .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/internetMediaType> "video/ogg" .
+<http://the-fr.org/id/file-format/1398> <http://www.w3.org/2000/01/rdf-schema#label> "Ogg Theora Video"@en .
+<http://the-fr.org/id/file-format/1398> <http://purl.org/dc/terms/description> "Ogg is a free, open container format maintained by the Xiph.Org Foundation. The Ogg container format can multiplex a number of independent streams for audio, video, text, and metadata.
+
+Theora is a free, lossy video compression format also developed by the Xiph.Org Foundation."@en .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Video> .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/hasExtension> "ogv" .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/hasExtension> "ogg" .
+<http://the-fr.org/id/file-format/1398> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1398> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1399> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/ogg" .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/opus" .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/puid> "fmt/946" .
+<http://the-fr.org/id/file-format/1399> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/946> .
+<http://the-fr.org/id/file-format/1399> <http://www.w3.org/2000/01/rdf-schema#label> "Ogg Opus Codec Compressed Multimedia File"@en .
+<http://the-fr.org/id/file-format/1399> <http://purl.org/dc/terms/description> "Ogg is a open container format maintained by the Xiph.Org Foundation, while Opus is a lossy audio coding format developed by Xiph and intended to replace the Vorbis codec."@en .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/hasExtension> "ogg" .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/hasExtension> "opus" .
+<http://the-fr.org/id/file-format/1399> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1399> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/ogg" .
+<http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/puid> "fmt/947" .
+<http://the-fr.org/id/file-format/1400> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/947> .
+<http://the-fr.org/id/file-format/1400> <http://www.w3.org/2000/01/rdf-schema#label> "Ogg FLAC Compressed Multimedia File"@en .
+<http://the-fr.org/id/file-format/1400> <http://purl.org/dc/terms/description> "Ogg is a open container format maintained by the Xiph.Org Foundation. FLAC (Free Lossless Audio Codec) handles archival and high fidelity audio data."@en .
+<http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/hasExtension> "ogg" .
+<http://the-fr.org/id/file-format/1400> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1401> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/ogg" .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/speex" .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/puid> "fmt/948" .
+<http://the-fr.org/id/file-format/1401> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/948> .
+<http://the-fr.org/id/file-format/1401> <http://www.w3.org/2000/01/rdf-schema#label> "Ogg Speex Codec Multimedia File"@en .
+<http://the-fr.org/id/file-format/1401> <http://purl.org/dc/terms/description> "Ogg is a open container format maintained by the Xiph.Org Foundation. The Speex codec is a lossy codec aimed at handling low bitrate audio, particularly speech."@en .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/hasExtension> "ogg" .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/hasExtension> "spx" .
+<http://the-fr.org/id/file-format/1401> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1402> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.wordperfect" .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/puid> "fmt/949" .
+<http://the-fr.org/id/file-format/1402> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/949> .
+<http://the-fr.org/id/file-format/1402> <http://www.w3.org/2000/01/rdf-schema#label> "WordPerfect"@en .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/version> "4.0/4.1/4.2" .
+<http://the-fr.org/id/file-format/1402> <http://purl.org/dc/terms/description> "WordPerfect is a Word Processing application currently owned by Corel Corporation. The original version of WordPerfect 4.0 was released in 1984. 4.1 followed in 1985 and 4.2 
+in 1986, with versions released on various platforms up to 1988 when version 5.0 was originally released for DOS.
+
+Only the technical specification for version 4.2 is currently known to have been made public, originally via the PC Developer\'s Toolkit diskette, and this can be found 
+preserved here: http://www.columbia.edu/~em36/wpdos/wp42ff.txt.
+
+The file format for the WP4.2 version contains only the document body with special function codes, and the format lacks a header or mandatory elements that can be used by 
+PRONOM for automatic identification. Each function code represents a text function, such as bold or underline, so with reference to the specification it should be possible to 
+parse the file to understand the intended layout. It may be the case that the file format for 4.0 and 4.1 is functionally identical or very similar to version 4.2.
+
+A free C++ library called libwpd is available: http://libwpd.sourceforge.net/ and it includes the ability to parse WP4.2 files. This library is known to have been implemented 
+in LibreOffice, Koffice, and AbiWord among others, so these applications can be used to open and render WordPerfect 4.2 files, and potentially WP4.0 and WP4.1.
+
+Due to the age of the format, WP4.x files may lack a format extension, however .wp4 and .wpd are known to be associated with the format."@en .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/hasExtension> "wp4" .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/hasExtension> "wpd" .
+<http://the-fr.org/id/file-format/1402> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1402> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1403> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/puid> "fmt/950" .
+<http://the-fr.org/id/file-format/1403> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/950> .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/internetMediaType> "message/rfc822" .
+<http://the-fr.org/id/file-format/1403> <http://www.w3.org/2000/01/rdf-schema#label> "MIME Email"@en .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/version> "1.0" .
+<http://the-fr.org/id/file-format/1403> <http://purl.org/dc/terms/description> "An Internet Message Format email message conforming to RFC 2045 (https://www.ietf.org/rfc/rfc2045.txt), specifically containing MIME-Version and Content-Type header fields, in addition to header fields \'To\', \'From\', and \'Date\' as described in RFC 822 (https://www.ietf.org/rfc/rfc822.txt)."@en .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/hasExtension> "eml" .
+<http://the-fr.org/id/file-format/1403> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
