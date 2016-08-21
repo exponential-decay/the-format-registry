@@ -17,7 +17,7 @@
 
 	#triple locations
 	define('TRIPLOC', '../public/tfr/tfr-triples/');
-	define('TRIPFILE', TRIPLOC . "tfr-triples.nt");	
+	define('TRIPFILE', TRIPLOC . "tfr-format-triples.nt");	
 
    #containers
 	define('LATEST_CONTAINER', "../private/pronom/pronom-latest/container/container-signature.xml");
