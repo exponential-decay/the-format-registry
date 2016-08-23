@@ -2,6 +2,7 @@
 
 	include ("tfr-structure-locations.php");
 	include ("pronom-to-rdf-mapping.php");
+   include ("non-container-relationship-mapping.php");
 
 	header("Content-type: text/plain; charset=utf-8"); 
 
@@ -20,12 +21,12 @@
 		fclose($ntfile);		# TODO: check if open
 	}
 
-	function create_tfr_triples($ntfile, $data, $puid, $containermagic=False)
+	function create_tfr_triples($ntfile, $data, $puid, $containermagic=False, $priority_list=False)
 	{
-		pronom_to_rdf_map($ntfile, $data, $puid, $containermagic);
+		pronom_to_rdf_map($ntfile, $data, $puid, $containermagic, $priority_list);
 	}
 
-	function pronom_data_to_triples($containermagic=False)
+	function pronom_data_to_triples($containermagic=False, $priority_list=False)
 	{
 		$ntfile = init_nt_file();
 
@@ -61,6 +62,12 @@
          }
 		}
 
+      //given a list of resource, create priority relationships between each...
+      if ($priority_list != False && sizeof($priority_list) > 0)
+      {
+         create_priorities($ntfile, $priority_list);
+      }
+
 		close_nt_file($ntfile);
 	}
 
@@ -78,7 +85,14 @@
       return $containermagic;
    }
 
+   //get magic from container signature file...
    $containermagic = read_container_magic();
-	pronom_data_to_triples($containermagic);
+
+   //get information from non-container signature file
+   $format_ids = read_signature_priorities();            //format ids from signature file
+   $priority_list = get_priority_list($format_ids);      //get priority list from signature file
+
+   //convert pronom data to triples...
+	pronom_data_to_triples($containermagic, $priority_list);
 
 ?>

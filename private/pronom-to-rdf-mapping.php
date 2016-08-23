@@ -31,6 +31,19 @@
       return "<http://www.nationalarchives.gov.uk/PRONOM/" . $identifier . ">";
    }
 
+   //a list of puids and their uris
+   $puid_resource_arr = array();
+
+   function add_to_uri_list($puid, $subject)
+   {
+      $uri_pair = array();
+      $uri_pair['puid'] = (string)$puid;
+      $uri_pair['uri'] = (string)$subject;
+      array_push($puid_resource_arr, $uri_pair);      //pass by argument...
+      print_r($puid_resource_arr);
+      //print "\n\n";
+   }
+
 	function extract_identifiers($ntfile, $subject, $xml)
 	{
       $puid = false;
@@ -52,7 +65,7 @@
 		}
 
 		fwrite($ntfile, $predicatevalue);
-
+      add_to_uri_list($puid, $subject);
       return $puid;
 	}
 
@@ -253,6 +266,11 @@
       fwrite($ntfile, $magictext);  
       fwrite($ntfile, $containertext);  
       fwrite($ntfile, $binarytext);  
+   }
+
+   function create_priorities($ntfile, $priority_list)
+   {
+      print "Working to create: " . HASPRIORITY_PREDICATE . "\n\n";
    }
 
 	function triple_mapper($ntfile, $subject, $formatXML, $containermagic=False)

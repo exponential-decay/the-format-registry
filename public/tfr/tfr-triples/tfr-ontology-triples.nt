@@ -169,3 +169,9 @@
 <http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://the-fr.org/format-registry/FileFormat>.
 <http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
 <http://the-fr.org/prop/format-registry/isDeprecated> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/prop/format-registry/hasPriorityOver> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/hasPriorityOver> <http://www.w3.org/2000/01/rdf-schema#label> "Has Priority Over"@en.
+<http://the-fr.org/prop/format-registry/hasPriorityOver> <http://www.w3.org/2000/01/rdf-schema#comment> "A file format identification is returned by PRONOM's sister tool DROID through signature based identification methods. An important instruction to DROID is the one that prioritizes results to ensure that one file format will be returned as a result, over another format with similar signature patterns, instead of both. This is specified in PRONOM using a hasPriorityOver relationship."@en.
+<http://the-fr.org/prop/format-registry/hasPriorityOver> <http://www.w3.org/2000/01/rdf-schema#domain> <http://the-fr.org/format-registry/FileFormat>.
+<http://the-fr.org/prop/format-registry/hasPriorityOver> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/hasPriorityOver> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".

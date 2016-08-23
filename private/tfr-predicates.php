@@ -12,6 +12,9 @@
    define("BINARY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic>");
    define("DEPRECATED_PREDICATE", "<http://the-fr.org/prop/format-registry/isDeprecated>");
 
+   //file format relationships
+   define("HASPRIORITY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPriorityOver>");
+
    // additional ontologies
    define("SAMEAS_PREDICATE", "<https://www.w3.org/2002/07/owl#sameAs>");
    define("MAGIC_PREDICATE", "<http://digipres.org/formats/sources/pronom/formats/#hasMagic>");   

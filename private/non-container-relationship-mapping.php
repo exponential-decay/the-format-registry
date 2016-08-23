@@ -85,9 +85,4 @@
       }
       return $results;
    }
-
-   header("Content-Type: text/plain");
-   $list1 = read_signature_priorities();
-   $priority_list = get_priority_list($list1);
-   print_r($priority_list);
 ?>
