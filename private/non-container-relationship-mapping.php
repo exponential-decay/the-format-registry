@@ -1,6 +1,6 @@
 <?php
 
-	include ("tfr-structure-locations.php");
+	include_once ("tfr-structure-locations.php");
 
    define("DROID_PUID", 'PUID');
    define("DROID_ID", 'ID');
@@ -40,7 +40,7 @@
          
          $ff[DROID_PUID] = (string)$puid;
          $ff[DROID_ID] = (string)$id;
-         $id_arr;
+         $id_arr = 0;
 
          if ($FileFormat->HasPriorityOverFileFormatID != null)
          {
