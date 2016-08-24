@@ -2,6 +2,7 @@
 	include "tfr-predicates.php";
 	include "tfr-uri-constants.php";
 
+   //modifier may be used to add language to literals, e.g. "@en"
 	function write_triple($subject, $predicate, $object, $modifier="", $literal=True)
 	{
 		$spo = "";
@@ -31,20 +32,15 @@
       return "<http://www.nationalarchives.gov.uk/PRONOM/" . $identifier . ">";
    }
 
-   //a list of puids and their uris
-   $puid_resource_arr = array();
-
-   function add_to_uri_list($puid, $subject)
+   function add_to_uri_list($puid, $subject, &$puid_resource_arr)
    {
       $uri_pair = array();
       $uri_pair['puid'] = (string)$puid;
       $uri_pair['uri'] = (string)$subject;
       array_push($puid_resource_arr, $uri_pair);      //pass by argument...
-      print_r($puid_resource_arr);
-      //print "\n\n";
    }
 
-	function extract_identifiers($ntfile, $subject, $xml)
+	function extract_identifiers($ntfile, $subject, $xml, &$puid_resource_arr)
 	{
       $puid = false;
 		$predicatevalue = "";
@@ -65,7 +61,7 @@
 		}
 
 		fwrite($ntfile, $predicatevalue);
-      add_to_uri_list($puid, $subject);
+      add_to_uri_list($puid, $subject, $puid_resource_arr);
       return $puid;
 	}
 
@@ -268,15 +264,43 @@
       fwrite($ntfile, $binarytext);  
    }
 
-   function create_priorities($ntfile, $priority_list)
+   function create_priorities($ntfile, $priority_list, $puid_resource_arr)
    {
-      print "Working to create: " . HASPRIORITY_PREDICATE . "\n\n";
+      foreach($priority_list as $fmt)
+      {
+         $f1 = False;
+         $f2 = False;
+         $uri1 = '';
+         $uri2 = '';
+         foreach($puid_resource_arr as $uri)
+         {
+            if ($fmt['HASPRIORITY'] == $uri['puid'])
+            {
+               $f1 = True;
+               $uri1 = (string)$uri['uri'];
+            }
+            if ($fmt['OVER'] == $uri['puid'])
+            {
+               $f2 = True;
+               $uri2 = (string)$uri['uri'];
+            }
+
+            //we've the uris for the formats we are seeking priorities for
+            //translate to a triple string and exit early. 
+            if ($f1 == True && $f2 == True)
+            {
+               $priority_text = write_triple($uri1, HASPRIORITY_PREDICATE, $uri2, "", False);
+               fwrite($ntfile, $priority_text); 
+               break;
+            }
+         }
+      }
    }
 
-	function triple_mapper($ntfile, $subject, $formatXML, $containermagic=False)
+	function triple_mapper($ntfile, $subject, $formatXML, $containermagic, &$puid_resource_arr)
 	{
 		extract_class($ntfile, $subject);
-		$puid = extract_identifiers($ntfile, $subject, $formatXML);
+		$puid = extract_identifiers($ntfile, $subject, $formatXML, $puid_resource_arr);
 		extract_name_version($ntfile, $subject, $formatXML);
 		extract_alias($ntfile, $subject, $formatXML);		
 		extract_description($ntfile, $subject, $formatXML);
@@ -293,7 +317,7 @@
 		return $subject;
 	}
 
-	function pronom_to_rdf_map($ntfile, $data, $puid, $containermagic=False)
+	function pronom_to_rdf_map($ntfile, $data, $puid, $containermagic, &$puid_resource_arr)
 	{ 
 		$xml = simplexml_load_string($data);
   
@@ -304,7 +328,7 @@
       else
       {
 		   $formatXML = $xml->report_format_detail->FileFormat;
-         triple_mapper($ntfile, mint_subject(), $formatXML, $containermagic);
+         triple_mapper($ntfile, mint_subject(), $formatXML, $containermagic, $puid_resource_arr);
       }
 	}
 ?>

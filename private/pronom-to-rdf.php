@@ -1,6 +1,6 @@
 <?php
 
-	include ("tfr-structure-locations.php");
+	include_once ("tfr-structure-locations.php");
 	include ("pronom-to-rdf-mapping.php");
    include ("non-container-relationship-mapping.php");
 
@@ -21,16 +21,20 @@
 		fclose($ntfile);		# TODO: check if open
 	}
 
-	function create_tfr_triples($ntfile, $data, $puid, $containermagic=False, $priority_list=False)
+	function create_tfr_triples($ntfile, $data, $puid, $containermagic, &$puid_resource_arr)
 	{
-		pronom_to_rdf_map($ntfile, $data, $puid, $containermagic, $priority_list);
+		pronom_to_rdf_map($ntfile, $data, $puid, $containermagic, $puid_resource_arr);
 	}
 
-	function pronom_data_to_triples($containermagic=False, $priority_list=False)
+	function pronom_data_to_triples($containermagic, $priority_list)
 	{
 		$ntfile = init_nt_file();
 
 		$type_arr = array(XFMT, FMT);
+
+      //a list of format mappings to URIs may be useful
+      //e.g. for specifying format relationships...
+      $puid_resource_arr = array();
 
 		#for($x = 0; $x < 1; $x++)
 		for($x = 0; $x < sizeof($type_arr); $x++)
@@ -58,14 +62,15 @@
          foreach ($no_array as $nor)
          {   
 				$srcfile = $basedir . "/" . $type_arr[$x] . $nor . ".xml";
-				create_tfr_triples($ntfile, file_get_contents($srcfile), $srcfile, $containermagic);
+				create_tfr_triples($ntfile, file_get_contents($srcfile), $srcfile, $containermagic, $puid_resource_arr);
          }
 		}
 
+      //run last once all URIs have been defined... 
       //given a list of resource, create priority relationships between each...
       if ($priority_list != False && sizeof($priority_list) > 0)
       {
-         create_priorities($ntfile, $priority_list);
+         create_priorities($ntfile, $priority_list, $puid_resource_arr);
       }
 
 		close_nt_file($ntfile);
