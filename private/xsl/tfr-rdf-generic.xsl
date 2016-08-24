@@ -33,10 +33,14 @@
 		**Magic:**  <xsl:value-of select="digipres:hasMagic"/>&#10;
 		**Container Magic:**  <xsl:value-of select="tfrprop:hasPRONOMContainerMagic"/>&#10;
 		**Binary Magic:**  <xsl:value-of select="tfrprop:hasPRONOMBinaryMagic"/>&#10;
+**Signature Priority Over:**
+<xsl:for-each select="tfrprop:hasPriorityOver">
+* [<xsl:value-of select="@rdf:resource"/>](<xsl:value-of select="@rdf:resource"/>)&#10;
+</xsl:for-each>
 		**Alias:** <xsl:value-of select="skos:altLabel"/>&#10;
 		**Class:** [<xsl:value-of select="rdf:type/@rdf:resource"/>](<xsl:value-of select="rdf:type/@rdf:resource"/>)&#10;
 		**Type:** [<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>](<xsl:value-of select="tfrprop:formatType/@rdf:resource"/>)&#10;
-		**SPARQL:** [<xsl:value-of select="$about"/>](http://the-fr.org/public/sparql/endpoint.php?query=describe+%3C<xsl:value-of select="$about"/>%3E&#38;output=&#38;jsonp=&#38;key=&#38;show_inline=1)&#10; 
+		**SPARQL:** [http://the-fr.org/public/sparql/endpoint.php?query=describe+%3C<xsl:value-of select="$about"/>%3E&#38;output=&#38;jsonp=&#38;key=&#38;show_inline=1](http://the-fr.org/public/sparql/endpoint.php?query=describe+%3C<xsl:value-of select="$about"/>%3E&#38;output=&#38;jsonp=&#38;key=&#38;show_inline=1)&#10; 
 		</xsl:for-each>
 	</xsl:template>
 </xsl:stylesheet>
