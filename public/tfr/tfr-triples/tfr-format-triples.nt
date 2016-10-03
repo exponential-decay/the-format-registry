@@ -2064,6 +2064,7 @@ File format specifications available at http://standards.iso.org/ittf/PubliclyAv
 <http://the-fr.org/id/file-format/181> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/181> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/182> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/182> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.Quark.QuarkXPress" .
 <http://the-fr.org/id/file-format/182> <http://the-fr.org/prop/format-registry/puid> "x-fmt/182" .
 <http://the-fr.org/id/file-format/182> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/182> .
 <http://the-fr.org/id/file-format/182> <http://www.w3.org/2000/01/rdf-schema#label> "Quark Xpress Data File"@en .
@@ -2224,6 +2225,7 @@ File format specifications available at http://standards.iso.org/ittf/PubliclyAv
 <http://the-fr.org/id/file-format/195> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/195> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
 <http://the-fr.org/id/file-format/195> <http://the-fr.org/prop/format-registry/hasExtension> "sgml" .
+<http://the-fr.org/id/file-format/195> <http://the-fr.org/prop/format-registry/hasExtension> "sgm" .
 <http://the-fr.org/id/file-format/195> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/195> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/195> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -2984,7 +2986,11 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/260> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/260> .
 <http://the-fr.org/id/file-format/260> <http://www.w3.org/2000/01/rdf-schema#label> "WordStar for MS-DOS Document"@en .
 <http://the-fr.org/id/file-format/260> <http://the-fr.org/prop/format-registry/version> "4.0" .
-<http://the-fr.org/id/file-format/260> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/260> <http://purl.org/dc/terms/description> "WordStar is a Word Processor application originally published by MicroPro. WS4 files currently cannot by identified though a PRONOM identification signature. 
+
+On the surface it\'s a plain text file, however the format \'shifts\' the last byte of each word. Effectively it is \'flipping\' the first bit of the ASCII character from 0 to 1. so a lower case \'r\' (hex value 0x72) becomes \'ò\' (hex value 0xF2); lower case \'d\' (hex 0x64) becomes \'ä\' (hex 0xE4) and so on. 
+
+It should be possible to write a simple decoder application for WS4 files, however note that the conjecture above is based on observation of a limited pool of files, and there may be additional subtleties yet to be encountered and understood. Please contact the PRONOM team if you have any further information about this format."@en .
 <http://the-fr.org/id/file-format/260> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/260> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
 <http://the-fr.org/id/file-format/260> <http://the-fr.org/prop/format-registry/hasExtension> "ws" .
@@ -3031,12 +3037,12 @@ Full specifications can be found at http://www.opengeospatial.org/standards/gml"
 <http://the-fr.org/id/file-format/263> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/263> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/264> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
-<http://the-fr.org/id/file-format/264> <http://the-fr.org/prop/format-registry/internetMediaType> "application/x-rar-compressed" .
+<http://the-fr.org/id/file-format/264> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.rar" .
 <http://the-fr.org/id/file-format/264> <http://the-fr.org/prop/format-registry/puid> "x-fmt/264" .
 <http://the-fr.org/id/file-format/264> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/264> .
 <http://the-fr.org/id/file-format/264> <http://www.w3.org/2000/01/rdf-schema#label> "RAR Archive"@en .
 <http://the-fr.org/id/file-format/264> <http://the-fr.org/prop/format-registry/version> "2.0" .
-<http://the-fr.org/id/file-format/264> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/264> <http://purl.org/dc/terms/description> "RAR is a proprietary archive file format that supports data compression, error recovery and file spanning."@en .
 <http://the-fr.org/id/file-format/264> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/264> <http://the-fr.org/prop/format-registry/hasExtension> "rar" .
 <http://the-fr.org/id/file-format/264> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -4507,10 +4513,11 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/386> <http://www.w3.org/2000/01/rdf-schema#label> "Exchangeable Image File Format (Uncompressed)"@en .
 <http://the-fr.org/id/file-format/386> <http://the-fr.org/prop/format-registry/version> "2.2" .
 <http://the-fr.org/id/file-format/386> <http://www.w3.org/2004/02/skos/core#altLabel> "Exif Uncompressed Image (2.2)" .
-<http://the-fr.org/id/file-format/386> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/386> <http://purl.org/dc/terms/description> "Exchangeable image file format (Exif) is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras (including smartphones), scanners and other systems handling image and sound files recorded by digital cameras."@en .
 <http://the-fr.org/id/file-format/386> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/386> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/386> <http://the-fr.org/prop/format-registry/hasExtension> "tif" .
+<http://the-fr.org/id/file-format/386> <http://the-fr.org/prop/format-registry/hasExtension> "tiff" .
 <http://the-fr.org/id/file-format/386> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/386> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/386> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -4521,10 +4528,11 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/387> <http://www.w3.org/2000/01/rdf-schema#label> "Exchangeable Image File Format (Uncompressed)"@en .
 <http://the-fr.org/id/file-format/387> <http://the-fr.org/prop/format-registry/version> "2.1" .
 <http://the-fr.org/id/file-format/387> <http://www.w3.org/2004/02/skos/core#altLabel> "Exif Uncompressed Image (2.1)" .
-<http://the-fr.org/id/file-format/387> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/387> <http://purl.org/dc/terms/description> "Exchangeable image file format (Exif) is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras (including smartphones), scanners and other systems handling image and sound files recorded by digital cameras."@en .
 <http://the-fr.org/id/file-format/387> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/387> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/387> <http://the-fr.org/prop/format-registry/hasExtension> "tif" .
+<http://the-fr.org/id/file-format/387> <http://the-fr.org/prop/format-registry/hasExtension> "tiff" .
 <http://the-fr.org/id/file-format/387> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/387> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/387> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -4675,10 +4683,11 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/398> <http://www.w3.org/2000/01/rdf-schema#label> "Exchangeable Image File Format (Uncompressed)"@en .
 <http://the-fr.org/id/file-format/398> <http://the-fr.org/prop/format-registry/version> "2.0" .
 <http://the-fr.org/id/file-format/398> <http://www.w3.org/2004/02/skos/core#altLabel> "Exif Uncompressed Image (2.0)" .
-<http://the-fr.org/id/file-format/398> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/398> <http://purl.org/dc/terms/description> "Exchangeable image file format (Exif) is a standard that specifies the formats for images, sound, and ancillary tags used by digital cameras (including smartphones), scanners and other systems handling image and sound files recorded by digital cameras."@en .
 <http://the-fr.org/id/file-format/398> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/398> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
 <http://the-fr.org/id/file-format/398> <http://the-fr.org/prop/format-registry/hasExtension> "tif" .
+<http://the-fr.org/id/file-format/398> <http://the-fr.org/prop/format-registry/hasExtension> "tiff" .
 <http://the-fr.org/id/file-format/398> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/398> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/398> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -6132,7 +6141,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/512> <http://the-fr.org/prop/format-registry/hasExtension> "xls" .
 <http://the-fr.org/id/file-format/512> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/512> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://the-fr.org/id/file-format/512> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/512> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/513> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/513> <http://the-fr.org/prop/format-registry/puid> "fmt/60" .
 <http://the-fr.org/id/file-format/513> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/60> .
@@ -9866,7 +9875,9 @@ The signature identification proposed for PDF/A 1b has been tested against a num
 <http://the-fr.org/id/file-format/809> <http://the-fr.org/prop/format-registry/puid> "fmt/356" .
 <http://the-fr.org/id/file-format/809> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/356> .
 <http://the-fr.org/id/file-format/809> <http://www.w3.org/2000/01/rdf-schema#label> "Adaptive Multi-Rate Audio"@en .
-<http://the-fr.org/id/file-format/809> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/809> <http://www.w3.org/2004/02/skos/core#altLabel> "AMR-NB" .
+<http://the-fr.org/id/file-format/809> <http://www.w3.org/2004/02/skos/core#altLabel> " GSM-AMR" .
+<http://the-fr.org/id/file-format/809> <http://purl.org/dc/terms/description> "The Adaptive Multi-Rate (AMR or AMR-NB or GSM-AMR) audio codec is an audio compression format optimized for speech coding. AMR speech codec consists of a multi-rate narrowband speech codec that encodes narrowband (200–3400 Hz) signals at variable bit rates ranging from 4.75 to 12.2 kbit/s with toll quality speech starting at 7.4 kbit/s."@en .
 <http://the-fr.org/id/file-format/809> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/809> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
 <http://the-fr.org/id/file-format/809> <http://the-fr.org/prop/format-registry/hasExtension> "amr" .
@@ -10344,8 +10355,9 @@ Furthe information regarding this and other RIFF formats can be found at http://
 <http://the-fr.org/id/file-format/848> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/848> <http://the-fr.org/prop/format-registry/puid> "fmt/395" .
 <http://the-fr.org/id/file-format/848> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/395> .
+<http://the-fr.org/id/file-format/848> <http://the-fr.org/prop/format-registry/internetMediaType> "text/vcard" .
 <http://the-fr.org/id/file-format/848> <http://www.w3.org/2000/01/rdf-schema#label> "vCard"@en .
-<http://the-fr.org/id/file-format/848> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/848> <http://purl.org/dc/terms/description> "vCard is a file format standard for electronic business cards. vCards are often attached to e-mail messages, but can be exchanged in other ways, such as on the World Wide Web or instant messaging."@en .
 <http://the-fr.org/id/file-format/848> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/848> <http://the-fr.org/prop/format-registry/hasExtension> "vcf" .
 <http://the-fr.org/id/file-format/848> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -10519,12 +10531,12 @@ The last 3 areas, the Developer Area, the Extension Area and the TGA File Footer
 <http://the-fr.org/id/file-format/863> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/863> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
-<http://the-fr.org/id/file-format/864> <http://the-fr.org/prop/format-registry/internetMediaType> "application/x-rar-compressed" .
+<http://the-fr.org/id/file-format/864> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.rar" .
 <http://the-fr.org/id/file-format/864> <http://the-fr.org/prop/format-registry/puid> "fmt/411" .
 <http://the-fr.org/id/file-format/864> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/411> .
 <http://the-fr.org/id/file-format/864> <http://www.w3.org/2000/01/rdf-schema#label> "RAR Archive"@en .
 <http://the-fr.org/id/file-format/864> <http://the-fr.org/prop/format-registry/version> "2.9" .
-<http://the-fr.org/id/file-format/864> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/864> <http://purl.org/dc/terms/description> "RAR is a proprietary archive file format that supports data compression, error recovery and file spanning."@en .
 <http://the-fr.org/id/file-format/864> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/864> <http://the-fr.org/prop/format-registry/hasExtension> "rar" .
 <http://the-fr.org/id/file-format/864> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11634,6 +11646,7 @@ Since the method of identifying and distinguishing specific types of OOXML docum
 <http://the-fr.org/id/file-format/956> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/503> .
 <http://the-fr.org/id/file-format/956> <http://the-fr.org/prop/format-registry/internetMediaType> "multipart/appledouble" .
 <http://the-fr.org/id/file-format/956> <http://www.w3.org/2000/01/rdf-schema#label> "AppleDouble Resource Fork"@en .
+<http://the-fr.org/id/file-format/956> <http://the-fr.org/prop/format-registry/version> "2" .
 <http://the-fr.org/id/file-format/956> <http://purl.org/dc/terms/description> "The resource fork is a construct of the Mac OS operating system used to store structured data in a file, alongside unstructured data stored within the data fork. The format specification is available here: http://support.apple.com/kb/TA32537?viewlocale=en_US
 
 The format lacks an extension, and is instead represented by a file name consisting of ._<filename resource fork belongs to>"@en .
@@ -12998,7 +13011,7 @@ The EBML specifications are work-in-progress, and can be found here: https://git
 <http://the-fr.org/id/file-format/1065> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1065> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
-<http://the-fr.org/id/file-format/1066> <http://the-fr.org/prop/format-registry/internetMediaType> "application/x-rar-compressed" .
+<http://the-fr.org/id/file-format/1066> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.rar" .
 <http://the-fr.org/id/file-format/1066> <http://the-fr.org/prop/format-registry/puid> "fmt/613" .
 <http://the-fr.org/id/file-format/1066> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/613> .
 <http://the-fr.org/id/file-format/1066> <http://www.w3.org/2000/01/rdf-schema#label> "RAR Archive"@en .
@@ -13450,6 +13463,7 @@ The EBML specifications are work-in-progress, and can be found here: https://git
 <http://the-fr.org/id/file-format/1102> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1102> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1103> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.Quark.QuarkXPress" .
 <http://the-fr.org/id/file-format/1103> <http://the-fr.org/prop/format-registry/puid> "fmt/650" .
 <http://the-fr.org/id/file-format/1103> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/650> .
 <http://the-fr.org/id/file-format/1103> <http://www.w3.org/2000/01/rdf-schema#label> "Quark Xpress Report File"@en .
@@ -13463,6 +13477,7 @@ The EBML specifications are work-in-progress, and can be found here: https://git
 <http://the-fr.org/id/file-format/1103> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1103> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1104> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.Quark.QuarkXPress" .
 <http://the-fr.org/id/file-format/1104> <http://the-fr.org/prop/format-registry/puid> "fmt/651" .
 <http://the-fr.org/id/file-format/1104> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/651> .
 <http://the-fr.org/id/file-format/1104> <http://www.w3.org/2000/01/rdf-schema#label> "Quark Xpress Data File"@en .
@@ -13478,6 +13493,7 @@ The EBML specifications are work-in-progress, and can be found here: https://git
 <http://the-fr.org/id/file-format/1104> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1104> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1105> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.Quark.QuarkXPress" .
 <http://the-fr.org/id/file-format/1105> <http://the-fr.org/prop/format-registry/puid> "fmt/652" .
 <http://the-fr.org/id/file-format/1105> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/652> .
 <http://the-fr.org/id/file-format/1105> <http://www.w3.org/2000/01/rdf-schema#label> "Quark Xpress Data File"@en .
@@ -13866,6 +13882,7 @@ language and a fixed-document format."@en .
 <http://the-fr.org/id/file-format/1137> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1137> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1138> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1138> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.Quark.QuarkXPress" .
 <http://the-fr.org/id/file-format/1138> <http://the-fr.org/prop/format-registry/puid> "fmt/685" .
 <http://the-fr.org/id/file-format/1138> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/685> .
 <http://the-fr.org/id/file-format/1138> <http://www.w3.org/2000/01/rdf-schema#label> "Quark Xpress Data File"@en .
@@ -17158,6 +17175,303 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/1403> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1404> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1404> <http://the-fr.org/prop/format-registry/puid> "fmt/951" .
+<http://the-fr.org/id/file-format/1404> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/951> .
+<http://the-fr.org/id/file-format/1404> <http://www.w3.org/2000/01/rdf-schema#label> "Sonic Foundry WAVE 64"@en .
+<http://the-fr.org/id/file-format/1404> <http://www.w3.org/2004/02/skos/core#altLabel> "Sony Media WAVE 64" .
+<http://the-fr.org/id/file-format/1404> <http://purl.org/dc/terms/description> "W64 is a 64 bit WAV-like audio format created to overcome the 32 bit addressing limitations of conventional WAV."@en .
+<http://the-fr.org/id/file-format/1404> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1404> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1404> <http://the-fr.org/prop/format-registry/hasExtension> "w64" .
+<http://the-fr.org/id/file-format/1404> <http://the-fr.org/prop/format-registry/hasExtension> "wav" .
+<http://the-fr.org/id/file-format/1404> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1404> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1404> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1405> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/tta" .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/puid> "fmt/952" .
+<http://the-fr.org/id/file-format/1405> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/952> .
+<http://the-fr.org/id/file-format/1405> <http://www.w3.org/2000/01/rdf-schema#label> "True Audio"@en .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/version> "1" .
+<http://the-fr.org/id/file-format/1405> <http://purl.org/dc/terms/description> "True Audio is a lossless audio compression format for multichannel 8, 16 and 24 bits audio data."@en .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/hasExtension> "tta" .
+<http://the-fr.org/id/file-format/1405> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1405> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1406> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/tta" .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/puid> "fmt/953" .
+<http://the-fr.org/id/file-format/1406> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/953> .
+<http://the-fr.org/id/file-format/1406> <http://www.w3.org/2000/01/rdf-schema#label> "True Audio"@en .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/version> "2" .
+<http://the-fr.org/id/file-format/1406> <http://purl.org/dc/terms/description> "True Audio is a lossless audio compression format for multichannel 8, 16 and 24 bits audio data."@en .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/hasExtension> "tta" .
+<http://the-fr.org/id/file-format/1406> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1406> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1407> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1407> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/amr-wb" .
+<http://the-fr.org/id/file-format/1407> <http://the-fr.org/prop/format-registry/puid> "fmt/954" .
+<http://the-fr.org/id/file-format/1407> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/954> .
+<http://the-fr.org/id/file-format/1407> <http://www.w3.org/2000/01/rdf-schema#label> "Adaptive Multi-Rate Wideband Audio"@en .
+<http://the-fr.org/id/file-format/1407> <http://purl.org/dc/terms/description> "Adaptive Multi-Rate Wideband (AMR-WB) is a wideband speech audio coding standard based on Adaptive Multi-Rate encoding. AMR-WB provides a speech bandwidth of 50–7000 Hz compared to narrowband speech coders which in general offer around 300–3400 Hz. AMR-WB was developed by Nokia and VoiceAge."@en .
+<http://the-fr.org/id/file-format/1407> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1407> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1407> <http://the-fr.org/prop/format-registry/hasExtension> "awb" .
+<http://the-fr.org/id/file-format/1407> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1407> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1407> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1408> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1408> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/dls" .
+<http://the-fr.org/id/file-format/1408> <http://the-fr.org/prop/format-registry/puid> "fmt/955" .
+<http://the-fr.org/id/file-format/1408> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/955> .
+<http://the-fr.org/id/file-format/1408> <http://www.w3.org/2000/01/rdf-schema#label> "Downloadable Sounds Audio"@en .
+<http://the-fr.org/id/file-format/1408> <http://purl.org/dc/terms/description> "DLS is a file format that holds digital musical instrument sound banks. The DLS standards include specifications for how MIDI protocol-controlled music synthesizers should render the instruments in a DLS file."@en .
+<http://the-fr.org/id/file-format/1408> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1408> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1408> <http://the-fr.org/prop/format-registry/hasExtension> "dls" .
+<http://the-fr.org/id/file-format/1408> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1408> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1408> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1409> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1409> <http://the-fr.org/prop/format-registry/puid> "fmt/956" .
+<http://the-fr.org/id/file-format/1409> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/956> .
+<http://the-fr.org/id/file-format/1409> <http://www.w3.org/2000/01/rdf-schema#label> "RIFF-based MIDI"@en .
+<http://the-fr.org/id/file-format/1409> <http://purl.org/dc/terms/description> "The RIFF-based MIDI file format was created by Microsoft Corporation in 1991. The file is a RIFF container holding a MIDI file which may also include a sound bank."@en .
+<http://the-fr.org/id/file-format/1409> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1409> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1409> <http://the-fr.org/prop/format-registry/hasExtension> "rmi" .
+<http://the-fr.org/id/file-format/1409> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1409> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1409> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1410> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1410> <http://the-fr.org/prop/format-registry/puid> "fmt/957" .
+<http://the-fr.org/id/file-format/1410> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/957> .
+<http://the-fr.org/id/file-format/1410> <http://www.w3.org/2000/01/rdf-schema#label> "DirectMusic Segment File Format"@en .
+<http://the-fr.org/id/file-format/1410> <http://purl.org/dc/terms/description> "The DirectMusic Segment is a file format created by Microsoft. The files can be played with DirectMusic API using a Microsoft Software Synthesizer or any installed MIDI output device. DirectMusic provides DLS support, and SGT files often accompany sound banks. SGT files contain playing order and track information. Segment files always come with DirectMusic Style files, which contain all required melody pattern information."@en .
+<http://the-fr.org/id/file-format/1410> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1410> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1410> <http://the-fr.org/prop/format-registry/hasExtension> "sgt" .
+<http://the-fr.org/id/file-format/1410> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1410> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1410> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1411> <http://the-fr.org/prop/format-registry/puid> "fmt/958" .
+<http://the-fr.org/id/file-format/1411> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/958> .
+<http://the-fr.org/id/file-format/1411> <http://www.w3.org/2000/01/rdf-schema#label> "DirectMusic Style File Format"@en .
+<http://the-fr.org/id/file-format/1411> <http://purl.org/dc/terms/description> "The DirectMusic Style is a file format created by Microsoft. STY files contain melody pattern information. STY files are used by the DirectMusic Segment format and they cannot be played directly."@en .
+<http://the-fr.org/id/file-format/1411> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1411> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1411> <http://the-fr.org/prop/format-registry/hasExtension> "sty" .
+<http://the-fr.org/id/file-format/1411> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1411> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1411> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/puid> "fmt/959" .
+<http://the-fr.org/id/file-format/1412> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/959> .
+<http://the-fr.org/id/file-format/1412> <http://www.w3.org/2000/01/rdf-schema#label> "Portable Sound Format"@en .
+<http://the-fr.org/id/file-format/1412> <http://purl.org/dc/terms/description> "The Portable Sound Format (PSF) is a sequencer sound file format for video game music, created by Neill Corlett. PSF files contain audio data and a sequence player. A file with the .psf or .psf1 extensions will usually be self-contained files holding both the audio library data and sequencing data. A .minipsf or .minipsf1 will hold just sequencing data, while a .psflib or .psf1lib will contain the audio library data so these must reside in the same directory where used."@en .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "psf" .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "psf1" .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "psflib" .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "minipsf" .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "minipsf1" .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "gsf" .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "gsflib" .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasExtension> "minigsf" .
+<http://the-fr.org/id/file-format/1412> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1412> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1413> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1413> <http://the-fr.org/prop/format-registry/puid> "fmt/960" .
+<http://the-fr.org/id/file-format/1413> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/960> .
+<http://the-fr.org/id/file-format/1413> <http://www.w3.org/2000/01/rdf-schema#label> "DOS Sound and Music Interface Advanced Module Format"@en .
+<http://the-fr.org/id/file-format/1413> <http://purl.org/dc/terms/description> "The AMF format is an audio sequencing format containing both an audio sample bank, and sequencing data."@en .
+<http://the-fr.org/id/file-format/1413> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1413> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1413> <http://the-fr.org/prop/format-registry/hasExtension> "amf" .
+<http://the-fr.org/id/file-format/1413> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1413> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1413> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1414> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/mobile-xmf" .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/puid> "fmt/961" .
+<http://the-fr.org/id/file-format/1414> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/961> .
+<http://the-fr.org/id/file-format/1414> <http://www.w3.org/2000/01/rdf-schema#label> "Mobile eXtensible Music Format"@en .
+<http://the-fr.org/id/file-format/1414> <http://www.w3.org/2004/02/skos/core#altLabel> "Mobile XMF" .
+<http://the-fr.org/id/file-format/1414> <http://purl.org/dc/terms/description> "XMF is a family of specifications created and administered by the MIDI Manufacturer\'s Association. An XMF file contains one or more existing files such as Standard MIDI Files, Downloadable Sound (DLS) instrument files, WAV files, or other digital audio files to create a collection of all the resources needed to present a musical piece. Mobile XMF was developed specifically for mobile phones, and supports SP-MIDI format SMF files as well as Mobile DLS content."@en .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/hasExtension> "mxmf" .
+<http://the-fr.org/id/file-format/1414> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1415> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1415> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/qcelp" .
+<http://the-fr.org/id/file-format/1415> <http://the-fr.org/prop/format-registry/puid> "fmt/962" .
+<http://the-fr.org/id/file-format/1415> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/962> .
+<http://the-fr.org/id/file-format/1415> <http://www.w3.org/2000/01/rdf-schema#label> "QCP Audio File Format"@en .
+<http://the-fr.org/id/file-format/1415> <http://purl.org/dc/terms/description> "QCP is a storage format for exchanging Qualcomm Code Excited Linear Prediction (QCELP 13k) encoded audio data, as well as Enhanced Variable Rate Codec (EVRC) and Selectable Mode Vocoders (SMV) data."@en .
+<http://the-fr.org/id/file-format/1415> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1415> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1415> <http://the-fr.org/prop/format-registry/hasExtension> "qcp" .
+<http://the-fr.org/id/file-format/1415> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1415> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1415> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1416> <http://the-fr.org/prop/format-registry/puid> "fmt/963" .
+<http://the-fr.org/id/file-format/1416> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/963> .
+<http://the-fr.org/id/file-format/1416> <http://www.w3.org/2000/01/rdf-schema#label> "OMNIC Spectral Data File"@en .
+<http://the-fr.org/id/file-format/1416> <http://www.w3.org/2004/02/skos/core#altLabel> "Thermo Scientific OMNIC Data File" .
+<http://the-fr.org/id/file-format/1416> <http://purl.org/dc/terms/description> "OMNIC Spectral Data files are spectroscopy data files produced by Thermo Scientific OMNIC software."@en .
+<http://the-fr.org/id/file-format/1416> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1416> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Dataset> .
+<http://the-fr.org/id/file-format/1416> <http://the-fr.org/prop/format-registry/hasExtension> "spa" .
+<http://the-fr.org/id/file-format/1416> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1416> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1416> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1417> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1417> <http://the-fr.org/prop/format-registry/puid> "fmt/964" .
+<http://the-fr.org/id/file-format/1417> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/964> .
+<http://the-fr.org/id/file-format/1417> <http://www.w3.org/2000/01/rdf-schema#label> "Final Draft Document"@en .
+<http://the-fr.org/id/file-format/1417> <http://the-fr.org/prop/format-registry/version> "5-7" .
+<http://the-fr.org/id/file-format/1417> <http://purl.org/dc/terms/description> "Final Draft is screenwriting software for writing and formatting screenplays. This entry concerns the native file format of versions 5 through 7."@en .
+<http://the-fr.org/id/file-format/1417> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1417> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
+<http://the-fr.org/id/file-format/1417> <http://the-fr.org/prop/format-registry/hasExtension> "fdr" .
+<http://the-fr.org/id/file-format/1417> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1417> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1417> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/puid> "fmt/965" .
+<http://the-fr.org/id/file-format/1418> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/965> .
+<http://the-fr.org/id/file-format/1418> <http://www.w3.org/2000/01/rdf-schema#label> "Music Encoding Initiative"@en .
+<http://the-fr.org/id/file-format/1418> <http://purl.org/dc/terms/description> "The Music Encoding Initiative (MEI) is an open-source effort to define a system for encoding musical documents in a machine-readable structure. MEI is formalised in the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language (XML) schema.  
+
+PRONOM currently does not distinguish between different versions of MEI."@en .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/hasExtension> "mei" .
+<http://the-fr.org/id/file-format/1418> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1419> <http://the-fr.org/prop/format-registry/puid> "fmt/966" .
+<http://the-fr.org/id/file-format/1419> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/966> .
+<http://the-fr.org/id/file-format/1419> <http://the-fr.org/prop/format-registry/internetMediaType> "multipart/appledouble" .
+<http://the-fr.org/id/file-format/1419> <http://www.w3.org/2000/01/rdf-schema#label> "AppleDouble Resource Fork"@en .
+<http://the-fr.org/id/file-format/1419> <http://the-fr.org/prop/format-registry/version> "1" .
+<http://the-fr.org/id/file-format/1419> <http://purl.org/dc/terms/description> "The resource fork is a construct of the Mac OS operating system used to store structured data in a file, alongside unstructured data stored within the data fork. The format specification is available here: http://support.apple.com/kb/TA32537?viewlocale=en_US
+
+The format lacks an extension, and is instead represented by a file name consisting of ._<filename resource fork belongs to>"@en .
+<http://the-fr.org/id/file-format/1419> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1419> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1419> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1419> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1420> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1420> <http://the-fr.org/prop/format-registry/internetMediaType> "application/applefile" .
+<http://the-fr.org/id/file-format/1420> <http://the-fr.org/prop/format-registry/puid> "fmt/967" .
+<http://the-fr.org/id/file-format/1420> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/967> .
+<http://the-fr.org/id/file-format/1420> <http://www.w3.org/2000/01/rdf-schema#label> "AppleSingle"@en .
+<http://the-fr.org/id/file-format/1420> <http://the-fr.org/prop/format-registry/version> "1" .
+<http://the-fr.org/id/file-format/1420> <http://purl.org/dc/terms/description> "Apple Computers created the AppleSingle format (as well as the AppleDouble format) to represent and preserve the attributes of files across files systems that do not support the same attributes of the file’s home systems. AppleSingle is primarily a storage format and contains both a file’s contents and attributes. It consists of a header and one or more optional data entries followed by the byte stream of the file it is storing. It maintains the original Macintosh filename and file type (e.g. Mydoc.pdf). The AppleSingle format can store a number of different kinds of formats."@en .
+<http://the-fr.org/id/file-format/1420> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1420> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1420> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1420> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1421> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1421> <http://the-fr.org/prop/format-registry/internetMediaType> "application/applefile" .
+<http://the-fr.org/id/file-format/1421> <http://the-fr.org/prop/format-registry/puid> "fmt/968" .
+<http://the-fr.org/id/file-format/1421> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/968> .
+<http://the-fr.org/id/file-format/1421> <http://www.w3.org/2000/01/rdf-schema#label> "AppleSingle"@en .
+<http://the-fr.org/id/file-format/1421> <http://the-fr.org/prop/format-registry/version> "2" .
+<http://the-fr.org/id/file-format/1421> <http://purl.org/dc/terms/description> "Apple Computers created the AppleSingle format (as well as the AppleDouble format) to represent and preserve the attributes of files across files systems that do not support the same attributes of the file’s home systems. AppleSingle is primarily a storage format and contains both a file’s contents and attributes. It consists of a header and one or more optional data entries followed by the byte stream of the file it is storing. It maintains the original Macintosh filename and file type (e.g. Mydoc.pdf). The AppleSingle format can store a number of different kinds of formats."@en .
+<http://the-fr.org/id/file-format/1421> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1421> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1421> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1421> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1422> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/internetMediaType> "application/rtf" .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/puid> "fmt/969" .
+<http://the-fr.org/id/file-format/1422> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/969> .
+<http://the-fr.org/id/file-format/1422> <http://www.w3.org/2000/01/rdf-schema#label> "	Rich Text Format"@en .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/version> "0" .
+<http://the-fr.org/id/file-format/1422> <http://purl.org/dc/terms/description> "Rich Text Format (RTF) is a format developed by Microsoft to encode formatted text and graphics for use within applications or for data and formatting transfer between applications. It is closely associated with Microsoft Word, and new versions are developed with each release of Word. RTF files are encoded in plain text, typically ASCII, and consists of a series of control words, control symbols and groups. An RTF file comprises a Header section, containing various header tables, followed by a Document section, containing the document content and formatting.
+
+RTF0 may predate version 1.0 of the RTF specification which is known to date from at least 1992. Please contact the PRONOM team if you are aware of or have access to a formal specification for RTF0."@en .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/hasExtension> "rtf" .
+<http://the-fr.org/id/file-format/1422> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1422> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1423> <http://the-fr.org/prop/format-registry/puid> "fmt/970" .
+<http://the-fr.org/id/file-format/1423> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/970> .
+<http://the-fr.org/id/file-format/1423> <http://the-fr.org/prop/format-registry/internetMediaType> "image/ktx" .
+<http://the-fr.org/id/file-format/1423> <http://www.w3.org/2000/01/rdf-schema#label> "Khronos Texture File"@en .
+<http://the-fr.org/id/file-format/1423> <http://purl.org/dc/terms/description> "KTX (Khronos Texture) is a file format for storing OpenGL textures."@en .
+<http://the-fr.org/id/file-format/1423> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1423> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1423> <http://the-fr.org/prop/format-registry/hasExtension> "ktx" .
+<http://the-fr.org/id/file-format/1423> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1423> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1423> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1424> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1424> <http://the-fr.org/prop/format-registry/puid> "fmt/971" .
+<http://the-fr.org/id/file-format/1424> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/971> .
+<http://the-fr.org/id/file-format/1424> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft Windows Movie Maker File"@en .
+<http://the-fr.org/id/file-format/1424> <http://purl.org/dc/terms/description> "Windows Movie Maker is video editing software by Microsoft. A .mswmm file won\'t typically contain any source audio or video data, rather it will contain references or pointers to the source data. For this reason extracting a .mswmm file from its context may result in the movie being unable to play. A movie exported to a video format from within the application will contain the appropriate data for portable playback."@en .
+<http://the-fr.org/id/file-format/1424> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1424> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Video> .
+<http://the-fr.org/id/file-format/1424> <http://the-fr.org/prop/format-registry/hasExtension> "mswmm" .
+<http://the-fr.org/id/file-format/1424> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1424> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1424> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1425> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1425> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/vnd.dolby.mlp" .
+<http://the-fr.org/id/file-format/1425> <http://the-fr.org/prop/format-registry/puid> "fmt/972" .
+<http://the-fr.org/id/file-format/1425> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/972> .
+<http://the-fr.org/id/file-format/1425> <http://www.w3.org/2000/01/rdf-schema#label> "Dolby MLP Lossless Audio"@en .
+<http://the-fr.org/id/file-format/1425> <http://purl.org/dc/terms/description> "MLP \"Meridian Lossless Packing\" is the standard lossless compression format for DVD-Audio content. It was originally developed by Meridian Audio, Ltd."@en .
+<http://the-fr.org/id/file-format/1425> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1425> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1425> <http://the-fr.org/prop/format-registry/hasExtension> "mlp" .
+<http://the-fr.org/id/file-format/1425> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1425> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1425> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1426> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1426> <http://the-fr.org/prop/format-registry/internetMediaType> "audio/vnd.dts" .
+<http://the-fr.org/id/file-format/1426> <http://the-fr.org/prop/format-registry/puid> "fmt/973" .
+<http://the-fr.org/id/file-format/1426> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/973> .
+<http://the-fr.org/id/file-format/1426> <http://www.w3.org/2000/01/rdf-schema#label> "DTS Coherent Acoustics (DCA) Audio"@en .
+<http://the-fr.org/id/file-format/1426> <http://purl.org/dc/terms/description> "DTS Coherent Acoustics is a consumer-level audio codec employed as part of the DVD, Laserdisc and Blu-ray specifications."@en .
+<http://the-fr.org/id/file-format/1426> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1426> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1426> <http://the-fr.org/prop/format-registry/hasExtension> "dts" .
+<http://the-fr.org/id/file-format/1426> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1426> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1426> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1427> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/internetMediaType> "application/vnd.music-niff" .
+<http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/puid> "fmt/974" .
+<http://the-fr.org/id/file-format/1427> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/974> .
+<http://the-fr.org/id/file-format/1427> <http://www.w3.org/2000/01/rdf-schema#label> "Notation Interchange File Format"@en .
+<http://the-fr.org/id/file-format/1427> <http://purl.org/dc/terms/description> "Notation Interchange File Format (NIFF) is a music notation file format used primarily for transferring music notation between different scorewriters."@en .
+<http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/hasExtension> "nif" .
+<http://the-fr.org/id/file-format/1427> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/20> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/575> .
 <http://the-fr.org/id/file-format/20> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/577> .
 <http://the-fr.org/id/file-format/20> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/576> .
@@ -17205,15 +17519,12 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/259> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/564> .
 <http://the-fr.org/id/file-format/280> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/227> .
 <http://the-fr.org/id/file-format/280> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
-<http://the-fr.org/id/file-format/471> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
-<http://the-fr.org/id/file-format/471> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
-<http://the-fr.org/id/file-format/471> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/469> .
-<http://the-fr.org/id/file-format/471> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/470> .
-<http://the-fr.org/id/file-format/472> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
-<http://the-fr.org/id/file-format/472> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
-<http://the-fr.org/id/file-format/472> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/469> .
-<http://the-fr.org/id/file-format/472> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/470> .
-<http://the-fr.org/id/file-format/472> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
+<http://the-fr.org/id/file-format/467> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/468> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/469> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/470> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/471> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/472> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/503> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/498> .
 <http://the-fr.org/id/file-format/503> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/499> .
 <http://the-fr.org/id/file-format/503> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/500> .
@@ -17230,12 +17541,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/545> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/224> .
 <http://the-fr.org/id/file-format/545> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/544> .
 <http://the-fr.org/id/file-format/545> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
-<http://the-fr.org/id/file-format/473> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
-<http://the-fr.org/id/file-format/473> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
-<http://the-fr.org/id/file-format/473> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/469> .
-<http://the-fr.org/id/file-format/473> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/470> .
-<http://the-fr.org/id/file-format/473> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
-<http://the-fr.org/id/file-format/473> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
+<http://the-fr.org/id/file-format/473> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/554> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/550> .
 <http://the-fr.org/id/file-format/554> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/551> .
 <http://the-fr.org/id/file-format/554> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/552> .
@@ -17342,7 +17648,15 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/506> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/505> .
 <http://the-fr.org/id/file-format/574> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
 <http://the-fr.org/id/file-format/573> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/469> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/470> .
 <http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/548> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/405> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/781> .
 <http://the-fr.org/id/file-format/406> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/781> .
 <http://the-fr.org/id/file-format/407> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/781> .
@@ -17370,6 +17684,11 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/594> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/459> .
 <http://the-fr.org/id/file-format/595> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/459> .
 <http://the-fr.org/id/file-format/596> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/459> .
+<http://the-fr.org/id/file-format/597> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/598> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/599> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/600> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
+<http://the-fr.org/id/file-format/601> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/605> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/265> .
 <http://the-fr.org/id/file-format/605> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/386> .
 <http://the-fr.org/id/file-format/605> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/387> .
@@ -17390,8 +17709,10 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/609> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/806> .
 <http://the-fr.org/id/file-format/610> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/470> .
 <http://the-fr.org/id/file-format/610> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/598> .
+<http://the-fr.org/id/file-format/610> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/610> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/807> .
 <http://the-fr.org/id/file-format/611> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/470> .
+<http://the-fr.org/id/file-format/611> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/611> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/807> .
 <http://the-fr.org/id/file-format/428> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/552> .
 <http://the-fr.org/id/file-format/428> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/553> .
@@ -17407,6 +17728,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/656> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1397> .
 <http://the-fr.org/id/file-format/669> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
 <http://the-fr.org/id/file-format/697> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/729> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/731> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/549> .
 <http://the-fr.org/id/file-format/733> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/734> .
 <http://the-fr.org/id/file-format/742> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/550> .
@@ -17436,6 +17758,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/807> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/807> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/807> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/807> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/807> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/808> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/498> .
 <http://the-fr.org/id/file-format/808> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/499> .
@@ -17544,6 +17867,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17552,6 +17876,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17560,6 +17885,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17568,6 +17894,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17576,6 +17903,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17584,6 +17912,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/935> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/263> .
 <http://the-fr.org/id/file-format/935> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/550> .
@@ -17610,6 +17939,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/941> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/941> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/941> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/941> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/941> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/942> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/942> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17618,6 +17948,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/942> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/942> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/942> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/942> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/942> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/943> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/943> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17626,6 +17957,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/943> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/943> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/943> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/943> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/943> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/944> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/944> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17634,6 +17966,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/944> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/944> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/944> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/944> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/944> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/945> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/945> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17642,6 +17975,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/945> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/945> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/945> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/945> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/945> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/946> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/467> .
 <http://the-fr.org/id/file-format/946> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/468> .
@@ -17650,6 +17984,7 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/946> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/471> .
 <http://the-fr.org/id/file-format/946> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/946> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/473> .
+<http://the-fr.org/id/file-format/946> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/946> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/729> .
 <http://the-fr.org/id/file-format/949> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
 <http://the-fr.org/id/file-format/953> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/550> .
@@ -17772,3 +18107,5 @@ Due to the age of the format, WP4.x files may lack a format extension, however .
 <http://the-fr.org/id/file-format/1400> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1397> .
 <http://the-fr.org/id/file-format/1401> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1397> .
 <http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/731> .
+<http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1167> .
+<http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .

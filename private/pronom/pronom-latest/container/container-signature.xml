@@ -303,7 +303,7 @@
                     <Path>Book</Path>
                     <BinarySignatures>
                         <InternalSignatureCollection>
-	                        <InternalSignature ID="308">
+	                        <InternalSignature ID="2000">
 	                            <ByteSequence Reference="BOFoffset">
 	                                <SubSequence Position="1" SubSeqMinOffset="0" SubSeqMaxOffset="0">
 	                                    <Sequence>09 08</Sequence>
@@ -326,7 +326,7 @@
                     <Path>Workbook</Path>
                     <BinarySignatures>
                         <InternalSignatureCollection>
-	                        <InternalSignature ID="308">
+	                        <InternalSignature ID="2010">
 	                            <ByteSequence Reference="BOFoffset">
 	                                <SubSequence Position="1" SubSeqMinOffset="0" SubSeqMaxOffset="0">
 	                                    <Sequence>09 08</Sequence>
@@ -349,7 +349,7 @@
                     <Path>Book</Path>
                     <BinarySignatures>
                         <InternalSignatureCollection>
-	                        <InternalSignature ID="308">
+	                        <InternalSignature ID="2020">
 	                            <ByteSequence Reference="BOFoffset">
 	                                <SubSequence Position="1" SubSeqMinOffset="0" SubSeqMaxOffset="0">
 	                                    <Sequence>09 08</Sequence>
@@ -3029,6 +3029,18 @@
             </Files>
         </ContainerSignature>
 
+        <ContainerSignature Id="29000" ContainerType="OLE2">
+            <Description>Microsoft Windows Movie Maker File</Description>
+            <Files>
+                <File>
+                    <Path>ProducerData</Path>
+                </File>
+                <File>
+                    <Path>WmtoolsValid</Path>
+                </File>
+            </Files>
+        </ContainerSignature>
+
     </ContainerSignatures>
     <FileFormatMappings>
     
@@ -3334,12 +3346,14 @@
 	<FileFormatMapping signatureId="27000" Puid="fmt/916" />
  
 	<!--  Adobe Air 1.0 (ZIP)--> 
-    <FileFormatMapping signatureId="28000" Puid="fmt/937"/>
+	<FileFormatMapping signatureId="28000" Puid="fmt/937"/>
 	<!--  Adobe Air 1.5 (ZIP)--> 
-    <FileFormatMapping signatureId="28010" Puid="fmt/942"/>
+	<FileFormatMapping signatureId="28010" Puid="fmt/942"/>
 	<!--  Adobe Air 2.0 (ZIP)--> 
-    <FileFormatMapping signatureId="28020" Puid="fmt/943"/>
+	<FileFormatMapping signatureId="28020" Puid="fmt/943"/>
 
+	<!--  Microsoft Windows Movie Maker File (OLE2)--> 
+	<FileFormatMapping signatureId="29000" Puid="fmt/971"/>
     </FileFormatMappings>
   
     <TriggerPuids>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FFSignatureFile DateCreated="2016-07-27T12:13:11" Version="86" xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile">
+<FFSignatureFile DateCreated="2016-09-27T15:37:53" Version="88" xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile">
     <InternalSignatureCollection>
         <InternalSignature ID="9" Specificity="Specific">
             <ByteSequence Reference="BOFoffset">
@@ -859,21 +859,6 @@
                     <Shift Byte="49">3</Shift>
                     <Shift Byte="52">4</Shift>
                     <RightFragment MaxOffset="4" MinOffset="4" Position="1">57415645</RightFragment>
-                </SubSequence>
-                <SubSequence MinFragLength="0" Position="2" SubSeqMinOffset="0">
-                    <Sequence>666D7420</Sequence>
-                    <DefaultShift>5</DefaultShift>
-                    <Shift Byte="20">1</Shift>
-                    <Shift Byte="66">4</Shift>
-                    <Shift Byte="6D">3</Shift>
-                    <Shift Byte="74">2</Shift>
-                </SubSequence>
-                <SubSequence MinFragLength="0" Position="3" SubSeqMinOffset="18">
-                    <Sequence>64617461</Sequence>
-                    <DefaultShift>5</DefaultShift>
-                    <Shift Byte="61">1</Shift>
-                    <Shift Byte="64">4</Shift>
-                    <Shift Byte="74">2</Shift>
                 </SubSequence>
             </ByteSequence>
         </InternalSignature>
@@ -15586,7 +15571,13 @@
                     <Shift Byte="6D">9</Shift>
                     <Shift Byte="74">8</Shift>
                     <LeftFragment MaxOffset="4" MinOffset="4" Position="1">52494646</LeftFragment>
-                    <RightFragment MaxOffset="1000" MinOffset="14" Position="1">64617461</RightFragment>
+                </SubSequence>
+                <SubSequence MinFragLength="0" Position="2" SubSeqMinOffset="14">
+                    <Sequence>64617461</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="61">1</Shift>
+                    <Shift Byte="64">4</Shift>
+                    <Shift Byte="74">2</Shift>
                 </SubSequence>
             </ByteSequence>
         </InternalSignature>
@@ -15607,7 +15598,13 @@
                     <LeftFragment MaxOffset="4" MinOffset="4" Position="1">52494646</LeftFragment>
                     <RightFragment MaxOffset="0" MinOffset="0" Position="1">[!10]</RightFragment>
                     <RightFragment MaxOffset="3" MinOffset="3" Position="2">[!FEFF]</RightFragment>
-                    <RightFragment MaxOffset="1000" MinOffset="16" Position="3">64617461</RightFragment>
+                </SubSequence>
+                <SubSequence MinFragLength="0" Position="2" SubSeqMinOffset="16">
+                    <Sequence>64617461</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="61">1</Shift>
+                    <Shift Byte="64">4</Shift>
+                    <Shift Byte="74">2</Shift>
                 </SubSequence>
             </ByteSequence>
         </InternalSignature>
@@ -15627,7 +15624,13 @@
                     <Shift Byte="74">2</Shift>
                     <LeftFragment MaxOffset="4" MinOffset="4" Position="1">52494646</LeftFragment>
                     <RightFragment MaxOffset="4" MinOffset="4" Position="1">FEFF</RightFragment>
-                    <RightFragment MaxOffset="1000" MinOffset="38" Position="2">64617461</RightFragment>
+                </SubSequence>
+                <SubSequence MinFragLength="0" Position="2" SubSeqMinOffset="38">
+                    <Sequence>64617461</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="61">1</Shift>
+                    <Shift Byte="64">4</Shift>
+                    <Shift Byte="74">2</Shift>
                 </SubSequence>
             </ByteSequence>
         </InternalSignature>
@@ -25826,41 +25829,37 @@
         </InternalSignature>
         <InternalSignature ID="1038" Specificity="Specific">
             <ByteSequence Reference="BOFoffset">
-                <SubSequence MinFragLength="0" Position="1"
+                <SubSequence MinFragLength="8" Position="1"
                     SubSeqMaxOffset="0" SubSeqMinOffset="0">
-                    <Sequence>52463634FFFFFFFF5741564564733634</Sequence>
-                    <DefaultShift>17</DefaultShift>
+                    <Sequence>5741564564733634</Sequence>
+                    <DefaultShift>9</DefaultShift>
                     <Shift Byte="34">1</Shift>
                     <Shift Byte="36">2</Shift>
                     <Shift Byte="41">7</Shift>
                     <Shift Byte="45">5</Shift>
-                    <Shift Byte="46">15</Shift>
-                    <Shift Byte="52">16</Shift>
                     <Shift Byte="56">6</Shift>
                     <Shift Byte="57">8</Shift>
                     <Shift Byte="64">4</Shift>
                     <Shift Byte="73">3</Shift>
-                    <Shift Byte="FF">9</Shift>
+                    <LeftFragment MaxOffset="4" MinOffset="4" Position="1">52463634</LeftFragment>
                 </SubSequence>
             </ByteSequence>
         </InternalSignature>
         <InternalSignature ID="1039" Specificity="Specific">
             <ByteSequence Reference="BOFoffset">
-                <SubSequence MinFragLength="0" Position="1"
+                <SubSequence MinFragLength="8" Position="1"
                     SubSeqMaxOffset="0" SubSeqMinOffset="0">
-                    <Sequence>52463634FFFFFFFF5741564564733634</Sequence>
-                    <DefaultShift>17</DefaultShift>
+                    <Sequence>5741564564733634</Sequence>
+                    <DefaultShift>9</DefaultShift>
                     <Shift Byte="34">1</Shift>
                     <Shift Byte="36">2</Shift>
                     <Shift Byte="41">7</Shift>
                     <Shift Byte="45">5</Shift>
-                    <Shift Byte="46">15</Shift>
-                    <Shift Byte="52">16</Shift>
                     <Shift Byte="56">6</Shift>
                     <Shift Byte="57">8</Shift>
                     <Shift Byte="64">4</Shift>
                     <Shift Byte="73">3</Shift>
-                    <Shift Byte="FF">9</Shift>
+                    <LeftFragment MaxOffset="4" MinOffset="4" Position="1">52463634</LeftFragment>
                 </SubSequence>
                 <SubSequence MinFragLength="0" Position="2" SubSeqMinOffset="0">
                     <Sequence>62657874</Sequence>
@@ -30562,6 +30561,410 @@
                 </SubSequence>
             </ByteSequence>
         </InternalSignature>
+        <InternalSignature ID="1308" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>726966662E91CF11A5D628DB04C10000</Sequence>
+                    <DefaultShift>17</DefaultShift>
+                    <Shift Byte="00">1</Shift>
+                    <Shift Byte="04">4</Shift>
+                    <Shift Byte="11">9</Shift>
+                    <Shift Byte="28">6</Shift>
+                    <Shift Byte="2E">12</Shift>
+                    <Shift Byte="66">13</Shift>
+                    <Shift Byte="69">15</Shift>
+                    <Shift Byte="72">16</Shift>
+                    <Shift Byte="91">11</Shift>
+                    <Shift Byte="A5">8</Shift>
+                    <Shift Byte="C1">3</Shift>
+                    <Shift Byte="CF">10</Shift>
+                    <Shift Byte="D6">7</Shift>
+                    <Shift Byte="DB">5</Shift>
+                    <RightFragment MaxOffset="8" MinOffset="8" Position="1">77617665F3ACD311</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1309" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>54544131</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="31">1</Shift>
+                    <Shift Byte="41">2</Shift>
+                    <Shift Byte="54">3</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1310" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>54544132</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="32">1</Shift>
+                    <Shift Byte="41">2</Shift>
+                    <Shift Byte="54">3</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1311" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>2321414D522D57420A</Sequence>
+                    <DefaultShift>10</DefaultShift>
+                    <Shift Byte="0A">1</Shift>
+                    <Shift Byte="21">8</Shift>
+                    <Shift Byte="23">9</Shift>
+                    <Shift Byte="2D">4</Shift>
+                    <Shift Byte="41">7</Shift>
+                    <Shift Byte="42">2</Shift>
+                    <Shift Byte="4D">6</Shift>
+                    <Shift Byte="52">5</Shift>
+                    <Shift Byte="57">3</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1312" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>52494646</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="46">1</Shift>
+                    <Shift Byte="49">3</Shift>
+                    <Shift Byte="52">4</Shift>
+                    <RightFragment MaxOffset="4" MinOffset="4" Position="1">444C5320</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1313" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>52494646</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="46">1</Shift>
+                    <Shift Byte="49">3</Shift>
+                    <Shift Byte="52">4</Shift>
+                    <RightFragment MaxOffset="4" MinOffset="4" Position="1">524D4944</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1314" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>52494646</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="46">1</Shift>
+                    <Shift Byte="49">3</Shift>
+                    <Shift Byte="52">4</Shift>
+                    <RightFragment MaxOffset="4" MinOffset="4" Position="1">444D5347</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1315" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>52494646</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="46">1</Shift>
+                    <Shift Byte="49">3</Shift>
+                    <Shift Byte="52">4</Shift>
+                    <RightFragment MaxOffset="4" MinOffset="4" Position="1">444D5354</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1316" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>505346</Sequence>
+                    <DefaultShift>4</DefaultShift>
+                    <Shift Byte="46">1</Shift>
+                    <Shift Byte="50">3</Shift>
+                    <Shift Byte="53">2</Shift>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">01</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">02</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">11</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">12</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">13</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">21</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">22</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">23</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">41</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1317" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>414D46</Sequence>
+                    <DefaultShift>4</DefaultShift>
+                    <Shift Byte="41">3</Shift>
+                    <Shift Byte="46">1</Shift>
+                    <Shift Byte="4D">2</Shift>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">[0A:0E]</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1318" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>584D465F322E303000000002</Sequence>
+                    <DefaultShift>13</DefaultShift>
+                    <Shift Byte="00">2</Shift>
+                    <Shift Byte="02">1</Shift>
+                    <Shift Byte="2E">7</Shift>
+                    <Shift Byte="30">5</Shift>
+                    <Shift Byte="32">8</Shift>
+                    <Shift Byte="46">10</Shift>
+                    <Shift Byte="4D">11</Shift>
+                    <Shift Byte="58">12</Shift>
+                    <Shift Byte="5F">9</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1319" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>52494646</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="46">1</Shift>
+                    <Shift Byte="49">3</Shift>
+                    <Shift Byte="52">4</Shift>
+                    <RightFragment MaxOffset="4" MinOffset="4" Position="1">514C434D</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1320" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>537065637472616C20446174612046696C65</Sequence>
+                    <DefaultShift>19</DefaultShift>
+                    <Shift Byte="20">5</Shift>
+                    <Shift Byte="44">9</Shift>
+                    <Shift Byte="46">4</Shift>
+                    <Shift Byte="53">18</Shift>
+                    <Shift Byte="61">6</Shift>
+                    <Shift Byte="63">15</Shift>
+                    <Shift Byte="65">1</Shift>
+                    <Shift Byte="69">3</Shift>
+                    <Shift Byte="6C">2</Shift>
+                    <Shift Byte="70">17</Shift>
+                    <Shift Byte="72">13</Shift>
+                    <Shift Byte="74">7</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1328" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="16" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>46696E616C2044726166742C20496E63</Sequence>
+                    <DefaultShift>17</DefaultShift>
+                    <Shift Byte="20">4</Shift>
+                    <Shift Byte="2C">5</Shift>
+                    <Shift Byte="44">10</Shift>
+                    <Shift Byte="46">16</Shift>
+                    <Shift Byte="49">3</Shift>
+                    <Shift Byte="61">8</Shift>
+                    <Shift Byte="63">1</Shift>
+                    <Shift Byte="66">7</Shift>
+                    <Shift Byte="69">15</Shift>
+                    <Shift Byte="6C">12</Shift>
+                    <Shift Byte="6E">2</Shift>
+                    <Shift Byte="72">9</Shift>
+                    <Shift Byte="74">6</Shift>
+                    <LeftFragment MaxOffset="64" MinOffset="12" Position="1">FDFDFDFD</LeftFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1329" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>3C3F786D6C2076657273696F6E3D</Sequence>
+                    <DefaultShift>15</DefaultShift>
+                    <Shift Byte="20">9</Shift>
+                    <Shift Byte="3C">14</Shift>
+                    <Shift Byte="3D">1</Shift>
+                    <Shift Byte="3F">13</Shift>
+                    <Shift Byte="65">7</Shift>
+                    <Shift Byte="69">4</Shift>
+                    <Shift Byte="6C">10</Shift>
+                    <Shift Byte="6D">11</Shift>
+                    <Shift Byte="6E">2</Shift>
+                    <Shift Byte="6F">3</Shift>
+                    <Shift Byte="72">6</Shift>
+                    <Shift Byte="73">5</Shift>
+                    <Shift Byte="76">8</Shift>
+                    <Shift Byte="78">12</Shift>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">22</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">27</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="2">312E30</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="3">22</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="3">27</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="532" SubSeqMinOffset="20">
+                    <Sequence>786D6C6E733D22687474703A2F2F7777772E6D757369632D656E636F64696E672E6F72672F6E732F6D6569</Sequence>
+                    <DefaultShift>44</DefaultShift>
+                    <Shift Byte="22">37</Shift>
+                    <Shift Byte="2D">20</Shift>
+                    <Shift Byte="2E">11</Shift>
+                    <Shift Byte="2F">4</Shift>
+                    <Shift Byte="3A">32</Shift>
+                    <Shift Byte="3D">38</Shift>
+                    <Shift Byte="63">17</Shift>
+                    <Shift Byte="64">15</Shift>
+                    <Shift Byte="65">2</Shift>
+                    <Shift Byte="67">8</Shift>
+                    <Shift Byte="68">36</Shift>
+                    <Shift Byte="69">1</Shift>
+                    <Shift Byte="6C">41</Shift>
+                    <Shift Byte="6D">3</Shift>
+                    <Shift Byte="6E">6</Shift>
+                    <Shift Byte="6F">10</Shift>
+                    <Shift Byte="70">33</Shift>
+                    <Shift Byte="72">9</Shift>
+                    <Shift Byte="73">5</Shift>
+                    <Shift Byte="74">34</Shift>
+                    <Shift Byte="75">24</Shift>
+                    <Shift Byte="77">27</Shift>
+                    <Shift Byte="78">43</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1330" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="196" SubSeqMinOffset="0">
+                    <Sequence>0005160700010000</Sequence>
+                    <DefaultShift>9</DefaultShift>
+                    <Shift Byte="00">1</Shift>
+                    <Shift Byte="01">3</Shift>
+                    <Shift Byte="05">7</Shift>
+                    <Shift Byte="07">5</Shift>
+                    <Shift Byte="16">6</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1331" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>0005160000010000</Sequence>
+                    <DefaultShift>9</DefaultShift>
+                    <Shift Byte="00">1</Shift>
+                    <Shift Byte="01">3</Shift>
+                    <Shift Byte="05">7</Shift>
+                    <Shift Byte="16">6</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1332" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>0005160000020000</Sequence>
+                    <DefaultShift>9</DefaultShift>
+                    <Shift Byte="00">1</Shift>
+                    <Shift Byte="02">3</Shift>
+                    <Shift Byte="05">7</Shift>
+                    <Shift Byte="16">6</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1333" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>7B5C727466305C</Sequence>
+                    <DefaultShift>8</DefaultShift>
+                    <Shift Byte="30">2</Shift>
+                    <Shift Byte="5C">1</Shift>
+                    <Shift Byte="66">3</Shift>
+                    <Shift Byte="72">5</Shift>
+                    <Shift Byte="74">4</Shift>
+                    <Shift Byte="7B">7</Shift>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">616E7369</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">6D6163</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">7063</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">706361</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1334" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>AB4B5458203131BB0D0A1A0A</Sequence>
+                    <DefaultShift>13</DefaultShift>
+                    <Shift Byte="0A">1</Shift>
+                    <Shift Byte="0D">4</Shift>
+                    <Shift Byte="1A">2</Shift>
+                    <Shift Byte="20">8</Shift>
+                    <Shift Byte="31">6</Shift>
+                    <Shift Byte="4B">11</Shift>
+                    <Shift Byte="54">10</Shift>
+                    <Shift Byte="58">9</Shift>
+                    <Shift Byte="AB">12</Shift>
+                    <Shift Byte="BB">5</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1335" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="8" SubSeqMinOffset="4">
+                    <Sequence>F8726F</Sequence>
+                    <DefaultShift>4</DefaultShift>
+                    <Shift Byte="6F">1</Shift>
+                    <Shift Byte="72">2</Shift>
+                    <Shift Byte="F8">3</Shift>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">BA</RightFragment>
+                    <RightFragment MaxOffset="0" MinOffset="0" Position="1">BB</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1336" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>7FFE8001</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="01">1</Shift>
+                    <Shift Byte="7F">4</Shift>
+                    <Shift Byte="80">2</Shift>
+                    <Shift Byte="FE">3</Shift>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+        <InternalSignature ID="1337" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="0" SubSeqMinOffset="0">
+                    <Sequence>52494658</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="46">2</Shift>
+                    <Shift Byte="49">3</Shift>
+                    <Shift Byte="52">4</Shift>
+                    <Shift Byte="58">1</Shift>
+                    <RightFragment MaxOffset="4" MinOffset="4" Position="1">4E494646</RightFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
     </InternalSignatureCollection>
     <FileFormatCollection>
         <FileFormat ID="8" MIMEType="application/msword"
@@ -31302,7 +31705,9 @@
         <FileFormat ID="254" Name="PageMaker Document" PUID="x-fmt/181" Version="6.5">
             <Extension>p65</Extension>
         </FileFormat>
-        <FileFormat ID="255" Name="Quark Xpress Data File" PUID="x-fmt/182">
+        <FileFormat ID="255"
+            MIMEType="application/vnd.Quark.QuarkXPress"
+            Name="Quark Xpress Data File" PUID="x-fmt/182">
             <InternalSignatureID>771</InternalSignatureID>
             <InternalSignatureID>772</InternalSignatureID>
             <Extension>qcd</Extension>
@@ -31359,6 +31764,7 @@
         <FileFormat ID="267" Name="IRIS Graphics" PUID="x-fmt/194"/>
         <FileFormat ID="268" MIMEType="text/sgml"
             Name="Standard Generalized Markup Language" PUID="x-fmt/195">
+            <Extension>sgm</Extension>
             <Extension>sgml</Extension>
         </FileFormat>
         <FileFormat ID="269" Name="NeXt Sound" PUID="x-fmt/196"/>
@@ -31678,7 +32084,7 @@
             <InternalSignatureID>200</InternalSignatureID>
             <Extension>zip</Extension>
         </FileFormat>
-        <FileFormat ID="384" MIMEType="application/x-rar-compressed"
+        <FileFormat ID="384" MIMEType="application/vnd.rar"
             Name="RAR Archive" PUID="x-fmt/264" Version="2.0">
             <InternalSignatureID>590</InternalSignatureID>
             <Extension>rar</Extension>
@@ -32186,45 +32592,42 @@
             PUID="fmt/14" Version="1.0">
             <InternalSignatureID>123</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="614" MIMEType="application/pdf"
             Name="Acrobat PDF 1.1 - Portable Document Format"
             PUID="fmt/15" Version="1.1">
             <InternalSignatureID>124</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="615" MIMEType="application/pdf"
             Name="Acrobat PDF 1.2 - Portable Document Format"
             PUID="fmt/16" Version="1.2">
             <InternalSignatureID>125</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="616" MIMEType="application/pdf"
             Name="Acrobat PDF 1.3 - Portable Document Format"
             PUID="fmt/17" Version="1.3">
             <InternalSignatureID>23</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="617" MIMEType="application/pdf"
             Name="Acrobat PDF 1.4 - Portable Document Format"
             PUID="fmt/18" Version="1.4">
             <InternalSignatureID>20</InternalSignatureID>
             <Extension>pdf</Extension>
-            <HasPriorityOverFileFormatID>613</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>614</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>615</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>616</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="618" MIMEType="application/pdf"
             Name="Acrobat PDF 1.5 - Portable Document Format"
             PUID="fmt/19" Version="1.5">
             <InternalSignatureID>22</InternalSignatureID>
             <Extension>pdf</Extension>
-            <HasPriorityOverFileFormatID>613</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>614</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>615</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>616</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="619" MIMEType="image/gif"
             Name="Graphics Interchange Format" PUID="fmt/3" Version="87a">
@@ -32312,12 +32715,7 @@
             PUID="fmt/20" Version="1.6">
             <InternalSignatureID>21</InternalSignatureID>
             <Extension>pdf</Extension>
-            <HasPriorityOverFileFormatID>613</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>614</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>615</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>616</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
-            <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="638" MIMEType="application/xml, text/xml"
             Name="Extensible Markup Language" PUID="fmt/101" Version="1.0">
@@ -32548,6 +32946,7 @@
             <InternalSignatureID>285</InternalSignatureID>
             <InternalSignatureID>288</InternalSignatureID>
             <Extension>tif</Extension>
+            <Extension>tiff</Extension>
             <HasPriorityOverFileFormatID>609</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>610</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>611</HasPriorityOverFileFormatID>
@@ -32562,6 +32961,7 @@
             <InternalSignatureID>284</InternalSignatureID>
             <InternalSignatureID>287</InternalSignatureID>
             <Extension>tif</Extension>
+            <Extension>tiff</Extension>
             <HasPriorityOverFileFormatID>609</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>610</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>611</HasPriorityOverFileFormatID>
@@ -32615,7 +33015,6 @@
         </FileFormat>
         <FileFormat ID="682" MIMEType="application/vnd.ms-excel"
             Name="Microsoft Excel 5.0/95 Workbook (xls)" PUID="fmt/59" Version="5/95">
-            <InternalSignatureID>76</InternalSignatureID>
             <Extension>xls</Extension>
             <Extension>xlw</Extension>
             <HasPriorityOverFileFormatID>767</HasPriorityOverFileFormatID>
@@ -33050,6 +33449,7 @@
             <InternalSignatureID>283</InternalSignatureID>
             <InternalSignatureID>286</InternalSignatureID>
             <Extension>tif</Extension>
+            <Extension>tiff</Extension>
             <HasPriorityOverFileFormatID>609</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>610</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>611</HasPriorityOverFileFormatID>
@@ -33114,7 +33514,15 @@
             PUID="fmt/95" Version="1a">
             <InternalSignatureID>264</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>613</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>614</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>615</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>616</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="771" MIMEType="application/postscript"
             Name="PostScript" PUID="x-fmt/406" Version="2.0">
@@ -33236,26 +33644,31 @@
             Name="Acrobat PDF/X - Portable Document Format - Exchange 1:1999" PUID="fmt/144">
             <InternalSignatureID>692</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="788" MIMEType="application/pdf"
             Name="Acrobat PDF/X - Portable Document Format - Exchange 1:2001" PUID="fmt/145">
             <InternalSignatureID>693</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="789" MIMEType="application/pdf"
             Name="Acrobat PDF/X - Portable Document Format - Exchange 1a:2003" PUID="fmt/146">
             <InternalSignatureID>694</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="790" MIMEType="application/pdf"
             Name="Acrobat PDF/X - Portable Document Format - Exchange 2:2003" PUID="fmt/147">
             <InternalSignatureID>695</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="791" MIMEType="application/pdf"
             Name="Acrobat PDF/X - Portable Document Format - Exchange 3:2003" PUID="fmt/148">
             <InternalSignatureID>696</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="792" Name="JTIP (JPEG Tiled Image Pyramid)" PUID="fmt/149"/>
         <FileFormat ID="793" Name="JPEG-LS" PUID="fmt/150">
@@ -33392,6 +33805,7 @@
             <Extension>pdf</Extension>
             <HasPriorityOverFileFormatID>616</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>788</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1100</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="819" MIMEType="application/pdf"
@@ -33400,6 +33814,7 @@
             <InternalSignatureID>597</InternalSignatureID>
             <Extension>pdf</Extension>
             <HasPriorityOverFileFormatID>616</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1100</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="820"
@@ -33985,6 +34400,7 @@
             PUID="fmt/276" Version="1.7">
             <InternalSignatureID>289</InternalSignatureID>
             <Extension>pdf</Extension>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1017" Name="ESRI Arc/View Shapefile Index" PUID="fmt/277">
             <InternalSignatureID>290</InternalSignatureID>
@@ -34449,6 +34865,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1101" MIMEType="application/rtf, text/rtf"
@@ -34670,7 +35087,7 @@
             <InternalSignatureID>635</InternalSignatureID>
             <Extension>ds_store</Extension>
         </FileFormat>
-        <FileFormat ID="1143" Name="vCard" PUID="fmt/395">
+        <FileFormat ID="1143" MIMEType="text/vcard" Name="vCard" PUID="fmt/395">
             <InternalSignatureID>634</InternalSignatureID>
             <Extension>vcf</Extension>
         </FileFormat>
@@ -34760,7 +35177,7 @@
             <HasPriorityOverFileFormatID>644</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>645</HasPriorityOverFileFormatID>
         </FileFormat>
-        <FileFormat ID="1159" MIMEType="application/x-rar-compressed"
+        <FileFormat ID="1159" MIMEType="application/vnd.rar"
             Name="RAR Archive" PUID="fmt/411" Version="2.9">
             <InternalSignatureID>591</InternalSignatureID>
             <Extension>rar</Extension>
@@ -35187,6 +35604,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1264" MIMEType="application/pdf"
@@ -35201,6 +35619,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1265" MIMEType="application/pdf"
@@ -35215,6 +35634,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1266" MIMEType="application/pdf"
@@ -35229,6 +35649,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1267" MIMEType="application/pdf"
@@ -35243,6 +35664,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1268" MIMEType="application/pdf"
@@ -35257,6 +35679,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1269" MIMEType="application/x-ibooks+zip"
@@ -35317,6 +35740,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1276" MIMEType="application/pdf"
@@ -35330,6 +35754,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1277" MIMEType="application/pdf"
@@ -35343,6 +35768,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1278" MIMEType="application/pdf"
@@ -35356,6 +35782,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1279" MIMEType="application/pdf"
@@ -35369,6 +35796,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1280" MIMEType="application/pdf"
@@ -35382,6 +35810,7 @@
             <HasPriorityOverFileFormatID>617</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>618</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>637</HasPriorityOverFileFormatID>
+            <HasPriorityOverFileFormatID>869</HasPriorityOverFileFormatID>
             <HasPriorityOverFileFormatID>1016</HasPriorityOverFileFormatID>
         </FileFormat>
         <FileFormat ID="1281" Name="Microsoft Office Encrypted Document"
@@ -35434,7 +35863,7 @@
             <Extension>dgn</Extension>
         </FileFormat>
         <FileFormat ID="1290" MIMEType="multipart/appledouble"
-            Name="AppleDouble Resource Fork" PUID="fmt/503">
+            Name="AppleDouble Resource Fork" PUID="fmt/503" Version="2">
             <InternalSignatureID>778</InternalSignatureID>
         </FileFormat>
         <FileFormat ID="1291" Name="Standard Flowgram Format" PUID="fmt/504">
@@ -36005,7 +36434,7 @@
             <Extension>mab</Extension>
             <Extension>msf</Extension>
         </FileFormat>
-        <FileFormat ID="1409" MIMEType="application/x-rar-compressed"
+        <FileFormat ID="1409" MIMEType="application/vnd.rar"
             Name="RAR Archive" PUID="fmt/613" Version="5.0">
             <InternalSignatureID>949</InternalSignatureID>
             <Extension>rar</Extension>
@@ -36186,7 +36615,9 @@
             <Extension>mpeg</Extension>
             <Extension>mpg</Extension>
         </FileFormat>
-        <FileFormat ID="1449" Name="Quark Xpress Report File" PUID="fmt/650">
+        <FileFormat ID="1449"
+            MIMEType="application/vnd.Quark.QuarkXPress"
+            Name="Quark Xpress Report File" PUID="fmt/650">
             <InternalSignatureID>979</InternalSignatureID>
             <InternalSignatureID>980</InternalSignatureID>
             <InternalSignatureID>981</InternalSignatureID>
@@ -36194,8 +36625,9 @@
             <Extension>qxp%20report</Extension>
             <Extension>xtg</Extension>
         </FileFormat>
-        <FileFormat ID="1450" Name="Quark Xpress Data File"
-            PUID="fmt/651" Version="10">
+        <FileFormat ID="1450"
+            MIMEType="application/vnd.Quark.QuarkXPress"
+            Name="Quark Xpress Data File" PUID="fmt/651" Version="10">
             <InternalSignatureID>982</InternalSignatureID>
             <InternalSignatureID>983</InternalSignatureID>
             <Extension>qcd</Extension>
@@ -36204,8 +36636,9 @@
             <Extension>qxp</Extension>
             <HasPriorityOverFileFormatID>255</HasPriorityOverFileFormatID>
         </FileFormat>
-        <FileFormat ID="1451" Name="Quark Xpress Data File"
-            PUID="fmt/652" Version="6">
+        <FileFormat ID="1451"
+            MIMEType="application/vnd.Quark.QuarkXPress"
+            Name="Quark Xpress Data File" PUID="fmt/652" Version="6">
             <InternalSignatureID>984</InternalSignatureID>
             <InternalSignatureID>985</InternalSignatureID>
             <Extension>qcd</Extension>
@@ -36348,8 +36781,9 @@
             <InternalSignatureID>1010</InternalSignatureID>
             <Extension>vwx</Extension>
         </FileFormat>
-        <FileFormat ID="1484" Name="Quark Xpress Data File"
-            PUID="fmt/685" Version="9">
+        <FileFormat ID="1484"
+            MIMEType="application/vnd.Quark.QuarkXPress"
+            Name="Quark Xpress Data File" PUID="fmt/685" Version="9">
             <InternalSignatureID>1011</InternalSignatureID>
             <InternalSignatureID>1012</InternalSignatureID>
             <Extension>qcd</Extension>
@@ -37718,6 +38152,123 @@
             <InternalSignatureID>1299</InternalSignatureID>
             <Extension>eml</Extension>
             <HasPriorityOverFileFormatID>1018</HasPriorityOverFileFormatID>
+        </FileFormat>
+        <FileFormat ID="1756" Name="Sonic Foundry WAVE 64" PUID="fmt/951">
+            <InternalSignatureID>1308</InternalSignatureID>
+            <Extension>w64</Extension>
+            <Extension>wav</Extension>
+        </FileFormat>
+        <FileFormat ID="1757" MIMEType="audio/tta" Name="True Audio"
+            PUID="fmt/952" Version="1">
+            <InternalSignatureID>1309</InternalSignatureID>
+            <Extension>tta</Extension>
+        </FileFormat>
+        <FileFormat ID="1758" MIMEType="audio/tta" Name="True Audio"
+            PUID="fmt/953" Version="2">
+            <InternalSignatureID>1310</InternalSignatureID>
+            <Extension>tta</Extension>
+        </FileFormat>
+        <FileFormat ID="1759" MIMEType="audio/amr-wb"
+            Name="Adaptive Multi-Rate Wideband Audio" PUID="fmt/954">
+            <InternalSignatureID>1311</InternalSignatureID>
+            <Extension>awb</Extension>
+        </FileFormat>
+        <FileFormat ID="1760" MIMEType="audio/dls"
+            Name="Downloadable Sounds Audio" PUID="fmt/955">
+            <InternalSignatureID>1312</InternalSignatureID>
+            <Extension>dls</Extension>
+        </FileFormat>
+        <FileFormat ID="1761" Name="RIFF-based MIDI" PUID="fmt/956">
+            <InternalSignatureID>1313</InternalSignatureID>
+            <Extension>rmi</Extension>
+        </FileFormat>
+        <FileFormat ID="1762" Name="DirectMusic Segment File Format" PUID="fmt/957">
+            <InternalSignatureID>1314</InternalSignatureID>
+            <Extension>sgt</Extension>
+        </FileFormat>
+        <FileFormat ID="1763" Name="DirectMusic Style File Format" PUID="fmt/958">
+            <InternalSignatureID>1315</InternalSignatureID>
+            <Extension>sty</Extension>
+        </FileFormat>
+        <FileFormat ID="1764" Name="Portable Sound Format" PUID="fmt/959">
+            <InternalSignatureID>1316</InternalSignatureID>
+            <Extension>gsf</Extension>
+            <Extension>gsflib</Extension>
+            <Extension>minigsf</Extension>
+            <Extension>minipsf</Extension>
+            <Extension>minipsf1</Extension>
+            <Extension>psf</Extension>
+            <Extension>psf1</Extension>
+            <Extension>psflib</Extension>
+        </FileFormat>
+        <FileFormat ID="1765"
+            Name="DOS Sound and Music Interface Advanced Module Format" PUID="fmt/960">
+            <InternalSignatureID>1317</InternalSignatureID>
+            <Extension>amf</Extension>
+        </FileFormat>
+        <FileFormat ID="1766" MIMEType="audio/mobile-xmf"
+            Name="Mobile eXtensible Music Format" PUID="fmt/961">
+            <InternalSignatureID>1318</InternalSignatureID>
+            <Extension>mxmf</Extension>
+            <HasPriorityOverFileFormatID>1513</HasPriorityOverFileFormatID>
+        </FileFormat>
+        <FileFormat ID="1767" MIMEType="audio/qcelp"
+            Name="QCP Audio File Format" PUID="fmt/962">
+            <InternalSignatureID>1319</InternalSignatureID>
+            <Extension>qcp</Extension>
+        </FileFormat>
+        <FileFormat ID="1768" Name="OMNIC Spectral Data File" PUID="fmt/963">
+            <InternalSignatureID>1320</InternalSignatureID>
+            <Extension>spa</Extension>
+        </FileFormat>
+        <FileFormat ID="1769" Name="Final Draft Document" PUID="fmt/964" Version="5-7">
+            <InternalSignatureID>1328</InternalSignatureID>
+            <Extension>fdr</Extension>
+        </FileFormat>
+        <FileFormat ID="1770" Name="Music Encoding Initiative" PUID="fmt/965">
+            <InternalSignatureID>1329</InternalSignatureID>
+            <Extension>mei</Extension>
+            <HasPriorityOverFileFormatID>638</HasPriorityOverFileFormatID>
+        </FileFormat>
+        <FileFormat ID="1771" MIMEType="multipart/appledouble"
+            Name="AppleDouble Resource Fork" PUID="fmt/966" Version="1">
+            <InternalSignatureID>1330</InternalSignatureID>
+        </FileFormat>
+        <FileFormat ID="1772" MIMEType="application/applefile"
+            Name="AppleSingle" PUID="fmt/967" Version="1">
+            <InternalSignatureID>1331</InternalSignatureID>
+        </FileFormat>
+        <FileFormat ID="1773" MIMEType="application/applefile"
+            Name="AppleSingle" PUID="fmt/968" Version="2">
+            <InternalSignatureID>1332</InternalSignatureID>
+        </FileFormat>
+        <FileFormat ID="1774" MIMEType="application/rtf"
+            Name=" Rich Text Format" PUID="fmt/969" Version="0">
+            <InternalSignatureID>1333</InternalSignatureID>
+            <Extension>rtf</Extension>
+        </FileFormat>
+        <FileFormat ID="1775" MIMEType="image/ktx"
+            Name="Khronos Texture File" PUID="fmt/970">
+            <InternalSignatureID>1334</InternalSignatureID>
+            <Extension>ktx</Extension>
+        </FileFormat>
+        <FileFormat ID="1776" Name="Microsoft Windows Movie Maker File" PUID="fmt/971">
+            <Extension>mswmm</Extension>
+        </FileFormat>
+        <FileFormat ID="1777" MIMEType="audio/vnd.dolby.mlp"
+            Name="Dolby MLP Lossless Audio" PUID="fmt/972">
+            <InternalSignatureID>1335</InternalSignatureID>
+            <Extension>mlp</Extension>
+        </FileFormat>
+        <FileFormat ID="1778" MIMEType="audio/vnd.dts"
+            Name="DTS Coherent Acoustics (DCA) Audio" PUID="fmt/973">
+            <InternalSignatureID>1336</InternalSignatureID>
+            <Extension>dts</Extension>
+        </FileFormat>
+        <FileFormat ID="1779" MIMEType="application/vnd.music-niff"
+            Name="Notation Interchange File Format" PUID="fmt/974">
+            <InternalSignatureID>1337</InternalSignatureID>
+            <Extension>nif</Extension>
         </FileFormat>
     </FileFormatCollection>
 </FFSignatureFile>
