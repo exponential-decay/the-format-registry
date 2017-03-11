@@ -1033,7 +1033,7 @@ A DWF package must meet the following requirements:
 <http://the-fr.org/id/file-format/91> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/91> .
 <http://the-fr.org/id/file-format/91> <http://www.w3.org/2000/01/rdf-schema#label> "Postscript"@en .
 <http://the-fr.org/id/file-format/91> <http://the-fr.org/prop/format-registry/version> "1.0" .
-<http://the-fr.org/id/file-format/91> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/91> <http://purl.org/dc/terms/description> "Postscript is a computer language for creating vector graphics."@en .
 <http://the-fr.org/id/file-format/91> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/91> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
 <http://the-fr.org/id/file-format/91> <http://the-fr.org/prop/format-registry/hasExtension> "ps" .
@@ -3837,13 +3837,14 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/puid> "x-fmt/330" .
 <http://the-fr.org/id/file-format/330> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/330> .
 <http://the-fr.org/id/file-format/330> <http://www.w3.org/2000/01/rdf-schema#label> "JustWrite Text Document"@en .
-<http://the-fr.org/id/file-format/330> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/330> <http://purl.org/dc/terms/description> "JustWrite is a word processer which was developed by the Symantec Corporation in the 1990\'s."@en .
 <http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/WordprocessedText> .
 <http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/hasExtension> "jw" .
-<http://the-fr.org/id/file-format/330> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/hasExtension> "jwt" .
+<http://the-fr.org/id/file-format/330> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/330> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
 <http://the-fr.org/id/file-format/331> <http://the-fr.org/prop/format-registry/puid> "x-fmt/331" .
 <http://the-fr.org/id/file-format/331> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/x-fmt/331> .
@@ -5046,6 +5047,7 @@ Full specifications can be found at http://www.w3.org/TR/xmlschema-0/"@en .
 <http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Email> .
 <http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/hasExtension> "msg" .
+<http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/hasExtension> "oft" .
 <http://the-fr.org/id/file-format/429> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/429> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -7548,7 +7550,6 @@ This version was published in February 2005 and corrected the flaws in the first
 <http://the-fr.org/id/file-format/614> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/161> .
 <http://the-fr.org/id/file-format/614> <http://www.w3.org/2000/01/rdf-schema#label> "SIARD (Software-Independent Archiving of Relational Databases)"@en .
 <http://the-fr.org/id/file-format/614> <http://the-fr.org/prop/format-registry/version> "1.0" .
-<http://the-fr.org/id/file-format/614> <http://www.w3.org/2004/02/skos/core#altLabel> "SIARD (2.0)" .
 <http://the-fr.org/id/file-format/614> <http://purl.org/dc/terms/description> "Software-Independent Archiving of Relational Databases is a format for storing content of relational databases in files for long-term preservation e.g. in archives. The format was developed by the Swiss Federal Archives. It is an open standard and is supported by the SIARD software of the Swiss Federal Archives. SIARD format is a ZIP file (based on the 64 bit extension of the  ZIP format introduced by PkWare Inc. with version 4.5 of the ZIP format definition in order to avoid size limitations which are unrealistic for databases). The ZIP file contains an XML file describing the database structure (database metadata) as well as a collection of XML files describing the table content (database primary data) as well as - optionally - some text files and some binary files representing database large objects (BLOBs and CLOBs). SIARD format is used for archiving databases adhering to the SQL (ideally SQL:1999 core) standard."@en .
 <http://the-fr.org/id/file-format/614> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/614> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Database> .
@@ -8909,7 +8910,7 @@ The basic structure of a FLAC stream is: •The four byte string \"fLaC\"
 <http://the-fr.org/id/file-format/733> <http://the-fr.org/prop/format-registry/puid> "fmt/280" .
 <http://the-fr.org/id/file-format/733> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/280> .
 <http://the-fr.org/id/file-format/733> <http://www.w3.org/2000/01/rdf-schema#label> "LaTeX (Master document)"@en .
-<http://the-fr.org/id/file-format/733> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/733> <http://purl.org/dc/terms/description> "LaTeX is a document preparation system for typesetting. It is widely used in academia for technical or scientific documents but can be used for other forms of publishing. LaTeX projects can contain multiple subdocuments which are linked to a Master Document."@en .
 <http://the-fr.org/id/file-format/733> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/733> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
 <http://the-fr.org/id/file-format/733> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -8919,7 +8920,7 @@ The basic structure of a FLAC stream is: •The four byte string \"fLaC\"
 <http://the-fr.org/id/file-format/734> <http://the-fr.org/prop/format-registry/puid> "fmt/281" .
 <http://the-fr.org/id/file-format/734> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/281> .
 <http://the-fr.org/id/file-format/734> <http://www.w3.org/2000/01/rdf-schema#label> "LaTeX (Subdocument)"@en .
-<http://the-fr.org/id/file-format/734> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/734> <http://purl.org/dc/terms/description> "LaTeX is a document preparation system for typesetting. It is widely used in academia for technical or scientific documents but can be used for other forms of publishing. LaTeX projects can contain multiple subdocuments which are linked to a Master Document."@en .
 <http://the-fr.org/id/file-format/734> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/734> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
 <http://the-fr.org/id/file-format/734> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -10611,6 +10612,7 @@ The last 3 areas, the Developer Area, the Extension Area and the TGA File Footer
 <http://the-fr.org/id/file-format/869> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/869> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/870> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/870> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/870> <http://the-fr.org/prop/format-registry/puid> "fmt/417" .
 <http://the-fr.org/id/file-format/870> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/417> .
 <http://the-fr.org/id/file-format/870> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -10624,6 +10626,7 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/870> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/870> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/871> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/871> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/871> <http://the-fr.org/prop/format-registry/puid> "fmt/418" .
 <http://the-fr.org/id/file-format/871> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/418> .
 <http://the-fr.org/id/file-format/871> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -10638,6 +10641,7 @@ Version 3 includes graph creation."@en .
 <http://the-fr.org/id/file-format/871> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/871> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/872> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/872> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/872> <http://the-fr.org/prop/format-registry/puid> "fmt/419" .
 <http://the-fr.org/id/file-format/872> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/419> .
 <http://the-fr.org/id/file-format/872> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -10651,6 +10655,7 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/872> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/872> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/873> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/873> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/873> <http://the-fr.org/prop/format-registry/puid> "fmt/420" .
 <http://the-fr.org/id/file-format/873> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/420> .
 <http://the-fr.org/id/file-format/873> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -10664,6 +10669,7 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/873> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/873> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/874> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/874> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/874> <http://the-fr.org/prop/format-registry/puid> "fmt/421" .
 <http://the-fr.org/id/file-format/874> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/421> .
 <http://the-fr.org/id/file-format/874> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -10677,6 +10683,7 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/874> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/874> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/875> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/875> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/875> <http://the-fr.org/prop/format-registry/puid> "fmt/422" .
 <http://the-fr.org/id/file-format/875> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/422> .
 <http://the-fr.org/id/file-format/875> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -10690,6 +10697,7 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/875> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/875> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/876> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/876> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/876> <http://the-fr.org/prop/format-registry/puid> "fmt/423" .
 <http://the-fr.org/id/file-format/876> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/423> .
 <http://the-fr.org/id/file-format/876> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -11308,7 +11316,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/929> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/476> .
 <http://the-fr.org/id/file-format/929> <http://www.w3.org/2000/01/rdf-schema#label> "Acrobat PDF/A - Portable Document Format"@en .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/version> "2a" .
-<http://the-fr.org/id/file-format/929> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A2 supports three levels of compliance: PDF/A-2a (Accessible), PDF/A-2b (Basic). and PDF/A-2u (Unicode). PDF/A-2 is based on ISO 32000-1 – PDF 1.7 and is defined by ISO 19005-2:2011, which has the formal name \'Document management – Electronic document file format for long-term preservation – Part 2: Use of ISO 32000-1 (PDF/A-2)\'."@en .
+<http://the-fr.org/id/file-format/929> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A2 supports three levels of compliance: PDF/A-2a (Accessible), PDF/A-2b (Basic). and PDF/A-2u (Unicode). The PDF/A-2 standard is a constrained subset of ISO 32000-1 (PDF 1.7), which includes PDF 1.0-1.7 and is defined by ISO 19005-2:2011, which has the formal name \'Document management – Electronic document file format for long-term preservation – Part 2: Use of ISO 32000-1 (PDF/A-2)\'."@en .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
 <http://the-fr.org/id/file-format/929> <http://the-fr.org/prop/format-registry/hasExtension> "pdf" .
@@ -11321,7 +11329,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/930> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/477> .
 <http://the-fr.org/id/file-format/930> <http://www.w3.org/2000/01/rdf-schema#label> "Acrobat PDF/A - Portable Document Format"@en .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/version> "2b" .
-<http://the-fr.org/id/file-format/930> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A2 supports three levels of compliance: PDF/A-2a (Accessible), PDF/A-2b (Basic). and PDF/A-2u (Unicode). PDF/A-2 is based on ISO 32000-1 – PDF 1.7 and is defined by ISO 19005-2:2011, which has the formal name \'Document management – Electronic document file format for long-term preservation – Part 2: Use of ISO 32000-1 (PDF/A-2)\'."@en .
+<http://the-fr.org/id/file-format/930> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A2 supports three levels of compliance: PDF/A-2a (Accessible), PDF/A-2b (Basic). and PDF/A-2u (Unicode). The PDF/A-2 standard is a constrained subset of ISO 32000-1 (PDF 1.7), which includes PDF 1.0-1.7 and is defined by ISO 19005-2:2011, which has the formal name \'Document management – Electronic document file format for long-term preservation – Part 2: Use of ISO 32000-1 (PDF/A-2)\'."@en .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
 <http://the-fr.org/id/file-format/930> <http://the-fr.org/prop/format-registry/hasExtension> "pdf" .
@@ -11334,7 +11342,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/931> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/478> .
 <http://the-fr.org/id/file-format/931> <http://www.w3.org/2000/01/rdf-schema#label> "Acrobat PDF/A - Portable Document Format"@en .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/version> "2u" .
-<http://the-fr.org/id/file-format/931> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A2 supports three levels of compliance: PDF/A-2a (Accessible), PDF/A-2b (Basic). and PDF/A-2u (Unicode). PDF/A-2 is based on ISO 32000-1 – PDF 1.7 and is defined by ISO 19005-2:2011, which has the formal name \'Document management – Electronic document file format for long-term preservation – Part 2: Use of ISO 32000-1 (PDF/A-2)\'."@en .
+<http://the-fr.org/id/file-format/931> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A2 supports three levels of compliance: PDF/A-2a (Accessible), PDF/A-2b (Basic). and PDF/A-2u (Unicode). The PDF/A-2 standard is a constrained subset of ISO 32000-1 (PDF 1.7), which includes PDF 1.0-1.7 and is defined by ISO 19005-2:2011, which has the formal name \'Document management – Electronic document file format for long-term preservation – Part 2: Use of ISO 32000-1 (PDF/A-2)\'."@en .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
 <http://the-fr.org/id/file-format/931> <http://the-fr.org/prop/format-registry/hasExtension> "pdf" .
@@ -11347,7 +11355,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/932> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/479> .
 <http://the-fr.org/id/file-format/932> <http://www.w3.org/2000/01/rdf-schema#label> "Acrobat PDF/A - Portable Document Format"@en .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/version> "3a" .
-<http://the-fr.org/id/file-format/932> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A3 supports three levels of compliance: PDF/A-3a (Accessible), PDF/A-3b (Basic). and PDF/A-3u (Unicode). PDF/A-2 is based on ISO 32000-1 – PDF 1.7 and is defined by ISO 19005-3:2012, which has the formal name \'Document management - Electronic document file format for long-term preservation - Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3)\'. The primary new feature in PDF/A-3 is the ability to embed any source format within a PDF/A file."@en .
+<http://the-fr.org/id/file-format/932> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A3 supports three levels of compliance: PDF/A-3a (Accessible), PDF/A-3b (Basic). and PDF/A-3u (Unicode). The PDF/A-2 standard is a constrained subset of ISO 32000-1 (PDF 1.7), which includes PDF 1.0-1.7 and is defined by ISO 19005-3:2012, which has the formal name \'Document management - Electronic document file format for long-term preservation - Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3)\'. The primary new feature in PDF/A-3 is the ability to embed any source format within a PDF/A file."@en .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
 <http://the-fr.org/id/file-format/932> <http://the-fr.org/prop/format-registry/hasExtension> "pdf" .
@@ -11360,7 +11368,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/933> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/480> .
 <http://the-fr.org/id/file-format/933> <http://www.w3.org/2000/01/rdf-schema#label> "Acrobat PDF/A - Portable Document Format"@en .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/version> "3b" .
-<http://the-fr.org/id/file-format/933> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A3 supports three levels of compliance: PDF/A-3a (Accessible), PDF/A-3b (Basic). and PDF/A-3u (Unicode). PDF/A-2 is based on ISO 32000-1 – PDF 1.7 and is defined by ISO 19005-3:2012, which has the formal name \'Document management - Electronic document file format for long-term preservation - Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3)\'. The primary new feature in PDF/A-3 is the ability to embed any source format within a PDF/A file."@en .
+<http://the-fr.org/id/file-format/933> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A3 supports three levels of compliance: PDF/A-3a (Accessible), PDF/A-3b (Basic). and PDF/A-3u (Unicode). The PDF/A-2 standard is a constrained subset of ISO 32000-1 (PDF 1.7), which includes PDF 1.0-1.7 and is defined by ISO 19005-3:2012, which has the formal name \'Document management - Electronic document file format for long-term preservation - Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3)\'. The primary new feature in PDF/A-3 is the ability to embed any source format within a PDF/A file."@en .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
 <http://the-fr.org/id/file-format/933> <http://the-fr.org/prop/format-registry/hasExtension> "pdf" .
@@ -11373,7 +11381,7 @@ replacing the last character in the filename with an underscore. It is implement
 <http://the-fr.org/id/file-format/934> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/481> .
 <http://the-fr.org/id/file-format/934> <http://www.w3.org/2000/01/rdf-schema#label> "Acrobat PDF/A - Portable Document Format"@en .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/version> "3u" .
-<http://the-fr.org/id/file-format/934> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A3 supports three levels of compliance: PDF/A-3a (Accessible), PDF/A-3b (Basic). and PDF/A-3u (Unicode). PDF/A-2 is based on ISO 32000-1 – PDF 1.7 and is defined by ISO 19005-3:2012, which has the formal name \'Document management - Electronic document file format for long-term preservation - Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3)\'. The primary new feature in PDF/A-3 is the ability to embed any source format within a PDF/A file."@en .
+<http://the-fr.org/id/file-format/934> <http://purl.org/dc/terms/description> "The Portable Document Format/Archive is a format designed for long term preservation by Adobe Systems. PDF/A is an ISO standardised version of PDF, with all of the features from PDF that would impede long term preservation removed. A major principle of PDF/A is that it is self contained and not reliant on externalities thus all font and colour information is encoded into the file. PDF/A files are larger than other types of PDF files due to the need for embedded information. PDF/A3 supports three levels of compliance: PDF/A-3a (Accessible), PDF/A-3b (Basic). and PDF/A-3u (Unicode). The PDF/A-2 standard is a constrained subset of ISO 32000-1 (PDF 1.7), which includes PDF 1.0-1.7 and is defined by ISO 19005-3:2012, which has the formal name \'Document management - Electronic document file format for long-term preservation - Part 3: Use of ISO 32000-1 with support for embedded files (PDF/A-3)\'. The primary new feature in PDF/A-3 is the ability to embed any source format within a PDF/A file."@en .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/PageDescription> .
 <http://the-fr.org/id/file-format/934> <http://the-fr.org/prop/format-registry/hasExtension> "pdf" .
@@ -12298,6 +12306,7 @@ Research done by The National Archives."@en .
 <http://the-fr.org/id/file-format/1009> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1009> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1010> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1010> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1010> <http://the-fr.org/prop/format-registry/puid> "fmt/557" .
 <http://the-fr.org/id/file-format/1010> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/557> .
 <http://the-fr.org/id/file-format/1010> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12311,6 +12320,7 @@ documents. A PostScript language document description that minimally conforms to
 <http://the-fr.org/id/file-format/1010> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1010> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1011> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1011> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1011> <http://the-fr.org/prop/format-registry/puid> "fmt/558" .
 <http://the-fr.org/id/file-format/1011> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/558> .
 <http://the-fr.org/id/file-format/1011> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12326,6 +12336,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1011> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1011> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1012> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1012> <http://the-fr.org/prop/format-registry/puid> "fmt/559" .
 <http://the-fr.org/id/file-format/1012> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/559> .
 <http://the-fr.org/id/file-format/1012> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12341,6 +12352,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1012> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1012> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1013> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1013> <http://the-fr.org/prop/format-registry/puid> "fmt/560" .
 <http://the-fr.org/id/file-format/1013> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/560> .
 <http://the-fr.org/id/file-format/1013> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12356,6 +12368,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1013> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1013> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1014> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1014> <http://the-fr.org/prop/format-registry/puid> "fmt/561" .
 <http://the-fr.org/id/file-format/1014> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/561> .
 <http://the-fr.org/id/file-format/1014> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12371,6 +12384,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1014> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1014> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1015> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1015> <http://the-fr.org/prop/format-registry/puid> "fmt/562" .
 <http://the-fr.org/id/file-format/1015> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/562> .
 <http://the-fr.org/id/file-format/1015> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12386,6 +12400,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1015> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1015> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1016> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1016> <http://the-fr.org/prop/format-registry/puid> "fmt/563" .
 <http://the-fr.org/id/file-format/1016> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/563> .
 <http://the-fr.org/id/file-format/1016> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12401,6 +12416,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1016> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1016> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1017> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1017> <http://the-fr.org/prop/format-registry/puid> "fmt/564" .
 <http://the-fr.org/id/file-format/1017> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/564> .
 <http://the-fr.org/id/file-format/1017> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -12416,6 +12432,7 @@ Beginning with version 9, the Adobe Illustrated ai file format included both a p
 <http://the-fr.org/id/file-format/1017> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1017> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1018> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1018> <http://the-fr.org/prop/format-registry/internetMediaType> "application/postscript" .
 <http://the-fr.org/id/file-format/1018> <http://the-fr.org/prop/format-registry/puid> "fmt/565" .
 <http://the-fr.org/id/file-format/1018> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/565> .
 <http://the-fr.org/id/file-format/1018> <http://www.w3.org/2000/01/rdf-schema#label> "Adobe Illustrator"@en .
@@ -13315,7 +13332,7 @@ The EBML specifications are work-in-progress, and can be found here: https://git
 <http://the-fr.org/id/file-format/1090> <http://the-fr.org/prop/format-registry/puid> "fmt/637" .
 <http://the-fr.org/id/file-format/1090> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/637> .
 <http://the-fr.org/id/file-format/1090> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft OneNote"@en .
-<http://the-fr.org/id/file-format/1090> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/1090> <http://purl.org/dc/terms/description> "Microsoft OneNote is a computer program for information gathering and multi-user collaboration. The OneNote File Format is a persistence format for storing digital notes as hierarchical sets of sections and pages. Pages can contain text, images, tables, note tags and other types of user-defined content."@en .
 <http://the-fr.org/id/file-format/1090> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1090> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Presentation> .
 <http://the-fr.org/id/file-format/1090> <http://the-fr.org/prop/format-registry/hasExtension> "one" .
@@ -14425,7 +14442,7 @@ Full specifications available at: http://www.opengeospatial.org/standards/kml"@e
 <http://the-fr.org/id/file-format/1181> <http://the-fr.org/prop/format-registry/puid> "fmt/728" .
 <http://the-fr.org/id/file-format/1181> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/728> .
 <http://the-fr.org/id/file-format/1181> <http://www.w3.org/2000/01/rdf-schema#label> "RealLegal E-Transcript"@en .
-<http://the-fr.org/id/file-format/1181> <http://purl.org/dc/terms/description> "This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’."@en .
+<http://the-fr.org/id/file-format/1181> <http://purl.org/dc/terms/description> "RealLegal E-Transcript creates electronic transcripts. E-Transcript files allow for custom formatting. There is a free E-Transcript Viewer to view an E-Transcript file. E-Transcript files are also compatible with Westlaw Case Notebook."@en .
 <http://the-fr.org/id/file-format/1181> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1181> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
 <http://the-fr.org/id/file-format/1181> <http://the-fr.org/prop/format-registry/hasExtension> "ptx" .
@@ -17472,6 +17489,241 @@ RTF0 may predate version 1.0 of the RTF specification which is known to date fro
 <http://the-fr.org/id/file-format/1427> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1427> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1428> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1428> <http://the-fr.org/prop/format-registry/puid> "fmt/975" .
+<http://the-fr.org/id/file-format/1428> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/975> .
+<http://the-fr.org/id/file-format/1428> <http://www.w3.org/2000/01/rdf-schema#label> "Jamcracker Tracker Module"@en .
+<http://the-fr.org/id/file-format/1428> <http://purl.org/dc/terms/description> "The Jamcracker Tracker Module format is an audio sequencing format developed by Martin Gemmel."@en .
+<http://the-fr.org/id/file-format/1428> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1428> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Audio> .
+<http://the-fr.org/id/file-format/1428> <http://the-fr.org/prop/format-registry/hasExtension> "jam" .
+<http://the-fr.org/id/file-format/1428> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1428> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1428> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1429> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1429> <http://the-fr.org/prop/format-registry/puid> "fmt/976" .
+<http://the-fr.org/id/file-format/1429> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/976> .
+<http://the-fr.org/id/file-format/1429> <http://www.w3.org/2000/01/rdf-schema#label> "MagicaVoxel Vox format"@en .
+<http://the-fr.org/id/file-format/1429> <http://purl.org/dc/terms/description> ".vox is the format generated by MagicaVoxel, an 8-bit voxel editor."@en .
+<http://the-fr.org/id/file-format/1429> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1429> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1429> <http://the-fr.org/prop/format-registry/hasExtension> "vox" .
+<http://the-fr.org/id/file-format/1429> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1429> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1429> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1430> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1430> <http://the-fr.org/prop/format-registry/puid> "fmt/977" .
+<http://the-fr.org/id/file-format/1430> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/977> .
+<http://the-fr.org/id/file-format/1430> <http://www.w3.org/2000/01/rdf-schema#label> "AutoCAD Design Web Format(DWFx)"@en .
+<http://the-fr.org/id/file-format/1430> <http://purl.org/dc/terms/description> "DWFx is the newest version of the AutoCAD Design Web Format (DWF). DWFx is based on the XML Paper Specification (XPS). DWF and DWFx are  compressed file formats which can be suitable for distributing over the Internet for review. You can export a single drawing or publish multiple drawings and sheet sets into a DWF or DWFx file."@en .
+<http://the-fr.org/id/file-format/1430> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1430> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1430> <http://the-fr.org/prop/format-registry/hasExtension> "dwfx" .
+<http://the-fr.org/id/file-format/1430> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1430> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1430> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1431> <http://the-fr.org/prop/format-registry/puid> "fmt/978" .
+<http://the-fr.org/id/file-format/1431> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/978> .
+<http://the-fr.org/id/file-format/1431> <http://www.w3.org/2000/01/rdf-schema#label> "3DS Max"@en .
+<http://the-fr.org/id/file-format/1431> <http://purl.org/dc/terms/description> "A MAX file is a three-dimensional scene file. They are created by 3DS Max, a 3D modeling, animation, and rendering application. It may contain multiple models that include wireframes, textures, lighting effects, shading, animation, and other 3D design elements."@en .
+<http://the-fr.org/id/file-format/1431> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1431> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1431> <http://the-fr.org/prop/format-registry/hasExtension> "max" .
+<http://the-fr.org/id/file-format/1431> <http://the-fr.org/prop/format-registry/hasExtension> "chr" .
+<http://the-fr.org/id/file-format/1431> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1431> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1431> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1432> <http://the-fr.org/prop/format-registry/puid> "fmt/979" .
+<http://the-fr.org/id/file-format/1432> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/979> .
+<http://the-fr.org/id/file-format/1432> <http://www.w3.org/2000/01/rdf-schema#label> "XML Property List"@en .
+<http://the-fr.org/id/file-format/1432> <http://purl.org/dc/terms/description> "In the OS X, iOS, NeXTSTEP, and GNUstep programming frameworks, property list files store serialized objects. It is the standard way to save and load data between the internal representation within the objects defined in an Objective-C program and disk files, in order to store program settings and other data. This is the XML version but there is also a binary version of the format."@en .
+<http://the-fr.org/id/file-format/1432> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1432> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1432> <http://the-fr.org/prop/format-registry/hasExtension> "plist" .
+<http://the-fr.org/id/file-format/1432> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1432> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1432> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1433> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/puid> "fmt/980" .
+<http://the-fr.org/id/file-format/1433> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/980> .
+<http://the-fr.org/id/file-format/1433> <http://www.w3.org/2000/01/rdf-schema#label> "AAE Sidecar Format"@en .
+<http://the-fr.org/id/file-format/1433> <http://purl.org/dc/terms/description> "The AAE sidecar format is a form of property list format. It has been reported as present in iOS 8 and OS X Yosemite for transferring non-destructive adjustments in photo editing between systems and apps. It is an XML based format. The .aae file accompanies the actual image which is in a .jpg file."@en .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/hasExtension> "aae" .
+<http://the-fr.org/id/file-format/1433> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1434> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/puid> "fmt/981" .
+<http://the-fr.org/id/file-format/1434> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/981> .
+<http://the-fr.org/id/file-format/1434> <http://www.w3.org/2000/01/rdf-schema#label> "EazyDraw File Format"@en .
+<http://the-fr.org/id/file-format/1434> <http://purl.org/dc/terms/description> "The ezdraw file format is mainly associated with \'EazyDraw\' by Dekorra Optics LLC enterprise. EazyDraw is a vector based drawing application. It is used for desk top publishing (DTP) with Apple\'s Macintosh OS X (Mac OS-X) operating system. The format is an XML Property List dictionary based format. There is also a binary version of this format."@en .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/hasExtension> "ezdraw" .
+<http://the-fr.org/id/file-format/1434> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1435> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/puid> "fmt/982" .
+<http://the-fr.org/id/file-format/1435> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/982> .
+<http://the-fr.org/id/file-format/1435> <http://www.w3.org/2000/01/rdf-schema#label> "iMovieProj File Format"@en .
+<http://the-fr.org/id/file-format/1435> <http://purl.org/dc/terms/description> "Associated with Apple video editing software application \'iMovie\'. This format is based on an XML property list."@en .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/hasExtension> "iMovieProj" .
+<http://the-fr.org/id/file-format/1435> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1436> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/puid> "fmt/983" .
+<http://the-fr.org/id/file-format/1436> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/983> .
+<http://the-fr.org/id/file-format/1436> <http://www.w3.org/2000/01/rdf-schema#label> "NIB File Format"@en .
+<http://the-fr.org/id/file-format/1436> <http://purl.org/dc/terms/description> "The NIB file format is used by Interface Builder, a software development application for Apple\'s Mac OS X operating system. The NIB objects are stored as an XML property list, they are unpackaged upon running an application."@en .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/hasExtension> "nib" .
+<http://the-fr.org/id/file-format/1436> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1437> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/puid> "fmt/984" .
+<http://the-fr.org/id/file-format/1437> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/984> .
+<http://the-fr.org/id/file-format/1437> <http://www.w3.org/2000/01/rdf-schema#label> "Binary Property List"@en .
+<http://the-fr.org/id/file-format/1437> <http://purl.org/dc/terms/description> "In the OS X, iOS, NeXTSTEP, and GNUstep programming frameworks, property list files store serialized objects. It is the standard way to save and load data between the internal representation within the objects defined in an Objective-C program and disk files, in order to store program settings and other data. This is the binary version but there is also an XML version of the format."@en .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/hasExtension> "plist" .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/hasExtension> "nib" .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/hasExtension> "aae" .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/hasExtension> "iMovieProj" .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/hasExtension> "ezdraw" .
+<http://the-fr.org/id/file-format/1437> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1437> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1438> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1438> <http://the-fr.org/prop/format-registry/puid> "fmt/985" .
+<http://the-fr.org/id/file-format/1438> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/985> .
+<http://the-fr.org/id/file-format/1438> <http://the-fr.org/prop/format-registry/internetMediaType> "image/vnd.valve.source.texture" .
+<http://the-fr.org/id/file-format/1438> <http://www.w3.org/2000/01/rdf-schema#label> "Valve Texture Format"@en .
+<http://the-fr.org/id/file-format/1438> <http://purl.org/dc/terms/description> "The Valve Texture Format is used by the Valve Corporation\'s Source engine to represent textures in models and environments."@en .
+<http://the-fr.org/id/file-format/1438> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1438> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1438> <http://the-fr.org/prop/format-registry/hasExtension> "vtf" .
+<http://the-fr.org/id/file-format/1438> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1438> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1438> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1439> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1439> <http://the-fr.org/prop/format-registry/puid> "fmt/986" .
+<http://the-fr.org/id/file-format/1439> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/986> .
+<http://the-fr.org/id/file-format/1439> <http://www.w3.org/2000/01/rdf-schema#label> "Extensible Metadata Platform Format"@en .
+<http://the-fr.org/id/file-format/1439> <http://purl.org/dc/terms/description> "The Extensible Metadata Platform (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardised and custom metadata for all kinds of resources."@en .
+<http://the-fr.org/id/file-format/1439> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1439> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/MarkupText> .
+<http://the-fr.org/id/file-format/1439> <http://the-fr.org/prop/format-registry/hasExtension> "xmp" .
+<http://the-fr.org/id/file-format/1439> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1439> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1439> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1440> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1440> <http://the-fr.org/prop/format-registry/puid> "fmt/987" .
+<http://the-fr.org/id/file-format/1440> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/987> .
+<http://the-fr.org/id/file-format/1440> <http://www.w3.org/2000/01/rdf-schema#label> "Microsoft OneNote Package File"@en .
+<http://the-fr.org/id/file-format/1440> <http://purl.org/dc/terms/description> "Microsoft OneNote is a computer program for information gathering and multi-user collaboration. OneNote package files are compressed container formats which allow users to share OneNote files across computers. The OneNote File Format is a persistence format for storing digital notes as hierarchical sets of sections and pages. Pages can contain text, images, tables, note tags and other types of user-defined content."@en .
+<http://the-fr.org/id/file-format/1440> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1440> <http://the-fr.org/prop/format-registry/hasExtension> "onepkg" .
+<http://the-fr.org/id/file-format/1440> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1440> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1440> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1441> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1441> <http://the-fr.org/prop/format-registry/puid> "fmt/988" .
+<http://the-fr.org/id/file-format/1441> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/988> .
+<http://the-fr.org/id/file-format/1441> <http://www.w3.org/2000/01/rdf-schema#label> "ESRI ArcScene Document"@en .
+<http://the-fr.org/id/file-format/1441> <http://purl.org/dc/terms/description> "	In the ArcGIS platform by ESRI ArcScene formats allow 3D visualization of GIS data. ArcScenedocuments can overlay multiple layers of data in a 3D environment."@en .
+<http://the-fr.org/id/file-format/1441> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1441> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1441> <http://the-fr.org/prop/format-registry/hasExtension> "sxd" .
+<http://the-fr.org/id/file-format/1441> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1441> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1441> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1442> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1442> <http://the-fr.org/prop/format-registry/puid> "fmt/989" .
+<http://the-fr.org/id/file-format/1442> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/989> .
+<http://the-fr.org/id/file-format/1442> <http://www.w3.org/2000/01/rdf-schema#label> "ESRI ArcGlobe Document"@en .
+<http://the-fr.org/id/file-format/1442> <http://purl.org/dc/terms/description> "	In the ArcGIS platform by ESRI ArcGlobe formats allow 3D visualization of GIS data based on a global view."@en .
+<http://the-fr.org/id/file-format/1442> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1442> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Model> .
+<http://the-fr.org/id/file-format/1442> <http://the-fr.org/prop/format-registry/hasExtension> "3dd" .
+<http://the-fr.org/id/file-format/1442> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1442> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1442> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1443> <http://the-fr.org/prop/format-registry/puid> "fmt/990" .
+<http://the-fr.org/id/file-format/1443> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/990> .
+<http://the-fr.org/id/file-format/1443> <http://www.w3.org/2000/01/rdf-schema#label> "ESRI File Geodatabase"@en .
+<http://the-fr.org/id/file-format/1443> <http://purl.org/dc/terms/description> "An ESRI file geodatabase is a collection of files in a folder on disk that can store, query, and manage both spatial and nonspatial data.The GeoDB is the primary data storage model for ArcGIS."@en .
+<http://the-fr.org/id/file-format/1443> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1443> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Database> .
+<http://the-fr.org/id/file-format/1443> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1443> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1443> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1444> <http://the-fr.org/prop/format-registry/puid> "fmt/991" .
+<http://the-fr.org/id/file-format/1444> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/991> .
+<http://the-fr.org/id/file-format/1444> <http://www.w3.org/2000/01/rdf-schema#label> "SHA256 File"@en .
+<http://the-fr.org/id/file-format/1444> <http://purl.org/dc/terms/description> "SHA256 is part of the family of SHA-2 (Secure Hash Algorithm 2) hash functions which are designed by the United States National Security Agency. SHA256 prodcues a 256-but (32-byte) hash value. It can be used as a checksum to verify data integrity. The SHA256 file is a text document which contains single or multiple SHA1 values."@en .
+<http://the-fr.org/id/file-format/1444> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1444> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1444> <http://the-fr.org/prop/format-registry/hasExtension> "sha256" .
+<http://the-fr.org/id/file-format/1444> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1444> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1444> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1445> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1445> <http://the-fr.org/prop/format-registry/puid> "fmt/992" .
+<http://the-fr.org/id/file-format/1445> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/992> .
+<http://the-fr.org/id/file-format/1445> <http://www.w3.org/2000/01/rdf-schema#label> "SHA1 File"@en .
+<http://the-fr.org/id/file-format/1445> <http://purl.org/dc/terms/description> "SHA-1 (Secure Hash Algorithm 1) is a cryptographic hash function designed by the United States National Security Agency and is a U.S. Federal Information Processing Standard published by the United States NIST. SHA-1 produces a 160-bit (20-byte) hash value. It can be used as a checksum to verify data integrity. The SHA1 file is a text document which contains single or multiple SHA1 values."@en .
+<http://the-fr.org/id/file-format/1445> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1445> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1445> <http://the-fr.org/prop/format-registry/hasExtension> "sha1" .
+<http://the-fr.org/id/file-format/1445> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1445> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1445> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1446> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1446> <http://the-fr.org/prop/format-registry/puid> "fmt/993" .
+<http://the-fr.org/id/file-format/1446> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/993> .
+<http://the-fr.org/id/file-format/1446> <http://www.w3.org/2000/01/rdf-schema#label> "MD5 File"@en .
+<http://the-fr.org/id/file-format/1446> <http://purl.org/dc/terms/description> "The MD5 algorithm is a hash function producing a 128-bit hash value, it is described in RFC 1321. Although MD5 was initially designed to be used as a cryptographic hash function, it has been found to suffer from extensive vulnerabilities. It can still be used as a checksum to verify data integrity against unintentional corruption. The MD5 file is a text document which contains single or multiple MD5 values."@en .
+<http://the-fr.org/id/file-format/1446> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1446> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/StructuredText> .
+<http://the-fr.org/id/file-format/1446> <http://the-fr.org/prop/format-registry/hasExtension> "md5" .
+<http://the-fr.org/id/file-format/1446> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1446> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1446> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1447> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1447> <http://the-fr.org/prop/format-registry/puid> "fmt/994" .
+<http://the-fr.org/id/file-format/1447> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/994> .
+<http://the-fr.org/id/file-format/1447> <http://www.w3.org/2000/01/rdf-schema#label> "Jeffs Image Format"@en .
+<http://the-fr.org/id/file-format/1447> <http://purl.org/dc/terms/description> "Jeff\'s Image Format (JIF) is a raster image file format that was designed to be a patent-free alternative to GIF. It is nearly identical to GIF, except that it uses zlib compression instead of LZW."@en .
+<http://the-fr.org/id/file-format/1447> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1447> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/RasterImage> .
+<http://the-fr.org/id/file-format/1447> <http://the-fr.org/prop/format-registry/hasExtension> "jif" .
+<http://the-fr.org/id/file-format/1447> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1447> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1447> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1448> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://the-fr.org/def/format-registry/FileFormat> .
+<http://the-fr.org/id/file-format/1448> <http://the-fr.org/prop/format-registry/puid> "fmt/995" .
+<http://the-fr.org/id/file-format/1448> <https://www.w3.org/2002/07/owl#sameAs> <http://www.nationalarchives.gov.uk/PRONOM/fmt/995> .
+<http://the-fr.org/id/file-format/1448> <http://www.w3.org/2000/01/rdf-schema#label> "SIARD (Software-Independent Archiving of Relational Databases)"@en .
+<http://the-fr.org/id/file-format/1448> <http://the-fr.org/prop/format-registry/version> "2.0" .
+<http://the-fr.org/id/file-format/1448> <http://purl.org/dc/terms/description> "Software-Independent Archiving of Relational Databases is a format for storing content of relational databases in files for long-term preservation e.g. in archives. The format was developed by the Swiss Federal Archives. It is an open standard and is supported by the SIARD software of the Swiss Federal Archives. SIARD format is a ZIP file (based on the 64 bit extension of the  ZIP format introduced by PkWare Inc. with version 4.5 of the ZIP format definition in order to avoid size limitations which are unrealistic for databases). The ZIP file contains an XML file describing the database structure (database metadata) as well as a collection of XML files describing the table content (database primary data) as well as - optionally - some text files and some binary files representing database large objects (BLOBs and CLOBs). SIARD format is used for archiving databases adhering to the SQL (ideally SQL:1999 core) standard."@en .
+<http://the-fr.org/id/file-format/1448> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1448> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Database> .
+<http://the-fr.org/id/file-format/1448> <http://the-fr.org/prop/format-registry/hasExtension> "siard" .
+<http://the-fr.org/id/file-format/1448> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1448> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1448> <http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/20> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/575> .
 <http://the-fr.org/id/file-format/20> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/577> .
 <http://the-fr.org/id/file-format/20> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/576> .
@@ -18018,6 +18270,7 @@ RTF0 may predate version 1.0 of the RTF specification which is known to date fro
 <http://the-fr.org/id/file-format/1016> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/1017> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
 <http://the-fr.org/id/file-format/1018> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/472> .
+<http://the-fr.org/id/file-format/1023> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1439> .
 <http://the-fr.org/id/file-format/1024> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
 <http://the-fr.org/id/file-format/1025> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
 <http://the-fr.org/id/file-format/1032> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
@@ -18030,6 +18283,7 @@ RTF0 may predate version 1.0 of the RTF specification which is known to date fro
 <http://the-fr.org/id/file-format/1049> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/652> .
 <http://the-fr.org/id/file-format/1069> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/451> .
 <http://the-fr.org/id/file-format/1094> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/607> .
+<http://the-fr.org/id/file-format/1094> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/806> .
 <http://the-fr.org/id/file-format/1098> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/494> .
 <http://the-fr.org/id/file-format/1104> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/182> .
 <http://the-fr.org/id/file-format/1105> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/182> .
@@ -18109,3 +18363,14 @@ RTF0 may predate version 1.0 of the RTF specification which is known to date fro
 <http://the-fr.org/id/file-format/1403> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/731> .
 <http://the-fr.org/id/file-format/1414> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1167> .
 <http://the-fr.org/id/file-format/1418> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/1430> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1110> .
+<http://the-fr.org/id/file-format/1432> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/1433> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1432> .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/1434> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1432> .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/1435> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1432> .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/554> .
+<http://the-fr.org/id/file-format/1436> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/1432> .
+<http://the-fr.org/id/file-format/1440> <http://the-fr.org/prop/format-registry/hasPriorityOver> <http://the-fr.org/id/file-format/413> .
