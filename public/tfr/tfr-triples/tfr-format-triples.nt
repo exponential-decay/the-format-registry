@@ -5318,6 +5318,7 @@ Some camcorders store their MPEG-2 Program Stream video data as files with the .
 <http://the-fr.org/id/file-format/451> <http://www.w3.org/2000/01/rdf-schema#label> "TrueType Font"@en .
 <http://the-fr.org/id/file-format/451> <http://purl.org/dc/terms/description> "Created by Apple, TrueType Font files are a sequence of concatenated tables (a table is a sequence of words; each table must be long aligned and padded with zeroes if necessary). The first of the tables is the font directory, a special table that facilitates access to the other tables in the font. The directory is followed by a sequence of tables containing the font data. These tables can appear in any order. Certain tables are required for all fonts. Others are optional depending upon the functionality expected of a particular font. The tables have names known as tags. Tags have the type uint32. Currently defined tag names consist of four characters. Tag names with less than four characters have trailing spaces. When tag names are shown in text they are enclosed in straight quotes. Tables that are required must appear in any valid TrueType font file. Also notable is that Apple makes a distinction between a \"TrueType font\" (which refers to a particular font outline definition technology) and an \"sfnt-housed font,\" which refers to any font which uses the same packaging format as a TrueType font: that is, it uses the same directory structure and the same table format and meaning for any tables present."@en .
 <http://the-fr.org/id/file-format/451> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/451> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Font> .
 <http://the-fr.org/id/file-format/451> <http://the-fr.org/prop/format-registry/hasExtension> "ttf" .
 <http://the-fr.org/id/file-format/451> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/451> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -11862,6 +11863,7 @@ The format lacks an extension, and is instead represented by a file name consist
 <http://the-fr.org/id/file-format/973> <http://www.w3.org/2000/01/rdf-schema#label> "OpenType Font File"@en .
 <http://the-fr.org/id/file-format/973> <http://purl.org/dc/terms/description> "OpenType is a font format developed by Microsoft, in colaboration with Adobe."@en .
 <http://the-fr.org/id/file-format/973> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/973> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Font> .
 <http://the-fr.org/id/file-format/973> <http://the-fr.org/prop/format-registry/hasExtension> "otf" .
 <http://the-fr.org/id/file-format/973> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/973> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -13081,6 +13083,7 @@ The EBML specifications are work-in-progress, and can be found here: https://git
 <http://the-fr.org/id/file-format/1069> <http://the-fr.org/prop/format-registry/version> "1.0" .
 <http://the-fr.org/id/file-format/1069> <http://purl.org/dc/terms/description> "Web Open Font Format (WOFF) is a font format designed primarily for use on the Web, and can also be used as a container format or \"wrapper\" for font data in already-existing formats."@en .
 <http://the-fr.org/id/file-format/1069> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1069> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Font> .
 <http://the-fr.org/id/file-format/1069> <http://the-fr.org/prop/format-registry/hasExtension> "woff" .
 <http://the-fr.org/id/file-format/1069> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1069> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -19846,6 +19849,7 @@ The Praat Picture File is a diagram produced from speech analyses within Praat. 
 <http://the-fr.org/id/file-format/1625> <http://the-fr.org/prop/format-registry/version> "2.0" .
 <http://the-fr.org/id/file-format/1625> <http://purl.org/dc/terms/description> "Web Open Font Format (WOFF) is a font format designed primarily for use on the Web, and can also be used as a container format or \"wrapper\" for font data in already-existing formats. WOFF 2 was developed to provide improved compression over WOFF 1."@en .
 <http://the-fr.org/id/file-format/1625> <http://the-fr.org/prop/format-registry/isDeprecated> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://the-fr.org/id/file-format/1625> <http://the-fr.org/prop/format-registry/formatType> <http://the-fr.org/def/format-registry/Font> .
 <http://the-fr.org/id/file-format/1625> <http://the-fr.org/prop/format-registry/hasExtension> "woff2" .
 <http://the-fr.org/id/file-format/1625> <http://digipres.org/formats/sources/pronom/formats/#hasMagic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <http://the-fr.org/id/file-format/1625> <http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .

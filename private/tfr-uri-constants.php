@@ -19,6 +19,7 @@
 	define("UNSTRUCTUREDTXT_CLASS_TYPE", "<http://the-fr.org/def/format-registry/UnstructuredText>");
 	define("VIDEO_CLASS_TYPE", "<http://the-fr.org/def/format-registry/Video>");
 	define("WPTXT_CLASS_TYPE", "<http://the-fr.org/def/format-registry/WordprocessedText>");
-   define("MODEL_CLASS_TYPE", "<http://the-fr.org/def/format-registry/Model>");
+    define("MODEL_CLASS_TYPE", "<http://the-fr.org/def/format-registry/Model>");
+    define("FONT_CLASS_TYPE", "<http://the-fr.org/def/format-registry/Font>");
 
 ?>
