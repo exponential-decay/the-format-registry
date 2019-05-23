@@ -2,28 +2,29 @@
 <PRONOM-Report xmlns="http://pronom.nationalarchives.gov.uk">
   <report_format_detail>
     <FileFormat>
-      <FormatID>317</FormatID>
-      <FormatName>ESRI MapInfo Data File</FormatName>
+      <FormatID>2041</FormatID>
+      <FormatName>Sibelius Sound Set Definition</FormatName>
       <FormatVersion>
       </FormatVersion>
       <FormatAliases>
       </FormatAliases>
       <FormatFamilies>
       </FormatFamilies>
-      <FormatTypes>GIS</FormatTypes>
+      <FormatTypes>Text (Structured)</FormatTypes>
       <FormatDisclosure>
       </FormatDisclosure>
-      <FormatDescription>This is an outline record only, and requires further details, research or authentication to provide information that will enable users to further understand the format and to assess digital preservation risks associated with it if appropriate. If you are able to help by supplying any additional information concerning this entry, please return to the main PRONOM page and select ‘Add an Entry’.</FormatDescription>
-      <BinaryFileFormat>Text</BinaryFileFormat>
+      <FormatDescription>A text-based file used by Sibelius music composition software to list the file system locations of sound files in use within a composition.</FormatDescription>
+      <BinaryFileFormat>
+      </BinaryFileFormat>
       <ByteOrders>
       </ByteOrders>
       <ReleaseDate>
       </ReleaseDate>
       <WithdrawnDate>
       </WithdrawnDate>
-      <ProvenanceSourceID>1</ProvenanceSourceID>
-      <ProvenanceName>Digital Preservation Department / The National Archives</ProvenanceName>
-      <ProvenanceSourceDate>02 Aug 2005</ProvenanceSourceDate>
+      <ProvenanceSourceID>178</ProvenanceSourceID>
+      <ProvenanceName>National Library of New Zealand / National Library of New Zealand</ProvenanceName>
+      <ProvenanceSourceDate>18 Feb 2019</ProvenanceSourceDate>
       <ProvenanceDescription>
       </ProvenanceDescription>
       <LastUpdatedDate>18 Feb 2019</LastUpdatedDate>
@@ -34,12 +35,12 @@
       <TechnicalEnvironment>
       </TechnicalEnvironment>
       <FileFormatIdentifier>
-        <Identifier>x-fmt/225</Identifier>
+        <Identifier>fmt/1229</Identifier>
         <IdentifierType>PUID</IdentifierType>
       </FileFormatIdentifier>
       <ExternalSignature>
-        <ExternalSignatureID>2284</ExternalSignatureID>
-        <Signature>mid</Signature>
+        <ExternalSignatureID>2285</ExternalSignatureID>
+        <Signature>set</Signature>
         <SignatureType>File extension</SignatureType>
       </ExternalSignature>
     </FileFormat>

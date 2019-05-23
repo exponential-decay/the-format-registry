@@ -1,6 +1,7 @@
 <?php
     include "tfr-predicates.php";
     include "tfr-uri-constants.php";
+    include "wikidigi/get_wikidigi.php";
 
    //modifier may be used to add language to literals, e.g. "@en"
     function write_triple($subject, $predicate, $object, $modifier="", $literal=True)
@@ -268,6 +269,27 @@
       fwrite($ntfile, $binarytext);
    }
 
+    function add_wikidigi($ntfile, $subject, $puid=false)
+    {
+        if ($puid != "x-fmt/toggle") {
+            error_log("Creating wikidigi triple for " . $puid);
+            $wd = puid_to_wikidigi($puid);
+            if ($wd) {
+                $wd_triple = write_triple($subject, SEEALSO_PREDICATE, $wd, "", False);
+                fwrite($ntfile, $wd_triple);
+            }
+            $wd = puid_to_wididigi_sfw($puid);
+            if (is_array($wd) || is_object($wd)) {
+                foreach($wd as $uri => $label){
+                    $wd_triple = write_triple($subject, WIKIDIGI_SOFTWARE_PREDICATE, $uri, "", False);
+                    $wd_label = write_triple($subject, WIKIDIGI_SOFTWARE_LABEL, $label, "", True);
+                    fwrite($ntfile, $wd_triple);
+                    # fwrite($ntfile, $wd_label);
+                }
+            }
+        }
+    }
+
    function create_priorities($ntfile, $priority_list, $puid_resource_arr)
    {
       foreach($priority_list as $fmt)
@@ -310,7 +332,8 @@
         extract_description($ntfile, $subject, $formatXML);
         extract_type($ntfile, $subject, $formatXML);
         extract_extension($ntfile, $subject, $formatXML);
-      extract_magic($ntfile, $subject, $formatXML, $containermagic, $puid);
+        extract_magic($ntfile, $subject, $formatXML, $containermagic, $puid);
+        add_wikidigi($ntfile, $subject, $puid);
     }
 
     function mint_subject()

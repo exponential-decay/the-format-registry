@@ -8,14 +8,17 @@
 	define("TYPE_PREDICATE", "<http://the-fr.org/prop/format-registry/formatType>");
 	define("ALIAS_PREDICATE", "<http://www.w3.org/2004/02/skos/core#altLabel>");
 	define("EXTENSION_PREDICATE", "<http://the-fr.org/prop/format-registry/hasExtension>");
-   define("CONTAINER_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic>");
-   define("BINARY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic>");
-   define("DEPRECATED_PREDICATE", "<http://the-fr.org/prop/format-registry/isDeprecated>");
+    define("CONTAINER_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMContainerMagic>");
+    define("BINARY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPRONOMBinaryMagic>");
+    define("DEPRECATED_PREDICATE", "<http://the-fr.org/prop/format-registry/isDeprecated>");
 
-   //file format relationships
-   define("HASPRIORITY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPriorityOver>");
+    //file format relationships
+    define("HASPRIORITY_PREDICATE", "<http://the-fr.org/prop/format-registry/hasPriorityOver>");
 
-   // additional ontologies
-   define("SAMEAS_PREDICATE", "<https://www.w3.org/2002/07/owl#sameAs>");
-   define("MAGIC_PREDICATE", "<http://digipres.org/formats/sources/pronom/formats/#hasMagic>");   
+    // additional ontologies
+    define("SAMEAS_PREDICATE", "<https://www.w3.org/2002/07/owl#sameAs>");
+    define("MAGIC_PREDICATE", "<http://digipres.org/formats/sources/pronom/formats/#hasMagic>");
+    define("SEEALSO_PREDICATE", "<http://www.w3.org/2000/01/rdf-schema#seeAlso>");
+    define("WIKIDIGI_SOFTWARE_PREDICATE", "<http://www.wikidata.org/prop/direct/P1072>");
+    define("WIKIDIGI_SOFTWARE_LABEL", "<http://the-fr.org/prop/format-registry/wikidataSoftwareLabel>")
 ?>

@@ -6,7 +6,7 @@
 	function format_tfr_xml($xml, $uritype)
 	{
 		$xsl_loc = "private/xsl/tfr-rdf-generic.xsl";
-		
+
 		if ($uritype == ResponseHandler::DOC)
 		{
 			$xsl_loc = "private/xsl/tfr-rdf-generic.xsl";
@@ -50,7 +50,7 @@ EOD;
 
 		$tail = "</body></html>";
 
-		return $head . $mdtext . $tail; 
+		return $head . $mdtext . $tail;
 	}
 
 	function generate_markdown($markdown)

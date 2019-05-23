@@ -181,3 +181,8 @@
 <http://the-fr.org/def/format-registry/Font> <http://www.w3.org/2000/01/rdf-schema#comment> "Font files describe a type-face to be encoded-in, embedded-in, or pointed-to by a file-format. As an example a desktop publishing format might embed a font file to promote consistent rendering across devices."@en.
 <http://the-fr.org/def/format-registry/Font> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
 <http://the-fr.org/def/format-registry/Font> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".
+<http://the-fr.org/prop/format-registry/wikidataSoftwareLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>.
+<http://the-fr.org/prop/format-registry/wikidataSoftwareLabel> <http://www.w3.org/2000/01/rdf-schema#label> "Wikidata Software Label"@en.
+<http://the-fr.org/prop/format-registry/wikidataSoftwareLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "A mechanism to describe the label returned from a Wikidata query."@en.
+<http://the-fr.org/prop/format-registry/wikidataSoftwareLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://the-fr.org/format-registry/>.
+<http://the-fr.org/prop/format-registry/wikidataSoftwareLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing".

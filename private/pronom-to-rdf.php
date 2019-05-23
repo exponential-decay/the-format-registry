@@ -4,7 +4,7 @@
 	include ("pronom-to-rdf-mapping.php");
    include ("non-container-relationship-mapping.php");
 
-	header("Content-type: text/plain; charset=utf-8"); 
+	header("Content-type: text/plain; charset=utf-8");
 
 	function init_nt_file()
 	{
@@ -44,8 +44,8 @@
 			$basedir = LATESTDIR . "/" . $type_arr[$x];
 			$files = scandir($basedir);
 
-         //sort array consistently by number to set URI values 
-         //in concrete. xfmt1 becomes uri1 xfmt10 becomes uri10 
+         //sort array consistently by number to set URI values
+         //in concrete. xfmt1 becomes uri1 xfmt10 becomes uri10
          //not uri2, alphabetical ascending sort...
 			foreach($files as $file)
 			{
@@ -60,13 +60,13 @@
          asort($no_array);
 
          foreach ($no_array as $nor)
-         {   
+         {
 				$srcfile = $basedir . "/" . $type_arr[$x] . $nor . ".xml";
 				create_tfr_triples($ntfile, file_get_contents($srcfile), $srcfile, $containermagic, $puid_resource_arr);
          }
 		}
 
-      //run last once all URIs have been defined... 
+      //run last once all URIs have been defined...
       //given a list of resource, create priority relationships between each...
       if ($priority_list != False && sizeof($priority_list) > 0)
       {
