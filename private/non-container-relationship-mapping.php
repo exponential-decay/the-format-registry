@@ -8,7 +8,7 @@
    define("SIG_HAS_PRIORITY", 'HASPRIORITY');
    define("SIG_OVER", 'OVER');
 
-   /* Parts of the structure that we're interested in... 
+   /* Parts of the structure that we're interested in...
    <FFSignatureFile DateCreated="2016-07-27T12:13:11" Version="86" xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile">
     <FileFormatCollection>
      <FileFormat ID="1509" MIMEType="audio/x-wav"
@@ -37,7 +37,7 @@
 
          $puid = $FileFormat[DROID_PUID];
          $id = $FileFormat[DROID_ID];
-         
+
          $ff[DROID_PUID] = (string)$puid;
          $ff[DROID_ID] = (string)$id;
          $id_arr = 0;
@@ -50,9 +50,13 @@
             }
          }
 
-         if (sizeof($id_arr) > 0)
-         {
-            $ff[DROID_PRIORITY] = $id_arr;
+         if (is_array($id_arr)) {
+            if (sizeof($id_arr) > 0)
+            {
+               $ff[DROID_PRIORITY] = $id_arr;
+            }
+         } else {
+            $ff[DROID_PRIORITY] = null;
          }
 
          array_push($puids, $ff);
@@ -73,13 +77,13 @@
                foreach ($all_ids as $over)
                {
                   if ($id == $over[DROID_ID])
-                  {  
+                  {
                      $pri = array();
-                     $pri[SIG_HAS_PRIORITY] = $hasPriority[DROID_PUID]; 
-                     $pri[SIG_OVER] = $over[DROID_PUID];                   
+                     $pri[SIG_HAS_PRIORITY] = $hasPriority[DROID_PUID];
+                     $pri[SIG_OVER] = $over[DROID_PUID];
                      array_push($results, $pri);
                   }
-               }             
+               }
             }
          }
       }
