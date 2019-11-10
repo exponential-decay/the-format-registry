@@ -287,6 +287,12 @@
                     # fwrite($ntfile, $wd_label);
                 }
             }
+            $wd = puid_to_fdd($puid);
+            if ($wd) {
+                $wd_triple = write_triple($subject, SEEALSO_PREDICATE, $wd, "", False);
+                fwrite($ntfile, $wd_triple);
+                  error_log("Creating wikidigi triple for " . $wd_triple);;
+            }
         }
     }
 
@@ -344,9 +350,9 @@
         return $subject;
     }
 
-    function pronom_to_rdf_map($ntfile, $data, $puid, $containermagic, &$puid_resource_arr)
-    {
-        $xml = simplexml_load_string($data);
+   function pronom_to_rdf_map($ntfile, $data, $puid, $containermagic, &$puid_resource_arr)
+   {
+      $xml = simplexml_load_string($data);
 
       if (substr($data, 0, 1) == '')
       {
@@ -354,7 +360,7 @@
       }
       else
       {
-           $formatXML = $xml->report_format_detail->FileFormat;
+         $formatXML = $xml->report_format_detail->FileFormat;
          triple_mapper($ntfile, mint_subject(), $formatXML, $containermagic, $puid_resource_arr);
       }
     }

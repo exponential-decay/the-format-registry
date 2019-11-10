@@ -11,17 +11,18 @@ class SPARQLQueryDispatcher
 
     public function query(string $sparqlQuery): array
     {
-
+        // User-agent policy: https://meta.wikimedia.org/wiki/User-Agent_policy
+        $agent = 'User-Agent: the-fr.org/0.1 (https://the-fr.org; allalongthewatchtower2001+thefrorg@gmail.com) fr.org/0.1';
         $opts = [
             'http' => [
                 'method' => 'GET',
                 'header' => [
-                    'Accept: application/sparql-results+json'
+                    'Accept: application/sparql-results+json',
+                    $agent
                 ],
             ],
         ];
         $context = stream_context_create($opts);
-
         $url = $this->endpointUrl . '?query=' . urlencode($sparqlQuery);
         $response = file_get_contents($url, false, $context);
         return json_decode($response, true);
@@ -43,6 +44,15 @@ SELECT ?format ?pronom ?formatLabel ?software ?softwareLabel WHERE {
 }
 SPARQL;
 
+$locFDDSparql = <<< 'SPARQL'
+SELECT ?item ?fdd WHERE
+{
+  ?format wdt:P2748 "{{ PUID }}".
+  ?format wdt:P3266 ?fdd .
+}
+SPARQL;
+
+// Get Wikidata record for a PUID if it exists.
 function puid_to_wikidigi($puid) {
     global $wikiDigiPageSPARQLString;
     $search = str_replace("{{ PUID }}", $puid, $wikiDigiPageSPARQLString);
@@ -58,6 +68,7 @@ function puid_to_wikidigi($puid) {
     return False;
 }
 
+// Get software that can handle the PUID via Wikidata.
 function puid_to_wididigi_sfw($puid) {
 
     global $wikiDigiSoftwareSPARQL;
@@ -74,6 +85,24 @@ function puid_to_wididigi_sfw($puid) {
             }
         }
         return $uris;
+    }
+    return False;
+}
+
+// Return Library of Congress references via Wikidata lookup also.
+function puid_to_fdd($puid) {
+    $loc = "https://www.loc.gov/preservation/digital/formats/fdd/";
+    global $locFDDSparql;
+    $search = str_replace("{{ PUID }}", $puid, $locFDDSparql);
+    $endpointUrl = 'https://query.wikidata.org/sparql';
+    $queryDispatcher = new SPARQLQueryDispatcher($endpointUrl);
+    $queryResult = $queryDispatcher->query($search);
+    if ($queryResult["results"]["bindings"]) {
+        if ($queryResult["results"]["bindings"][0]["fdd"]["type"])
+        {
+
+            return "<" . $loc . $queryResult["results"]["bindings"][0]["fdd"]["value"] . ".shtml" . ">";
+        }
     }
     return False;
 }
