@@ -43,7 +43,9 @@
    			* [<xsl:value-of select="@rdf:resource"/>](<xsl:value-of select="@rdf:resource"/>)
 		</xsl:for-each>
 
-		**Wikidata:** <xsl:for-each select="rdfs:seeAlso">[<xsl:value-of select="@rdf:resource"/>](<xsl:value-of select="@rdf:resource"/>)</xsl:for-each>
+		**See Also (e.g. Wikidata, Library of Congress):**
+			<xsl:for-each select="rdfs:seeAlso">
+				* [<xsl:value-of select="@rdf:resource"/>](<xsl:value-of select="@rdf:resource"/>)</xsl:for-each>
 
 		**Software that can read the format:**
 			<xsl:for-each select="wikidata:P1072">
