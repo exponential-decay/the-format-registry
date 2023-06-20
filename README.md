@@ -108,7 +108,7 @@ The .NT files are a product of the mapping process, atm: DOWNLOAD FROM SOURCE =>
 
 ### Legal
 
-This site is bought to you by aggregating numerous other resources. If those sources
+This site is brought to you by aggregating numerous other resources. If those sources
 appear on this site, they are listed below. 
 
 - [PRONOM](http://www.nationalarchives.gov.uk/PRONOM/Default.aspx) data is licensed 
